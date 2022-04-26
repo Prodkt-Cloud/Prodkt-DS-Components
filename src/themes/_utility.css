@@ -1,0 +1,25 @@
+/*
+ * This file contains utility classes that can't be contained in a component and must be applied to the light DOM. None
+ * of the rules in this stylesheet should target component tags or HTML tags, and all classes *must* start with ".moyo-"
+ * to reduce the possibility of collisions.
+ */
+
+.moyo-scroll-lock {
+  overflow: hidden !important;
+}
+
+.moyo-toast-stack {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: var(--moyo-z-index-toast);
+  width: 28rem;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.moyo-toast-stack moyo-alert {
+  --box-shadow: var(--moyo-shadow-large);
+  margin: var(--moyo-spacing-medium);
+}
