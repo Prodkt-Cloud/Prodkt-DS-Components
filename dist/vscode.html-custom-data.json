@@ -39,19 +39,34 @@
       ]
     },
     {
-      "name": "moyo-animated-image",
+      "name": "moyo-avatar",
       "attributes": [
         {
-          "name": "src",
-          "description": "The image's src attribute."
+          "name": "image",
+          "description": "The image source to use for the avatar."
         },
         {
-          "name": "alt",
-          "description": "The image's alt attribute."
+          "name": "label",
+          "description": "A label to use to describe the avatar to assistive devices."
         },
         {
-          "name": "play",
-          "description": "When set, the image will animate. Otherwise, it will be paused."
+          "name": "initials",
+          "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended)."
+        },
+        {
+          "name": "shape",
+          "description": "The shape of the avatar.",
+          "values": [
+            {
+              "name": "circle"
+            },
+            {
+              "name": "square"
+            },
+            {
+              "name": "rounded"
+            }
+          ]
         }
       ]
     },
@@ -105,34 +120,19 @@
       ]
     },
     {
-      "name": "moyo-avatar",
+      "name": "moyo-animated-image",
       "attributes": [
         {
-          "name": "image",
-          "description": "The image source to use for the avatar."
+          "name": "src",
+          "description": "The image's src attribute."
         },
         {
-          "name": "label",
-          "description": "A label to use to describe the avatar to assistive devices."
+          "name": "alt",
+          "description": "The image's alt attribute."
         },
         {
-          "name": "initials",
-          "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended)."
-        },
-        {
-          "name": "shape",
-          "description": "The shape of the avatar.",
-          "values": [
-            {
-              "name": "circle"
-            },
-            {
-              "name": "square"
-            },
-            {
-              "name": "rounded"
-            }
-          ]
+          "name": "play",
+          "description": "When set, the image will animate. Otherwise, it will be paused."
         }
       ]
     },
@@ -167,15 +167,6 @@
         {
           "name": "pulse",
           "description": "Makes the badge pulsate to draw attention."
-        }
-      ]
-    },
-    {
-      "name": "moyo-breadcrumb",
-      "attributes": [
-        {
-          "name": "label",
-          "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices."
         }
       ]
     },
@@ -366,6 +357,15 @@
               "name": "_top"
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "moyo-breadcrumb",
+      "attributes": [
+        {
+          "name": "label",
+          "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices."
         }
       ]
     },

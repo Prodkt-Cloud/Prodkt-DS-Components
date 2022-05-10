@@ -146,102 +146,79 @@
           ]
         },
         {
-          "name": "moyo-animated-image",
+          "name": "moyo-avatar",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/animated-image",
+          "doc-url": "https://prodkt.cloud/components/avatar",
           "js": {
             "properties": [
               {
-                "name": "frozenFrame",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "isLoaded",
+                "name": "hasError",
                 "value": {
                   "type": "boolean"
                 }
               },
               {
-                "name": "animatedImage",
-                "value": {
-                  "type": "HTMLImageElement"
-                }
-              },
-              {
-                "name": "src",
-                "description": "The image's src attribute.",
+                "name": "image",
+                "description": "The image source to use for the avatar.",
                 "value": {
                   "type": "string"
                 }
               },
               {
-                "name": "alt",
-                "description": "The image's alt attribute.",
+                "name": "label",
+                "description": "A label to use to describe the avatar to assistive devices.",
                 "value": {
                   "type": "string"
                 }
               },
               {
-                "name": "play",
-                "description": "When set, the image will animate. Otherwise, it will be paused.",
+                "name": "initials",
+                "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended).",
                 "value": {
-                  "type": "boolean"
+                  "type": "string"
                 }
               },
               {
-                "name": "handleClick",
-                "value": {}
+                "name": "shape",
+                "description": "The shape of the avatar.",
+                "value": {
+                  "type": "'circle' | 'square' | 'rounded'"
+                }
               },
               {
-                "name": "handleLoad",
-                "value": {}
-              },
-              {
-                "name": "handleError",
-                "value": {}
-              },
-              {
-                "name": "handlePlayChange",
-                "value": {}
-              },
-              {
-                "name": "handleSrcChange",
+                "name": "handleImageChange",
                 "value": {}
               }
             ],
-            "events": [
-              {
-                "name": "moyo-load",
-                "description": "Emitted when the image loads successfully."
-              },
-              {
-                "name": "moyo-error",
-                "description": "Emitted when the image fails to load."
-              }
-            ]
+            "events": []
           },
           "attributes": [
             {
-              "name": "src",
-              "description": "The image's src attribute.",
+              "name": "image",
+              "description": "The image source to use for the avatar.",
               "value": {
                 "type": "string"
               }
             },
             {
-              "name": "alt",
-              "description": "The image's alt attribute.",
+              "name": "label",
+              "description": "A label to use to describe the avatar to assistive devices.",
               "value": {
                 "type": "string"
               }
             },
             {
-              "name": "play",
-              "description": "When set, the image will animate. Otherwise, it will be paused.",
+              "name": "initials",
+              "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended).",
               "value": {
-                "type": "boolean"
+                "type": "string"
+              }
+            },
+            {
+              "name": "shape",
+              "description": "The shape of the avatar.",
+              "value": {
+                "type": "'circle' | 'square' | 'rounded'"
               }
             }
           ]
@@ -514,79 +491,102 @@
           "attributes": []
         },
         {
-          "name": "moyo-avatar",
+          "name": "moyo-animated-image",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/avatar",
+          "doc-url": "https://prodkt.cloud/components/animated-image",
           "js": {
             "properties": [
               {
-                "name": "hasError",
+                "name": "frozenFrame",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "isLoaded",
                 "value": {
                   "type": "boolean"
                 }
               },
               {
-                "name": "image",
-                "description": "The image source to use for the avatar.",
+                "name": "animatedImage",
+                "value": {
+                  "type": "HTMLImageElement"
+                }
+              },
+              {
+                "name": "src",
+                "description": "The image's src attribute.",
                 "value": {
                   "type": "string"
                 }
               },
               {
-                "name": "label",
-                "description": "A label to use to describe the avatar to assistive devices.",
+                "name": "alt",
+                "description": "The image's alt attribute.",
                 "value": {
                   "type": "string"
                 }
               },
               {
-                "name": "initials",
-                "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended).",
+                "name": "play",
+                "description": "When set, the image will animate. Otherwise, it will be paused.",
                 "value": {
-                  "type": "string"
+                  "type": "boolean"
                 }
               },
               {
-                "name": "shape",
-                "description": "The shape of the avatar.",
-                "value": {
-                  "type": "'circle' | 'square' | 'rounded'"
-                }
+                "name": "handleClick",
+                "value": {}
               },
               {
-                "name": "handleImageChange",
+                "name": "handleLoad",
+                "value": {}
+              },
+              {
+                "name": "handleError",
+                "value": {}
+              },
+              {
+                "name": "handlePlayChange",
+                "value": {}
+              },
+              {
+                "name": "handleSrcChange",
                 "value": {}
               }
             ],
-            "events": []
+            "events": [
+              {
+                "name": "moyo-load",
+                "description": "Emitted when the image loads successfully."
+              },
+              {
+                "name": "moyo-error",
+                "description": "Emitted when the image fails to load."
+              }
+            ]
           },
           "attributes": [
             {
-              "name": "image",
-              "description": "The image source to use for the avatar.",
+              "name": "src",
+              "description": "The image's src attribute.",
               "value": {
                 "type": "string"
               }
             },
             {
-              "name": "label",
-              "description": "A label to use to describe the avatar to assistive devices.",
+              "name": "alt",
+              "description": "The image's alt attribute.",
               "value": {
                 "type": "string"
               }
             },
             {
-              "name": "initials",
-              "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended).",
+              "name": "play",
+              "description": "When set, the image will animate. Otherwise, it will be paused.",
               "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "shape",
-              "description": "The shape of the avatar.",
-              "value": {
-                "type": "'circle' | 'square' | 'rounded'"
+                "type": "boolean"
               }
             }
           ]
@@ -641,52 +641,6 @@
               "description": "Makes the badge pulsate to draw attention.",
               "value": {
                 "type": "boolean"
-              }
-            }
-          ]
-        },
-        {
-          "name": "moyo-breadcrumb",
-          "description": "",
-          "doc-url": "https://prodkt.cloud/components/breadcrumb",
-          "js": {
-            "properties": [
-              {
-                "name": "defaultSlot",
-                "value": {
-                  "type": "HTMLSlotElement"
-                }
-              },
-              {
-                "name": "separatorSlot",
-                "value": {
-                  "type": "HTMLSlotElement"
-                }
-              },
-              {
-                "name": "label",
-                "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "getSeparator",
-                "value": {}
-              },
-              {
-                "name": "handleSlotChange",
-                "value": {}
-              }
-            ],
-            "events": []
-          },
-          "attributes": [
-            {
-              "name": "label",
-              "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
-              "value": {
-                "type": "string"
               }
             }
           ]
@@ -1079,6 +1033,52 @@
               "description": "Used to override the form owner's `target` attribute.",
               "value": {
                 "type": "'_self' | '_blank' | '_parent' | '_top' | string"
+              }
+            }
+          ]
+        },
+        {
+          "name": "moyo-breadcrumb",
+          "description": "",
+          "doc-url": "https://prodkt.cloud/components/breadcrumb",
+          "js": {
+            "properties": [
+              {
+                "name": "defaultSlot",
+                "value": {
+                  "type": "HTMLSlotElement"
+                }
+              },
+              {
+                "name": "separatorSlot",
+                "value": {
+                  "type": "HTMLSlotElement"
+                }
+              },
+              {
+                "name": "label",
+                "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "getSeparator",
+                "value": {}
+              },
+              {
+                "name": "handleSlotChange",
+                "value": {}
+              }
+            ],
+            "events": []
+          },
+          "attributes": [
+            {
+              "name": "label",
+              "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
+              "value": {
+                "type": "string"
               }
             }
           ]
