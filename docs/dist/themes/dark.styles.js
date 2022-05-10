@@ -1,0 +1,467 @@
+import { css } from "lit";
+
+export default css`
+  :host,
+  .moyo-theme-dark {
+    @import url("../fonts/Inter-VariableFont.ttf");
+
+    --moyo-color-gray-50: hsl(240 5.1% 15%);
+    --moyo-color-gray-100: hsl(240 5.7% 18.2%);
+    --moyo-color-gray-200: hsl(240 4.6% 22%);
+    --moyo-color-gray-300: hsl(240 5% 27.6%);
+    --moyo-color-gray-400: hsl(240 5% 35.5%);
+    --moyo-color-gray-500: hsl(240 3.7% 44%);
+    --moyo-color-gray-600: hsl(240 5.3% 58%);
+    --moyo-color-gray-700: hsl(240 5.6% 73%);
+    --moyo-color-gray-800: hsl(240 7.3% 84%);
+    --moyo-color-gray-900: hsl(240 9.1% 91.8%);
+    --moyo-color-gray-950: hsl(0 0% 95%);
+
+    --moyo-color-red-50: hsl(0 56% 23.9%);
+    --moyo-color-red-100: hsl(0.6 60% 33.9%);
+    --moyo-color-red-200: hsl(0.9 67.2% 37.1%);
+    --moyo-color-red-300: hsl(1.1 71.3% 43.7%);
+    --moyo-color-red-400: hsl(1 76% 52.5%);
+    --moyo-color-red-500: hsl(0.7 89.6% 57.2%);
+    --moyo-color-red-600: hsl(0 98.6% 67.9%);
+    --moyo-color-red-700: hsl(0 100% 72.3%);
+    --moyo-color-red-800: hsl(0 100% 85.6%);
+    --moyo-color-red-900: hsl(0 100% 90.3%);
+    --moyo-color-red-950: hsl(0 100% 95.9%);
+
+    --moyo-color-orange-50: hsl(15 64.2% 23.3%);
+    --moyo-color-orange-100: hsl(15.1 70.9% 31.1%);
+    --moyo-color-orange-200: hsl(15.3 75.7% 35.5%);
+    --moyo-color-orange-300: hsl(17.1 83.5% 42.7%);
+    --moyo-color-orange-400: hsl(20.1 88% 50.8%);
+    --moyo-color-orange-500: hsl(24.3 100% 50.5%);
+    --moyo-color-orange-600: hsl(27.2 100% 57.7%);
+    --moyo-color-orange-700: hsl(31.3 100% 68.7%);
+    --moyo-color-orange-800: hsl(33.8 100% 79.3%);
+    --moyo-color-orange-900: hsl(38.9 100% 87.7%);
+    --moyo-color-orange-950: hsl(46.2 100% 95%);
+
+    --moyo-color-amber-50: hsl(21.9 66.3% 21.1%);
+    --moyo-color-amber-100: hsl(21.5 73.6% 29.7%);
+    --moyo-color-amber-200: hsl(22.3 77.6% 33.3%);
+    --moyo-color-amber-300: hsl(25.4 84.2% 39.6%);
+    --moyo-color-amber-400: hsl(31.4 87.4% 46.7%);
+    --moyo-color-amber-500: hsl(37 96.6% 48.3%);
+    --moyo-color-amber-600: hsl(43.3 100% 53.4%);
+    --moyo-color-amber-700: hsl(46.5 100% 61.1%);
+    --moyo-color-amber-800: hsl(49.3 100% 73%);
+    --moyo-color-amber-900: hsl(51.8 100% 85%);
+    --moyo-color-amber-950: hsl(60 100% 94.6%);
+
+    --moyo-color-yellow-50: hsl(32.5 60% 18.2%);
+    --moyo-color-yellow-100: hsl(28.1 68.6% 29%);
+    --moyo-color-yellow-200: hsl(31.3 75.8% 30.8%);
+    --moyo-color-yellow-300: hsl(34.7 84.4% 35.3%);
+    --moyo-color-yellow-400: hsl(40.1 87.3% 43.3%);
+    --moyo-color-yellow-500: hsl(44.7 88% 46%);
+    --moyo-color-yellow-600: hsl(47.7 100% 50.9%);
+    --moyo-color-yellow-700: hsl(51.3 100% 59.9%);
+    --moyo-color-yellow-800: hsl(54.6 100% 73%);
+    --moyo-color-yellow-900: hsl(58.9 100% 84.2%);
+    --moyo-color-yellow-950: hsl(60 100% 94%);
+
+    --moyo-color-lime-50: hsl(86.5 54.4% 18%);
+    --moyo-color-lime-100: hsl(87.6 56.8% 23.3%);
+    --moyo-color-lime-200: hsl(85.8 63.2% 24.5%);
+    --moyo-color-lime-300: hsl(86.1 72% 29.4%);
+    --moyo-color-lime-400: hsl(85.5 76.8% 37.3%);
+    --moyo-color-lime-500: hsl(84.3 74.2% 42.1%);
+    --moyo-color-lime-600: hsl(82.8 81.5% 52.6%);
+    --moyo-color-lime-700: hsl(82 89.9% 64%);
+    --moyo-color-lime-800: hsl(80.9 97.9% 76.6%);
+    --moyo-color-lime-900: hsl(77.9 100% 85.8%);
+    --moyo-color-lime-950: hsl(69.5 100% 93.8%);
+
+    --moyo-color-green-50: hsl(144.3 53.6% 16%);
+    --moyo-color-green-100: hsl(143.2 55.4% 23.5%);
+    --moyo-color-green-200: hsl(141.5 58.2% 26.3%);
+    --moyo-color-green-300: hsl(140.8 64.2% 31.8%);
+    --moyo-color-green-400: hsl(140.3 68% 39.2%);
+    --moyo-color-green-500: hsl(141.1 64.9% 43%);
+    --moyo-color-green-600: hsl(141.6 72.4% 55.2%);
+    --moyo-color-green-700: hsl(141.7 82.7% 70.1%);
+    --moyo-color-green-800: hsl(141 90.9% 82.1%);
+    --moyo-color-green-900: hsl(142 100% 89.1%);
+    --moyo-color-green-950: hsl(144 100% 95.5%);
+
+    --moyo-color-emerald-50: hsl(164.3 75% 13.5%);
+    --moyo-color-emerald-100: hsl(163.5 72.6% 20.1%);
+    --moyo-color-emerald-200: hsl(162.1 73.7% 22.4%);
+    --moyo-color-emerald-300: hsl(161.3 77.3% 27.6%);
+    --moyo-color-emerald-400: hsl(159.6 77.1% 34.3%);
+    --moyo-color-emerald-500: hsl(159.1 73.5% 37.9%);
+    --moyo-color-emerald-600: hsl(157.8 66.8% 48.9%);
+    --moyo-color-emerald-700: hsl(156.2 76.1% 63.8%);
+    --moyo-color-emerald-800: hsl(152.4 84.4% 77.4%);
+    --moyo-color-emerald-900: hsl(149.3 100% 87%);
+    --moyo-color-emerald-950: hsl(158.6 100% 94.8%);
+
+    --moyo-color-teal-50: hsl(176.5 51.5% 15.4%);
+    --moyo-color-teal-100: hsl(175.9 54.7% 22.3%);
+    --moyo-color-teal-200: hsl(175.9 60.7% 23.9%);
+    --moyo-color-teal-300: hsl(174.5 67.3% 28.8%);
+    --moyo-color-teal-400: hsl(174.4 71.9% 34.9%);
+    --moyo-color-teal-500: hsl(173.1 71% 38.3%);
+    --moyo-color-teal-600: hsl(172.3 68.2% 48.1%);
+    --moyo-color-teal-700: hsl(170.5 81.3% 61.5%);
+    --moyo-color-teal-800: hsl(168.4 92.1% 75.2%);
+    --moyo-color-teal-900: hsl(168.3 100% 86%);
+    --moyo-color-teal-950: hsl(180 100% 95.5%);
+
+    --moyo-color-cyan-50: hsl(197.1 53.8% 20.3%);
+    --moyo-color-cyan-100: hsl(196.8 57.3% 27.2%);
+    --moyo-color-cyan-200: hsl(195.3 62.7% 29.4%);
+    --moyo-color-cyan-300: hsl(193.5 71.3% 34.1%);
+    --moyo-color-cyan-400: hsl(192.5 76.8% 40.6%);
+    --moyo-color-cyan-500: hsl(189.4 78.6% 42.6%);
+    --moyo-color-cyan-600: hsl(188.2 89.1% 51.7%);
+    --moyo-color-cyan-700: hsl(187 98.6% 66.2%);
+    --moyo-color-cyan-800: hsl(184.9 100% 78.3%);
+    --moyo-color-cyan-900: hsl(180 100% 86.6%);
+    --moyo-color-cyan-950: hsl(180 100% 94.8%);
+
+    --moyo-color-sky-50: hsl(203 63.8% 20.9%);
+    --moyo-color-sky-100: hsl(203.4 70.4% 28%);
+    --moyo-color-sky-200: hsl(202.7 75.8% 30.8%);
+    --moyo-color-sky-300: hsl(203.1 80.4% 36.1%);
+    --moyo-color-sky-400: hsl(202.1 80.5% 44.3%);
+    --moyo-color-sky-500: hsl(199.7 85.9% 47.7%);
+    --moyo-color-sky-600: hsl(198.7 97.9% 57.2%);
+    --moyo-color-sky-700: hsl(198.7 100% 70.5%);
+    --moyo-color-sky-800: hsl(198.8 100% 82.5%);
+    --moyo-color-sky-900: hsl(198.5 100% 89.9%);
+    --moyo-color-sky-950: hsl(186 100% 95.5%);
+
+    --moyo-color-blue-50: hsl(227.1 49.5% 22.7%);
+    --moyo-color-blue-100: hsl(225.8 58.9% 36.8%);
+    --moyo-color-blue-200: hsl(227.7 64.4% 42.9%);
+    --moyo-color-blue-300: hsl(226.1 72.7% 51.2%);
+    --moyo-color-blue-400: hsl(222.6 86.5% 56.3%);
+    --moyo-color-blue-500: hsl(217.8 95.8% 57.4%);
+    --moyo-color-blue-600: hsl(213.3 100% 65%);
+    --moyo-color-blue-700: hsl(210.9 100% 74.8%);
+    --moyo-color-blue-800: hsl(211.5 100% 83.4%);
+    --moyo-color-blue-900: hsl(211 100% 88.9%);
+    --moyo-color-blue-950: hsl(201.8 100% 95.3%);
+
+    --moyo-color-indigo-50: hsl(243.5 40.8% 27%);
+    --moyo-color-indigo-100: hsl(242.9 45.7% 37.6%);
+    --moyo-color-indigo-200: hsl(244.7 52.7% 43.1%);
+    --moyo-color-indigo-300: hsl(245.3 60.5% 52.4%);
+    --moyo-color-indigo-400: hsl(244.1 79.2% 60.4%);
+    --moyo-color-indigo-500: hsl(239.6 88.7% 63.8%);
+    --moyo-color-indigo-600: hsl(234.5 96.7% 70.9%);
+    --moyo-color-indigo-700: hsl(229.4 100% 78.3%);
+    --moyo-color-indigo-800: hsl(227.1 100% 85%);
+    --moyo-color-indigo-900: hsl(223.8 100% 89.9%);
+    --moyo-color-indigo-950: hsl(220 100% 95.1%);
+
+    --moyo-color-violet-50: hsl(265.1 57.3% 25.4%);
+    --moyo-color-violet-100: hsl(263.5 63.8% 39.4%);
+    --moyo-color-violet-200: hsl(263.4 66.2% 44.1%);
+    --moyo-color-violet-300: hsl(263.7 72.8% 52.4%);
+    --moyo-color-violet-400: hsl(262.5 87.3% 59.8%);
+    --moyo-color-violet-500: hsl(258.3 95.1% 63.2%);
+    --moyo-color-violet-600: hsl(255.1 100% 67.2%);
+    --moyo-color-violet-700: hsl(253 100% 81.5%);
+    --moyo-color-violet-800: hsl(251.7 100% 87.9%);
+    --moyo-color-violet-900: hsl(254.1 100% 91.7%);
+    --moyo-color-violet-950: hsl(257.1 100% 96.1%);
+
+    --moyo-color-purple-50: hsl(276 54.3% 20.5%);
+    --moyo-color-purple-100: hsl(273.6 61.8% 35.4%);
+    --moyo-color-purple-200: hsl(272.9 64% 41.4%);
+    --moyo-color-purple-300: hsl(271.9 68.1% 49.2%);
+    --moyo-color-purple-400: hsl(271.5 85.1% 57.8%);
+    --moyo-color-purple-500: hsl(270.7 96.4% 62.1%);
+    --moyo-color-purple-600: hsl(270.5 100% 71.9%);
+    --moyo-color-purple-700: hsl(270.9 100% 81.3%);
+    --moyo-color-purple-800: hsl(272.4 100% 87.7%);
+    --moyo-color-purple-900: hsl(276.7 100% 91.5%);
+    --moyo-color-purple-950: hsl(300 100% 96.5%);
+
+    --moyo-color-fuchsia-50: hsl(297.1 51.2% 18.6%);
+    --moyo-color-fuchsia-100: hsl(296.7 59.5% 31.5%);
+    --moyo-color-fuchsia-200: hsl(295.4 65.4% 35.1%);
+    --moyo-color-fuchsia-300: hsl(294.6 67.4% 42.2%);
+    --moyo-color-fuchsia-400: hsl(293.3 68.7% 51.2%);
+    --moyo-color-fuchsia-500: hsl(292.1 88.4% 57.7%);
+    --moyo-color-fuchsia-600: hsl(292 98.5% 59.5%);
+    --moyo-color-fuchsia-700: hsl(292.4 100% 79.5%);
+    --moyo-color-fuchsia-800: hsl(292.9 100% 86.8%);
+    --moyo-color-fuchsia-900: hsl(300 100% 91.5%);
+    --moyo-color-fuchsia-950: hsl(300 100% 96.3%);
+
+    --moyo-color-pink-50: hsl(336.2 59.6% 20%);
+    --moyo-color-pink-100: hsl(336.8 63.9% 34%);
+    --moyo-color-pink-200: hsl(336.8 68.7% 37.6%);
+    --moyo-color-pink-300: hsl(336.1 71.8% 44.5%);
+    --moyo-color-pink-400: hsl(333.9 74.9% 53.1%);
+    --moyo-color-pink-500: hsl(330.7 86.3% 57.7%);
+    --moyo-color-pink-600: hsl(328.6 91.5% 67.2%);
+    --moyo-color-pink-700: hsl(327.4 97.6% 78.7%);
+    --moyo-color-pink-800: hsl(325.1 100% 86.6%);
+    --moyo-color-pink-900: hsl(322.1 100% 91.3%);
+    --moyo-color-pink-950: hsl(315 100% 95.9%);
+
+    --moyo-color-rose-50: hsl(342.3 62.9% 21.5%);
+    --moyo-color-rose-100: hsl(342.8 68.9% 34.2%);
+    --moyo-color-rose-200: hsl(344.8 72.6% 37.3%);
+    --moyo-color-rose-300: hsl(346.9 75.8% 43.7%);
+    --moyo-color-rose-400: hsl(348.2 80.1% 52.7%);
+    --moyo-color-rose-500: hsl(350.4 94.8% 57.5%);
+    --moyo-color-rose-600: hsl(351.2 100% 58.1%);
+    --moyo-color-rose-700: hsl(352.3 100% 78.1%);
+    --moyo-color-rose-800: hsl(352 100% 86.2%);
+    --moyo-color-rose-900: hsl(354.5 100% 90.7%);
+    --moyo-color-rose-950: hsl(353.3 100% 95.7%);
+
+    --moyo-color-primary-50: var(--moyo-color-sky-50);
+    --moyo-color-primary-100: var(--moyo-color-sky-100);
+    --moyo-color-primary-200: var(--moyo-color-sky-200);
+    --moyo-color-primary-300: var(--moyo-color-sky-300);
+    --moyo-color-primary-400: var(--moyo-color-sky-400);
+    --moyo-color-primary-500: var(--moyo-color-sky-500);
+    --moyo-color-primary-600: var(--moyo-color-sky-600);
+    --moyo-color-primary-700: var(--moyo-color-sky-700);
+    --moyo-color-primary-800: var(--moyo-color-sky-800);
+    --moyo-color-primary-900: var(--moyo-color-sky-900);
+    --moyo-color-primary-950: var(--moyo-color-sky-950);
+
+    --moyo-color-success-50: var(--moyo-color-green-50);
+    --moyo-color-success-100: var(--moyo-color-green-100);
+    --moyo-color-success-200: var(--moyo-color-green-200);
+    --moyo-color-success-300: var(--moyo-color-green-300);
+    --moyo-color-success-400: var(--moyo-color-green-400);
+    --moyo-color-success-500: var(--moyo-color-green-500);
+    --moyo-color-success-600: var(--moyo-color-green-600);
+    --moyo-color-success-700: var(--moyo-color-green-700);
+    --moyo-color-success-800: var(--moyo-color-green-800);
+    --moyo-color-success-900: var(--moyo-color-green-900);
+    --moyo-color-success-950: var(--moyo-color-green-950);
+
+    --moyo-color-warning-50: var(--moyo-color-amber-50);
+    --moyo-color-warning-100: var(--moyo-color-amber-100);
+    --moyo-color-warning-200: var(--moyo-color-amber-200);
+    --moyo-color-warning-300: var(--moyo-color-amber-300);
+    --moyo-color-warning-400: var(--moyo-color-amber-400);
+    --moyo-color-warning-500: var(--moyo-color-amber-500);
+    --moyo-color-warning-600: var(--moyo-color-amber-600);
+    --moyo-color-warning-700: var(--moyo-color-amber-700);
+    --moyo-color-warning-800: var(--moyo-color-amber-800);
+    --moyo-color-warning-900: var(--moyo-color-amber-900);
+    --moyo-color-warning-950: var(--moyo-color-amber-950);
+
+    --moyo-color-danger-50: var(--moyo-color-red-50);
+    --moyo-color-danger-100: var(--moyo-color-red-100);
+    --moyo-color-danger-200: var(--moyo-color-red-200);
+    --moyo-color-danger-300: var(--moyo-color-red-300);
+    --moyo-color-danger-400: var(--moyo-color-red-400);
+    --moyo-color-danger-500: var(--moyo-color-red-500);
+    --moyo-color-danger-600: var(--moyo-color-red-600);
+    --moyo-color-danger-700: var(--moyo-color-red-700);
+    --moyo-color-danger-800: var(--moyo-color-red-800);
+    --moyo-color-danger-900: var(--moyo-color-red-900);
+    --moyo-color-danger-950: var(--moyo-color-red-950);
+
+    --moyo-color-neutral-50: var(--moyo-color-gray-50);
+    --moyo-color-neutral-100: var(--moyo-color-gray-100);
+    --moyo-color-neutral-200: var(--moyo-color-gray-200);
+    --moyo-color-neutral-300: var(--moyo-color-gray-300);
+    --moyo-color-neutral-400: var(--moyo-color-gray-400);
+    --moyo-color-neutral-500: var(--moyo-color-gray-500);
+    --moyo-color-neutral-600: var(--moyo-color-gray-600);
+    --moyo-color-neutral-700: var(--moyo-color-gray-700);
+    --moyo-color-neutral-800: var(--moyo-color-gray-800);
+    --moyo-color-neutral-900: var(--moyo-color-gray-900);
+    --moyo-color-neutral-950: var(--moyo-color-gray-950);
+
+    --moyo-color-neutral-0: hsl(240, 5.9%, 11%);
+    --moyo-color-neutral-1000: hsl(0, 0%, 100%);
+
+    --moyo-border-radius-small: 0.1875rem;
+    --moyo-border-radius-medium: 0.25rem;
+    --moyo-border-radius-large: 0.5rem;
+    --moyo-border-radius-x-large: 1rem;
+
+    --moyo-border-radius-circle: 50%;
+    --moyo-border-radius-pill: 9999px;
+
+    --moyo-shadow-x-small: 0 1px 2px rgb(0 0 0 / 18%);
+    --moyo-shadow-small: 0 1px 2px rgb(0 0 0 / 24%);
+    --moyo-shadow-medium: 0 2px 4px rgb(0 0 0 / 24%);
+    --moyo-shadow-large: 0 2px 8px rgb(0 0 0 / 24%);
+    --moyo-shadow-x-large: 0 4px 16px rgb(0 0 0 / 24%);
+
+    --moyo-spacing-3x-small: 0.125rem;
+    --moyo-spacing-2x-small: 0.25rem;
+    --moyo-spacing-x-small: 0.5rem;
+    --moyo-spacing-small: 0.75rem;
+    --moyo-spacing-medium: 1rem;
+    --moyo-spacing-large: 1.25rem;
+    --moyo-spacing-x-large: 1.75rem;
+    --moyo-spacing-2x-large: 2.25rem;
+    --moyo-spacing-3x-large: 3rem;
+    --moyo-spacing-4x-large: 4.5rem;
+
+    --moyo-transition-x-slow: 1000ms;
+    --moyo-transition-slow: 500ms;
+    --moyo-transition-medium: 250ms;
+    --moyo-transition-fast: 150ms;
+    --moyo-transition-x-fast: 50ms;
+
+    --moyo-font-mono: SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+      monospace;
+    --moyo-font-sans: -apple-system, BlinkMacSystemFont, "Inter", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    --moyo-font-serif: Georgia, "Times New Roman", serif;
+
+    --moyo-font-size-2x-small: 0.625rem;
+    --moyo-font-size-x-small: 0.75rem;
+    --moyo-font-size-small: 0.875rem;
+    --moyo-font-size-medium: 1rem;
+    --moyo-font-size-large: 1.25rem;
+    --moyo-font-size-x-large: 1.5rem;
+    --moyo-font-size-2x-large: 2.25rem;
+    --moyo-font-size-3x-large: 3rem;
+    --moyo-font-size-4x-large: 4.5rem;
+
+    --moyo-font-weight-light: 300;
+    --moyo-font-weight-normal: 400;
+    --moyo-font-weight-semibold: 500;
+    --moyo-font-weight-bold: 700;
+
+    --moyo-letter-spacing-denser: -0.03em;
+    --moyo-letter-spacing-dense: -0.015em;
+    --moyo-letter-spacing-normal: normal;
+    --moyo-letter-spacing-loose: 0.075em;
+    --moyo-letter-spacing-looser: 0.15em;
+
+    --moyo-line-height-denser: 1;
+    --moyo-line-height-dense: 1.4;
+    --moyo-line-height-normal: 1.8;
+    --moyo-line-height-loose: 2.2;
+    --moyo-line-height-looser: 2.6;
+
+    --moyo-focus-ring-alpha: 45%;
+    --moyo-focus-ring-width: 3px;
+    --moyo-focus-ring: 0 0 0 var(--moyo-focus-ring-width)
+      hsl(198.6 88.7% 48.4% / var(--moyo-focus-ring-alpha));
+
+    --moyo-button-font-size-small: var(--moyo-font-size-x-small);
+    --moyo-button-font-size-medium: var(--moyo-font-size-small);
+    --moyo-button-font-size-large: var(--moyo-font-size-medium);
+
+    --moyo-input-height-small: 1.875rem;
+    --moyo-input-height-medium: 2.5rem;
+    --moyo-input-height-large: 3.125rem;
+
+    --moyo-input-background-color: var(--moyo-color-neutral-0);
+    --moyo-input-background-color-hover: var(--moyo-input-background-color);
+    --moyo-input-background-color-focus: var(--moyo-input-background-color);
+    --moyo-input-background-color-disabled: var(--moyo-color-neutral-100);
+    --moyo-input-border-color: var(--moyo-color-neutral-300);
+    --moyo-input-border-color-hover: var(--moyo-color-neutral-400);
+    --moyo-input-border-color-focus: var(--moyo-color-primary-500);
+    --moyo-input-border-color-disabled: var(--moyo-color-neutral-300);
+    --moyo-input-border-width: 1px;
+
+    --moyo-input-border-radius-small: var(--moyo-border-radius-medium);
+    --moyo-input-border-radius-medium: var(--moyo-border-radius-medium);
+    --moyo-input-border-radius-large: var(--moyo-border-radius-medium);
+
+    --moyo-input-font-family: var(--moyo-font-sans);
+    --moyo-input-font-weight: var(--moyo-font-weight-normal);
+    --moyo-input-font-size-small: var(--moyo-font-size-small);
+    --moyo-input-font-size-medium: var(--moyo-font-size-medium);
+    --moyo-input-font-size-large: var(--moyo-font-size-large);
+    --moyo-input-letter-spacing: var(--moyo-letter-spacing-normal);
+
+    --moyo-input-color: var(--moyo-color-neutral-700);
+    --moyo-input-color-hover: var(--moyo-color-neutral-700);
+    --moyo-input-color-focus: var(--moyo-color-neutral-700);
+    --moyo-input-color-disabled: var(--moyo-color-neutral-900);
+    --moyo-input-icon-color: var(--moyo-color-neutral-500);
+    --moyo-input-icon-color-hover: var(--moyo-color-neutral-600);
+    --moyo-input-icon-color-focus: var(--moyo-color-neutral-600);
+    --moyo-input-placeholder-color: var(--moyo-color-neutral-500);
+    --moyo-input-placeholder-color-disabled: var(--moyo-color-neutral-600);
+    --moyo-input-spacing-small: var(--moyo-spacing-small);
+    --moyo-input-spacing-medium: var(--moyo-spacing-medium);
+    --moyo-input-spacing-large: var(--moyo-spacing-large);
+
+    --moyo-input-filled-background-color: var(--moyo-color-neutral-100);
+    --moyo-input-filled-background-color-hover: var(--moyo-color-neutral-100);
+    --moyo-input-filled-background-color-focus: var(--moyo-color-neutral-100);
+    --moyo-input-filled-background-color-disabled: var(
+      --moyo-color-neutral-100
+    );
+    --moyo-input-filled-color: var(--moyo-color-neutral-800);
+    --moyo-input-filled-color-hover: var(--moyo-color-neutral-800);
+    --moyo-input-filled-color-focus: var(--moyo-color-neutral-700);
+    --moyo-input-filled-color-disabled: var(--moyo-color-neutral-800);
+
+    --moyo-input-label-font-size-small: var(--moyo-font-size-small);
+    --moyo-input-label-font-size-medium: var(--moyo-font-size-medium);
+    --moyo-input-label-font-size-large: var(--moyo-font-size-large);
+
+    --moyo-input-label-color: inherit;
+
+    --moyo-input-help-text-font-size-small: var(--moyo-font-size-x-small);
+    --moyo-input-help-text-font-size-medium: var(--moyo-font-size-small);
+    --moyo-input-help-text-font-size-large: var(--moyo-font-size-medium);
+
+    --moyo-input-help-text-color: var(--moyo-color-neutral-500);
+
+    --moyo-toggle-size: 1rem;
+
+    --moyo-overlay-background-color: hsl(0 0% 0% / 43%);
+
+    --moyo-panel-background-color: var(--moyo-color-neutral-50);
+    --moyo-panel-border-color: var(--moyo-color-neutral-200);
+    --moyo-panel-border-width: 1px;
+
+    --moyo-tooltip-border-radius: var(--moyo-border-radius-medium);
+    --moyo-tooltip-background-color: var(--moyo-color-neutral-800);
+    --moyo-tooltip-color: var(--moyo-color-neutral-0);
+    --moyo-tooltip-font-family: var(--moyo-font-sans);
+    --moyo-tooltip-font-weight: var(--moyo-font-weight-normal);
+    --moyo-tooltip-font-size: var(--moyo-font-size-small);
+    --moyo-tooltip-line-height: var(--moyo-line-height-dense);
+    --moyo-tooltip-padding: var(--moyo-spacing-2x-small)
+      var(--moyo-spacing-x-small);
+    --moyo-tooltip-arrow-size: 4px;
+
+    --moyo-z-index-drawer: 700;
+    --moyo-z-index-dialog: 800;
+    --moyo-z-index-dropdown: 900;
+    --moyo-z-index-toast: 950;
+    --moyo-z-index-tooltip: 1000;
+  }
+
+  .moyo-scroll-lock {
+    overflow: hidden !important;
+  }
+
+  .moyo-toast-stack {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: var(--moyo-z-index-toast);
+    width: 28rem;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+  }
+
+  .moyo-toast-stack moyo-alert {
+    --box-shadow: var(--moyo-shadow-large);
+    margin: var(--moyo-spacing-medium);
+  }
+`;
