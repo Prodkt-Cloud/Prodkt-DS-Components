@@ -1,12 +1,12 @@
 {
   "$schema": "http://json.schemastore.org/web-types",
-  "name": "MOYO UI",
-  "version": "1.0.0-beta.43",
+  "name": "@tovutifunk/tovuti",
+  "version": "1.0.0-beta.74",
   "description-markup": "markdown",
   "framework-config": {
     "enable-when": {
       "node-packages": [
-        "MOYO UI"
+        "@tovutifunk/tovuti"
       ]
     }
   },
@@ -142,107 +142,6 @@
               "name": "duration",
               "description": "The length of time, in milliseconds, the alert will show before closing itself. If the user interacts with\nthe alert before it closes (e.g. moves the mouse over it), the timer will restart. Defaults to `Infinity`.",
               "value": {}
-            }
-          ]
-        },
-        {
-          "name": "moyo-animated-image",
-          "description": "",
-          "doc-url": "https://moyo-components.vercel.app/components/animated-image",
-          "js": {
-            "properties": [
-              {
-                "name": "frozenFrame",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "isLoaded",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "animatedImage",
-                "value": {
-                  "type": "HTMLImageElement"
-                }
-              },
-              {
-                "name": "src",
-                "description": "The image's src attribute.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "alt",
-                "description": "The image's alt attribute.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "play",
-                "description": "When set, the image will animate. Otherwise, it will be paused.",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "handleClick",
-                "value": {}
-              },
-              {
-                "name": "handleLoad",
-                "value": {}
-              },
-              {
-                "name": "handleError",
-                "value": {}
-              },
-              {
-                "name": "handlePlayChange",
-                "value": {}
-              },
-              {
-                "name": "handleSrcChange",
-                "value": {}
-              }
-            ],
-            "events": [
-              {
-                "name": "moyo-load",
-                "description": "Emitted when the image loads successfully."
-              },
-              {
-                "name": "moyo-error",
-                "description": "Emitted when the image fails to load."
-              }
-            ]
-          },
-          "attributes": [
-            {
-              "name": "src",
-              "description": "The image's src attribute.",
-              "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "alt",
-              "description": "The image's alt attribute.",
-              "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "play",
-              "description": "When set, the image will animate. Otherwise, it will be paused.",
-              "value": {
-                "type": "boolean"
-              }
             }
           ]
         },
@@ -514,53 +413,100 @@
           "attributes": []
         },
         {
-          "name": "moyo-badge",
+          "name": "moyo-animated-image",
           "description": "",
-          "doc-url": "https://moyo-components.vercel.app/components/badge",
+          "doc-url": "https://moyo-components.vercel.app/components/animated-image",
           "js": {
             "properties": [
               {
-                "name": "variant",
-                "description": "The badge's variant.",
+                "name": "frozenFrame",
                 "value": {
-                  "type": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
+                  "type": "string"
                 }
               },
               {
-                "name": "pill",
-                "description": "Draws a pill-style badge with rounded edges.",
+                "name": "isLoaded",
                 "value": {
                   "type": "boolean"
                 }
               },
               {
-                "name": "pulse",
-                "description": "Makes the badge pulsate to draw attention.",
+                "name": "animatedImage",
+                "value": {
+                  "type": "HTMLImageElement"
+                }
+              },
+              {
+                "name": "src",
+                "description": "The image's src attribute.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "alt",
+                "description": "The image's alt attribute.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "play",
+                "description": "When set, the image will animate. Otherwise, it will be paused.",
                 "value": {
                   "type": "boolean"
                 }
+              },
+              {
+                "name": "handleClick",
+                "value": {}
+              },
+              {
+                "name": "handleLoad",
+                "value": {}
+              },
+              {
+                "name": "handleError",
+                "value": {}
+              },
+              {
+                "name": "handlePlayChange",
+                "value": {}
+              },
+              {
+                "name": "handleSrcChange",
+                "value": {}
               }
             ],
-            "events": []
+            "events": [
+              {
+                "name": "moyo-load",
+                "description": "Emitted when the image loads successfully."
+              },
+              {
+                "name": "moyo-error",
+                "description": "Emitted when the image fails to load."
+              }
+            ]
           },
           "attributes": [
             {
-              "name": "variant",
-              "description": "The badge's variant.",
+              "name": "src",
+              "description": "The image's src attribute.",
               "value": {
-                "type": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
+                "type": "string"
               }
             },
             {
-              "name": "pill",
-              "description": "Draws a pill-style badge with rounded edges.",
+              "name": "alt",
+              "description": "The image's alt attribute.",
               "value": {
-                "type": "boolean"
+                "type": "string"
               }
             },
             {
-              "name": "pulse",
-              "description": "Makes the badge pulsate to draw attention.",
+              "name": "play",
+              "description": "When set, the image will animate. Otherwise, it will be paused.",
               "value": {
                 "type": "boolean"
               }
@@ -646,45 +592,111 @@
           ]
         },
         {
-          "name": "moyo-breadcrumb",
+          "name": "moyo-badge",
           "description": "",
-          "doc-url": "https://moyo-components.vercel.app/components/breadcrumb",
+          "doc-url": "https://moyo-components.vercel.app/components/badge",
           "js": {
             "properties": [
               {
-                "name": "defaultSlot",
+                "name": "variant",
+                "description": "The badge's variant.",
                 "value": {
-                  "type": "HTMLSlotElement"
+                  "type": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
                 }
               },
               {
-                "name": "separatorSlot",
+                "name": "pill",
+                "description": "Draws a pill-style badge with rounded edges.",
                 "value": {
-                  "type": "HTMLSlotElement"
+                  "type": "boolean"
                 }
               },
               {
-                "name": "label",
-                "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
+                "name": "pulse",
+                "description": "Makes the badge pulsate to draw attention.",
                 "value": {
-                  "type": "string"
+                  "type": "boolean"
                 }
-              },
-              {
-                "name": "getSeparator",
-                "value": {}
-              },
-              {
-                "name": "handleSlotChange",
-                "value": {}
               }
             ],
             "events": []
           },
           "attributes": [
             {
-              "name": "label",
-              "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
+              "name": "variant",
+              "description": "The badge's variant.",
+              "value": {
+                "type": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
+              }
+            },
+            {
+              "name": "pill",
+              "description": "Draws a pill-style badge with rounded edges.",
+              "value": {
+                "type": "boolean"
+              }
+            },
+            {
+              "name": "pulse",
+              "description": "Makes the badge pulsate to draw attention.",
+              "value": {
+                "type": "boolean"
+              }
+            }
+          ]
+        },
+        {
+          "name": "moyo-breadcrumb-item",
+          "description": "",
+          "doc-url": "https://moyo-components.vercel.app/components/breadcrumb-item",
+          "js": {
+            "properties": [
+              {
+                "name": "hasSlotController",
+                "value": {}
+              },
+              {
+                "name": "href",
+                "description": "Optional URL to direct the user to when the breadcrumb item is activated. When set, a link will be rendered\ninternally. When unset, a button will be rendered instead.",
+                "value": {
+                  "type": "string | undefined"
+                }
+              },
+              {
+                "name": "target",
+                "description": "Tells the browser where to open the link. Only used when `href` is set.",
+                "value": {
+                  "type": "'_blank' | '_parent' | '_self' | '_top' | undefined"
+                }
+              },
+              {
+                "name": "rel",
+                "description": "The `rel` attribute to use on the link. Only used when `href` is set.",
+                "value": {
+                  "type": "string"
+                }
+              }
+            ],
+            "events": []
+          },
+          "attributes": [
+            {
+              "name": "href",
+              "description": "Optional URL to direct the user to when the breadcrumb item is activated. When set, a link will be rendered\ninternally. When unset, a button will be rendered instead.",
+              "value": {
+                "type": "string | undefined"
+              }
+            },
+            {
+              "name": "target",
+              "description": "Tells the browser where to open the link. Only used when `href` is set.",
+              "value": {
+                "type": "'_blank' | '_parent' | '_self' | '_top' | undefined"
+              }
+            },
+            {
+              "name": "rel",
+              "description": "The `rel` attribute to use on the link. Only used when `href` is set.",
               "value": {
                 "type": "string"
               }
@@ -1026,57 +1038,45 @@
           ]
         },
         {
-          "name": "moyo-breadcrumb-item",
+          "name": "moyo-breadcrumb",
           "description": "",
-          "doc-url": "https://moyo-components.vercel.app/components/breadcrumb-item",
+          "doc-url": "https://moyo-components.vercel.app/components/breadcrumb",
           "js": {
             "properties": [
               {
-                "name": "hasSlotController",
-                "value": {}
-              },
-              {
-                "name": "href",
-                "description": "Optional URL to direct the user to when the breadcrumb item is activated. When set, a link will be rendered\ninternally. When unset, a button will be rendered instead.",
+                "name": "defaultSlot",
                 "value": {
-                  "type": "string | undefined"
+                  "type": "HTMLSlotElement"
                 }
               },
               {
-                "name": "target",
-                "description": "Tells the browser where to open the link. Only used when `href` is set.",
+                "name": "separatorSlot",
                 "value": {
-                  "type": "'_blank' | '_parent' | '_self' | '_top' | undefined"
+                  "type": "HTMLSlotElement"
                 }
               },
               {
-                "name": "rel",
-                "description": "The `rel` attribute to use on the link. Only used when `href` is set.",
+                "name": "label",
+                "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
                 "value": {
                   "type": "string"
                 }
+              },
+              {
+                "name": "getSeparator",
+                "value": {}
+              },
+              {
+                "name": "handleSlotChange",
+                "value": {}
               }
             ],
             "events": []
           },
           "attributes": [
             {
-              "name": "href",
-              "description": "Optional URL to direct the user to when the breadcrumb item is activated. When set, a link will be rendered\ninternally. When unset, a button will be rendered instead.",
-              "value": {
-                "type": "string | undefined"
-              }
-            },
-            {
-              "name": "target",
-              "description": "Tells the browser where to open the link. Only used when `href` is set.",
-              "value": {
-                "type": "'_blank' | '_parent' | '_self' | '_top' | undefined"
-              }
-            },
-            {
-              "name": "rel",
-              "description": "The `rel` attribute to use on the link. Only used when `href` is set.",
+              "name": "label",
+              "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
               "value": {
                 "type": "string"
               }

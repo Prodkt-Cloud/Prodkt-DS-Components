@@ -250,166 +250,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/animated-image/animated-image.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "MoyoAnimatedImage",
-          "cssProperties": [
-            {
-              "description": "The size of the icon box.",
-              "name": "--control-box-size"
-            },
-            {
-              "description": "The size of the play/pause icons.",
-              "name": "--icon-size"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "frozenFrame",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "isLoaded",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false"
-            },
-            {
-              "kind": "field",
-              "name": "animatedImage",
-              "type": {
-                "text": "HTMLImageElement"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "src",
-              "type": {
-                "text": "string"
-              },
-              "description": "The image's src attribute.",
-              "attribute": "src"
-            },
-            {
-              "kind": "field",
-              "name": "alt",
-              "type": {
-                "text": "string"
-              },
-              "description": "The image's alt attribute.",
-              "attribute": "alt"
-            },
-            {
-              "kind": "field",
-              "name": "play",
-              "type": {
-                "text": "boolean"
-              },
-              "description": "When set, the image will animate. Otherwise, it will be paused.",
-              "attribute": "play",
-              "reflects": true
-            },
-            {
-              "kind": "method",
-              "name": "handleClick"
-            },
-            {
-              "kind": "method",
-              "name": "handleLoad"
-            },
-            {
-              "kind": "method",
-              "name": "handleError"
-            },
-            {
-              "kind": "method",
-              "name": "handlePlayChange"
-            },
-            {
-              "kind": "method",
-              "name": "handleSrcChange"
-            }
-          ],
-          "events": [
-            {
-              "description": "Emitted when the image loads successfully.",
-              "name": "moyo-load",
-              "reactName": "onMoyoLoad"
-            },
-            {
-              "description": "Emitted when the image fails to load.",
-              "name": "moyo-error",
-              "reactName": "onMoyoError"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "src",
-              "type": {
-                "text": "string"
-              },
-              "description": "The image's src attribute.",
-              "fieldName": "src"
-            },
-            {
-              "name": "alt",
-              "type": {
-                "text": "string"
-              },
-              "description": "The image's alt attribute.",
-              "fieldName": "alt"
-            },
-            {
-              "name": "play",
-              "type": {
-                "text": "boolean"
-              },
-              "description": "When set, the image will animate. Otherwise, it will be paused.",
-              "fieldName": "play"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "since": "Beta-46",
-          "status": "experimental",
-          "dependencies": [
-            "moyo-icon"
-          ],
-          "tagName": "moyo-animated-image",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "name": "MoyoAnimatedImage",
-            "module": "src/components/animated-image/animated-image.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "moyo-animated-image",
-          "declaration": {
-            "name": "MoyoAnimatedImage",
-            "module": "src/components/animated-image/animated-image.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/components/animation/animation.ts",
       "declarations": [
         {
@@ -805,86 +645,130 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/badge/badge.ts",
+      "path": "src/components/animated-image/animated-image.ts",
       "declarations": [
         {
           "kind": "class",
           "description": "",
-          "name": "MoyoBadge",
-          "cssParts": [
+          "name": "MoyoAnimatedImage",
+          "cssProperties": [
             {
-              "description": "The component's internal wrapper.",
-              "name": "base"
-            }
-          ],
-          "slots": [
+              "description": "The size of the icon box.",
+              "name": "--control-box-size"
+            },
             {
-              "description": "The badge's content.",
-              "name": ""
+              "description": "The size of the play/pause icons.",
+              "name": "--icon-size"
             }
           ],
           "members": [
             {
               "kind": "field",
-              "name": "variant",
+              "name": "frozenFrame",
               "type": {
-                "text": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
-              },
-              "default": "'primary'",
-              "description": "The badge's variant.",
-              "attribute": "variant",
-              "reflects": true
+                "text": "string"
+              }
             },
             {
               "kind": "field",
-              "name": "pill",
+              "name": "isLoaded",
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
-              "description": "Draws a pill-style badge with rounded edges.",
-              "attribute": "pill",
-              "reflects": true
+              "default": "false"
             },
             {
               "kind": "field",
-              "name": "pulse",
+              "name": "animatedImage",
+              "type": {
+                "text": "HTMLImageElement"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "src",
+              "type": {
+                "text": "string"
+              },
+              "description": "The image's src attribute.",
+              "attribute": "src"
+            },
+            {
+              "kind": "field",
+              "name": "alt",
+              "type": {
+                "text": "string"
+              },
+              "description": "The image's alt attribute.",
+              "attribute": "alt"
+            },
+            {
+              "kind": "field",
+              "name": "play",
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
-              "description": "Makes the badge pulsate to draw attention.",
-              "attribute": "pulse",
+              "description": "When set, the image will animate. Otherwise, it will be paused.",
+              "attribute": "play",
               "reflects": true
+            },
+            {
+              "kind": "method",
+              "name": "handleClick"
+            },
+            {
+              "kind": "method",
+              "name": "handleLoad"
+            },
+            {
+              "kind": "method",
+              "name": "handleError"
+            },
+            {
+              "kind": "method",
+              "name": "handlePlayChange"
+            },
+            {
+              "kind": "method",
+              "name": "handleSrcChange"
+            }
+          ],
+          "events": [
+            {
+              "description": "Emitted when the image loads successfully.",
+              "name": "moyo-load",
+              "reactName": "onMoyoLoad"
+            },
+            {
+              "description": "Emitted when the image fails to load.",
+              "name": "moyo-error",
+              "reactName": "onMoyoError"
             }
           ],
           "attributes": [
             {
-              "name": "variant",
+              "name": "src",
               "type": {
-                "text": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
+                "text": "string"
               },
-              "default": "'primary'",
-              "description": "The badge's variant.",
-              "fieldName": "variant"
+              "description": "The image's src attribute.",
+              "fieldName": "src"
             },
             {
-              "name": "pill",
+              "name": "alt",
+              "type": {
+                "text": "string"
+              },
+              "description": "The image's alt attribute.",
+              "fieldName": "alt"
+            },
+            {
+              "name": "play",
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
-              "description": "Draws a pill-style badge with rounded edges.",
-              "fieldName": "pill"
-            },
-            {
-              "name": "pulse",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Makes the badge pulsate to draw attention.",
-              "fieldName": "pulse"
+              "description": "When set, the image will animate. Otherwise, it will be paused.",
+              "fieldName": "play"
             }
           ],
           "superclass": {
@@ -892,8 +776,11 @@
             "package": "lit"
           },
           "since": "Beta-46",
-          "status": "stable",
-          "tagName": "moyo-badge",
+          "status": "experimental",
+          "dependencies": [
+            "moyo-icon"
+          ],
+          "tagName": "moyo-animated-image",
           "customElement": true
         }
       ],
@@ -902,16 +789,16 @@
           "kind": "js",
           "name": "default",
           "declaration": {
-            "name": "MoyoBadge",
-            "module": "src/components/badge/badge.ts"
+            "name": "MoyoAnimatedImage",
+            "module": "src/components/animated-image/animated-image.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "moyo-badge",
+          "name": "moyo-animated-image",
           "declaration": {
-            "name": "MoyoBadge",
-            "module": "src/components/badge/badge.ts"
+            "name": "MoyoAnimatedImage",
+            "module": "src/components/animated-image/animated-image.ts"
           }
         }
       ]
@@ -1082,12 +969,12 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/breadcrumb/breadcrumb.ts",
+      "path": "src/components/badge/badge.ts",
       "declarations": [
         {
           "kind": "class",
           "description": "",
-          "name": "MoyoBreadcrumb",
+          "name": "MoyoBadge",
           "cssParts": [
             {
               "description": "The component's internal wrapper.",
@@ -1096,58 +983,72 @@
           ],
           "slots": [
             {
-              "description": "One or more breadcrumb items to display.",
+              "description": "The badge's content.",
               "name": ""
-            },
-            {
-              "description": "The separator to use between breadcrumb items.",
-              "name": "separator"
             }
           ],
           "members": [
             {
               "kind": "field",
-              "name": "defaultSlot",
+              "name": "variant",
               "type": {
-                "text": "HTMLSlotElement"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "separatorSlot",
-              "type": {
-                "text": "HTMLSlotElement"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "label",
-              "type": {
-                "text": "string"
+                "text": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
               },
-              "default": "'Breadcrumb'",
-              "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
-              "attribute": "label"
+              "default": "'primary'",
+              "description": "The badge's variant.",
+              "attribute": "variant",
+              "reflects": true
             },
             {
-              "kind": "method",
-              "name": "getSeparator",
-              "privacy": "private"
+              "kind": "field",
+              "name": "pill",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Draws a pill-style badge with rounded edges.",
+              "attribute": "pill",
+              "reflects": true
             },
             {
-              "kind": "method",
-              "name": "handleSlotChange"
+              "kind": "field",
+              "name": "pulse",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Makes the badge pulsate to draw attention.",
+              "attribute": "pulse",
+              "reflects": true
             }
           ],
           "attributes": [
             {
-              "name": "label",
+              "name": "variant",
               "type": {
-                "text": "string"
+                "text": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
               },
-              "default": "'Breadcrumb'",
-              "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
-              "fieldName": "label"
+              "default": "'primary'",
+              "description": "The badge's variant.",
+              "fieldName": "variant"
+            },
+            {
+              "name": "pill",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Draws a pill-style badge with rounded edges.",
+              "fieldName": "pill"
+            },
+            {
+              "name": "pulse",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Makes the badge pulsate to draw attention.",
+              "fieldName": "pulse"
             }
           ],
           "superclass": {
@@ -1156,10 +1057,7 @@
           },
           "since": "Beta-46",
           "status": "stable",
-          "dependencies": [
-            "moyo-icon"
-          ],
-          "tagName": "moyo-breadcrumb",
+          "tagName": "moyo-badge",
           "customElement": true
         }
       ],
@@ -1168,16 +1066,156 @@
           "kind": "js",
           "name": "default",
           "declaration": {
-            "name": "MoyoBreadcrumb",
-            "module": "src/components/breadcrumb/breadcrumb.ts"
+            "name": "MoyoBadge",
+            "module": "src/components/badge/badge.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "moyo-breadcrumb",
+          "name": "moyo-badge",
           "declaration": {
-            "name": "MoyoBreadcrumb",
-            "module": "src/components/breadcrumb/breadcrumb.ts"
+            "name": "MoyoBadge",
+            "module": "src/components/badge/badge.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/breadcrumb-item/breadcrumb-item.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "MoyoBreadcrumbItem",
+          "cssParts": [
+            {
+              "description": "The component's internal wrapper.",
+              "name": "base"
+            },
+            {
+              "description": "The breadcrumb item's label.",
+              "name": "label"
+            },
+            {
+              "description": "The container that wraps the prefix slot.",
+              "name": "prefix"
+            },
+            {
+              "description": "The container that wraps the suffix slot.",
+              "name": "suffix"
+            },
+            {
+              "description": "The container that wraps the separator slot.",
+              "name": "separator"
+            }
+          ],
+          "slots": [
+            {
+              "description": "The breadcrumb item's label.",
+              "name": ""
+            },
+            {
+              "description": "An optional prefix, usually an icon or icon button.",
+              "name": "prefix"
+            },
+            {
+              "description": "An optional suffix, usually an icon or icon button.",
+              "name": "suffix"
+            },
+            {
+              "description": "The separator to use for the breadcrumb item. This will only change the separator for this item. If you want to change it for all items in the group, set the separator on `<moyo-breadcrumb>` instead.",
+              "name": "separator"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "hasSlotController",
+              "privacy": "private",
+              "default": "new HasSlotController(this, 'prefix', 'suffix')"
+            },
+            {
+              "kind": "field",
+              "name": "href",
+              "type": {
+                "text": "string | undefined"
+              },
+              "description": "Optional URL to direct the user to when the breadcrumb item is activated. When set, a link will be rendered\ninternally. When unset, a button will be rendered instead.",
+              "attribute": "href"
+            },
+            {
+              "kind": "field",
+              "name": "target",
+              "type": {
+                "text": "'_blank' | '_parent' | '_self' | '_top' | undefined"
+              },
+              "description": "Tells the browser where to open the link. Only used when `href` is set.",
+              "attribute": "target"
+            },
+            {
+              "kind": "field",
+              "name": "rel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'noreferrer noopener'",
+              "description": "The `rel` attribute to use on the link. Only used when `href` is set.",
+              "attribute": "rel"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "href",
+              "type": {
+                "text": "string | undefined"
+              },
+              "description": "Optional URL to direct the user to when the breadcrumb item is activated. When set, a link will be rendered\ninternally. When unset, a button will be rendered instead.",
+              "fieldName": "href"
+            },
+            {
+              "name": "target",
+              "type": {
+                "text": "'_blank' | '_parent' | '_self' | '_top' | undefined"
+              },
+              "description": "Tells the browser where to open the link. Only used when `href` is set.",
+              "fieldName": "target"
+            },
+            {
+              "name": "rel",
+              "type": {
+                "text": "string"
+              },
+              "default": "'noreferrer noopener'",
+              "description": "The `rel` attribute to use on the link. Only used when `href` is set.",
+              "fieldName": "rel"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "since": "Beta-46",
+          "status": "stable",
+          "tagName": "moyo-breadcrumb-item",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "MoyoBreadcrumbItem",
+            "module": "src/components/breadcrumb-item/breadcrumb-item.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "moyo-breadcrumb-item",
+          "declaration": {
+            "name": "MoyoBreadcrumbItem",
+            "module": "src/components/breadcrumb-item/breadcrumb-item.ts"
           }
         }
       ]
@@ -1697,113 +1735,72 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/breadcrumb-item/breadcrumb-item.ts",
+      "path": "src/components/breadcrumb/breadcrumb.ts",
       "declarations": [
         {
           "kind": "class",
           "description": "",
-          "name": "MoyoBreadcrumbItem",
+          "name": "MoyoBreadcrumb",
           "cssParts": [
             {
               "description": "The component's internal wrapper.",
               "name": "base"
-            },
-            {
-              "description": "The breadcrumb item's label.",
-              "name": "label"
-            },
-            {
-              "description": "The container that wraps the prefix slot.",
-              "name": "prefix"
-            },
-            {
-              "description": "The container that wraps the suffix slot.",
-              "name": "suffix"
-            },
-            {
-              "description": "The container that wraps the separator slot.",
-              "name": "separator"
             }
           ],
           "slots": [
             {
-              "description": "The breadcrumb item's label.",
+              "description": "One or more breadcrumb items to display.",
               "name": ""
             },
             {
-              "description": "An optional prefix, usually an icon or icon button.",
-              "name": "prefix"
-            },
-            {
-              "description": "An optional suffix, usually an icon or icon button.",
-              "name": "suffix"
-            },
-            {
-              "description": "The separator to use for the breadcrumb item. This will only change the separator for this item. If you want to change it for all items in the group, set the separator on `<moyo-breadcrumb>` instead.",
+              "description": "The separator to use between breadcrumb items.",
               "name": "separator"
             }
           ],
           "members": [
             {
               "kind": "field",
-              "name": "hasSlotController",
-              "privacy": "private",
-              "default": "new HasSlotController(this, 'prefix', 'suffix')"
-            },
-            {
-              "kind": "field",
-              "name": "href",
+              "name": "defaultSlot",
               "type": {
-                "text": "string | undefined"
-              },
-              "description": "Optional URL to direct the user to when the breadcrumb item is activated. When set, a link will be rendered\ninternally. When unset, a button will be rendered instead.",
-              "attribute": "href"
+                "text": "HTMLSlotElement"
+              }
             },
             {
               "kind": "field",
-              "name": "target",
+              "name": "separatorSlot",
               "type": {
-                "text": "'_blank' | '_parent' | '_self' | '_top' | undefined"
-              },
-              "description": "Tells the browser where to open the link. Only used when `href` is set.",
-              "attribute": "target"
+                "text": "HTMLSlotElement"
+              }
             },
             {
               "kind": "field",
-              "name": "rel",
+              "name": "label",
               "type": {
                 "text": "string"
               },
-              "default": "'noreferrer noopener'",
-              "description": "The `rel` attribute to use on the link. Only used when `href` is set.",
-              "attribute": "rel"
+              "default": "'Breadcrumb'",
+              "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
+              "attribute": "label"
+            },
+            {
+              "kind": "method",
+              "name": "getSeparator",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "handleSlotChange"
             }
           ],
           "attributes": [
             {
-              "name": "href",
-              "type": {
-                "text": "string | undefined"
-              },
-              "description": "Optional URL to direct the user to when the breadcrumb item is activated. When set, a link will be rendered\ninternally. When unset, a button will be rendered instead.",
-              "fieldName": "href"
-            },
-            {
-              "name": "target",
-              "type": {
-                "text": "'_blank' | '_parent' | '_self' | '_top' | undefined"
-              },
-              "description": "Tells the browser where to open the link. Only used when `href` is set.",
-              "fieldName": "target"
-            },
-            {
-              "name": "rel",
+              "name": "label",
               "type": {
                 "text": "string"
               },
-              "default": "'noreferrer noopener'",
-              "description": "The `rel` attribute to use on the link. Only used when `href` is set.",
-              "fieldName": "rel"
+              "default": "'Breadcrumb'",
+              "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
+              "fieldName": "label"
             }
           ],
           "superclass": {
@@ -1812,7 +1809,10 @@
           },
           "since": "Beta-46",
           "status": "stable",
-          "tagName": "moyo-breadcrumb-item",
+          "dependencies": [
+            "moyo-icon"
+          ],
+          "tagName": "moyo-breadcrumb",
           "customElement": true
         }
       ],
@@ -1821,16 +1821,16 @@
           "kind": "js",
           "name": "default",
           "declaration": {
-            "name": "MoyoBreadcrumbItem",
-            "module": "src/components/breadcrumb-item/breadcrumb-item.ts"
+            "name": "MoyoBreadcrumb",
+            "module": "src/components/breadcrumb/breadcrumb.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "moyo-breadcrumb-item",
+          "name": "moyo-breadcrumb",
           "declaration": {
-            "name": "MoyoBreadcrumbItem",
-            "module": "src/components/breadcrumb-item/breadcrumb-item.ts"
+            "name": "MoyoBreadcrumb",
+            "module": "src/components/breadcrumb/breadcrumb.ts"
           }
         }
       ]
@@ -13561,9 +13561,9 @@
     }
   ],
   "package": {
-    "name": "MOYO UI",
+    "name": "@tovutifunk/tovuti",
     "description": "A forward-thinking library of web components.",
-    "version": "1.0.0-beta.43",
+    "version": "1.0.0-beta.74",
     "author": "Bryan Funk",
     "homepage": "https://github.com/tovutifunk/tovuti",
     "license": "MIT"

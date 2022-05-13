@@ -39,23 +39,6 @@
       ]
     },
     {
-      "name": "moyo-animated-image",
-      "attributes": [
-        {
-          "name": "src",
-          "description": "The image's src attribute."
-        },
-        {
-          "name": "alt",
-          "description": "The image's alt attribute."
-        },
-        {
-          "name": "play",
-          "description": "When set, the image will animate. Otherwise, it will be paused."
-        }
-      ]
-    },
-    {
       "name": "moyo-animation",
       "attributes": [
         {
@@ -105,36 +88,19 @@
       ]
     },
     {
-      "name": "moyo-badge",
+      "name": "moyo-animated-image",
       "attributes": [
         {
-          "name": "variant",
-          "description": "The badge's variant.",
-          "values": [
-            {
-              "name": "primary"
-            },
-            {
-              "name": "success"
-            },
-            {
-              "name": "neutral"
-            },
-            {
-              "name": "warning"
-            },
-            {
-              "name": "danger"
-            }
-          ]
+          "name": "src",
+          "description": "The image's src attribute."
         },
         {
-          "name": "pill",
-          "description": "Draws a pill-style badge with rounded edges."
+          "name": "alt",
+          "description": "The image's alt attribute."
         },
         {
-          "name": "pulse",
-          "description": "Makes the badge pulsate to draw attention."
+          "name": "play",
+          "description": "When set, the image will animate. Otherwise, it will be paused."
         }
       ]
     },
@@ -171,11 +137,67 @@
       ]
     },
     {
-      "name": "moyo-breadcrumb",
+      "name": "moyo-badge",
       "attributes": [
         {
-          "name": "label",
-          "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices."
+          "name": "variant",
+          "description": "The badge's variant.",
+          "values": [
+            {
+              "name": "primary"
+            },
+            {
+              "name": "success"
+            },
+            {
+              "name": "neutral"
+            },
+            {
+              "name": "warning"
+            },
+            {
+              "name": "danger"
+            }
+          ]
+        },
+        {
+          "name": "pill",
+          "description": "Draws a pill-style badge with rounded edges."
+        },
+        {
+          "name": "pulse",
+          "description": "Makes the badge pulsate to draw attention."
+        }
+      ]
+    },
+    {
+      "name": "moyo-breadcrumb-item",
+      "attributes": [
+        {
+          "name": "href",
+          "description": "Optional URL to direct the user to when the breadcrumb item is activated. When set, a link will be rendered\ninternally. When unset, a button will be rendered instead."
+        },
+        {
+          "name": "target",
+          "description": "Tells the browser where to open the link. Only used when `href` is set.",
+          "values": [
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
+          ]
+        },
+        {
+          "name": "rel",
+          "description": "The `rel` attribute to use on the link. Only used when `href` is set."
         }
       ]
     },
@@ -339,33 +361,11 @@
       ]
     },
     {
-      "name": "moyo-breadcrumb-item",
+      "name": "moyo-breadcrumb",
       "attributes": [
         {
-          "name": "href",
-          "description": "Optional URL to direct the user to when the breadcrumb item is activated. When set, a link will be rendered\ninternally. When unset, a button will be rendered instead."
-        },
-        {
-          "name": "target",
-          "description": "Tells the browser where to open the link. Only used when `href` is set.",
-          "values": [
-            {
-              "name": "_blank"
-            },
-            {
-              "name": "_parent"
-            },
-            {
-              "name": "_self"
-            },
-            {
-              "name": "_top"
-            }
-          ]
-        },
-        {
-          "name": "rel",
-          "description": "The `rel` attribute to use on the link. Only used when `href` is set."
+          "name": "label",
+          "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices."
         }
       ]
     },
