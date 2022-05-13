@@ -1,13 +1,6 @@
 import { css } from "lit";
 
 export default css`
-  @font-face {
-    font-family: "CircularStd";
-    src: url("../fonts/circular/CircularStd-Book.woff2") format("woff2"),
-      url("../fonts/circular/CircularStd-Book.woff") format("woff");
-    font-style: normal;
-  }
-
   :host,
   .moyo-theme-dark {
     --moyo-color-gray-50: hsl(240 5.1% 15%);

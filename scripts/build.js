@@ -91,7 +91,7 @@ fs.mkdirSync(outdir, { recursive: true });
     copy(outdir, copydir);
   }
 
-  console.log(chalk.green(`The build has been generated at ${outdir} 📦\n`));
+  console.log(chalk.green(`The build has been generated on a Tovuti Local Development Server at ${outdir} 📦\n`));
 
   // Dev server
   if (serve) {
@@ -141,7 +141,7 @@ fs.mkdirSync(outdir, { recursive: true });
 
       setTimeout(() => {
         const url = `http://localhost:${port}`;
-        console.log(chalk.cyan(`Launched the Tovuti dev server at ${url} 🥾\n`));
+        console.log(chalk.cyan(`The build has been generated on a Tovuti Local Development Server at ${url} 🥾\n`));
         if (Object.keys(bs.sockets.sockets).length === 0) {
           open(url);
         } else {

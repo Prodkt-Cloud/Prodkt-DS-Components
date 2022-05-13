@@ -1,14 +1,5 @@
-@font-face {
-  font-family: 'CircularStd';
-  src: url('../fonts/circular/CircularStd-Book.woff2') format("woff2"),
-  url('../fonts/circular/CircularStd-Book.woff') format("woff");
-  font-style: normal;
-  }  
-
 :host,
 .moyo-theme-dark {
-
-
 
 
   /*

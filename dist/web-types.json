@@ -14,110 +14,9 @@
     "html": {
       "elements": [
         {
-          "name": "moyo-animated-image",
-          "description": "",
-          "doc-url": "https://prodkt.cloud/components/animated-image",
-          "js": {
-            "properties": [
-              {
-                "name": "frozenFrame",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "isLoaded",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "animatedImage",
-                "value": {
-                  "type": "HTMLImageElement"
-                }
-              },
-              {
-                "name": "src",
-                "description": "The image's src attribute.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "alt",
-                "description": "The image's alt attribute.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "play",
-                "description": "When set, the image will animate. Otherwise, it will be paused.",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "handleClick",
-                "value": {}
-              },
-              {
-                "name": "handleLoad",
-                "value": {}
-              },
-              {
-                "name": "handleError",
-                "value": {}
-              },
-              {
-                "name": "handlePlayChange",
-                "value": {}
-              },
-              {
-                "name": "handleSrcChange",
-                "value": {}
-              }
-            ],
-            "events": [
-              {
-                "name": "moyo-load",
-                "description": "Emitted when the image loads successfully."
-              },
-              {
-                "name": "moyo-error",
-                "description": "Emitted when the image fails to load."
-              }
-            ]
-          },
-          "attributes": [
-            {
-              "name": "src",
-              "description": "The image's src attribute.",
-              "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "alt",
-              "description": "The image's alt attribute.",
-              "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "play",
-              "description": "When set, the image will animate. Otherwise, it will be paused.",
-              "value": {
-                "type": "boolean"
-              }
-            }
-          ]
-        },
-        {
           "name": "moyo-alert",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/alert",
+          "doc-url": "https://moyo-components.vercel.app/components/alert",
           "js": {
             "properties": [
               {
@@ -247,9 +146,110 @@
           ]
         },
         {
+          "name": "moyo-animated-image",
+          "description": "",
+          "doc-url": "https://moyo-components.vercel.app/components/animated-image",
+          "js": {
+            "properties": [
+              {
+                "name": "frozenFrame",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "isLoaded",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "animatedImage",
+                "value": {
+                  "type": "HTMLImageElement"
+                }
+              },
+              {
+                "name": "src",
+                "description": "The image's src attribute.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "alt",
+                "description": "The image's alt attribute.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "play",
+                "description": "When set, the image will animate. Otherwise, it will be paused.",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "handleClick",
+                "value": {}
+              },
+              {
+                "name": "handleLoad",
+                "value": {}
+              },
+              {
+                "name": "handleError",
+                "value": {}
+              },
+              {
+                "name": "handlePlayChange",
+                "value": {}
+              },
+              {
+                "name": "handleSrcChange",
+                "value": {}
+              }
+            ],
+            "events": [
+              {
+                "name": "moyo-load",
+                "description": "Emitted when the image loads successfully."
+              },
+              {
+                "name": "moyo-error",
+                "description": "Emitted when the image fails to load."
+              }
+            ]
+          },
+          "attributes": [
+            {
+              "name": "src",
+              "description": "The image's src attribute.",
+              "value": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "alt",
+              "description": "The image's alt attribute.",
+              "value": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "play",
+              "description": "When set, the image will animate. Otherwise, it will be paused.",
+              "value": {
+                "type": "boolean"
+              }
+            }
+          ]
+        },
+        {
           "name": "moyo-animation",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/animation",
+          "doc-url": "https://moyo-components.vercel.app/components/animation",
           "js": {
             "properties": [
               {
@@ -497,7 +497,7 @@
         },
         {
           "description": "Gets a list of all supported animation names.",
-          "doc-url": "https://prodkt.cloud/components/",
+          "doc-url": "https://moyo-components.vercel.app/components/",
           "js": {
             "properties": [],
             "events": []
@@ -506,7 +506,7 @@
         },
         {
           "description": "Gets a list of all supported easing function names.",
-          "doc-url": "https://prodkt.cloud/components/",
+          "doc-url": "https://moyo-components.vercel.app/components/",
           "js": {
             "properties": [],
             "events": []
@@ -514,63 +514,9 @@
           "attributes": []
         },
         {
-          "name": "moyo-badge",
-          "description": "",
-          "doc-url": "https://prodkt.cloud/components/badge",
-          "js": {
-            "properties": [
-              {
-                "name": "variant",
-                "description": "The badge's variant.",
-                "value": {
-                  "type": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
-                }
-              },
-              {
-                "name": "pill",
-                "description": "Draws a pill-style badge with rounded edges.",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "pulse",
-                "description": "Makes the badge pulsate to draw attention.",
-                "value": {
-                  "type": "boolean"
-                }
-              }
-            ],
-            "events": []
-          },
-          "attributes": [
-            {
-              "name": "variant",
-              "description": "The badge's variant.",
-              "value": {
-                "type": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
-              }
-            },
-            {
-              "name": "pill",
-              "description": "Draws a pill-style badge with rounded edges.",
-              "value": {
-                "type": "boolean"
-              }
-            },
-            {
-              "name": "pulse",
-              "description": "Makes the badge pulsate to draw attention.",
-              "value": {
-                "type": "boolean"
-              }
-            }
-          ]
-        },
-        {
           "name": "moyo-avatar",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/avatar",
+          "doc-url": "https://moyo-components.vercel.app/components/avatar",
           "js": {
             "properties": [
               {
@@ -646,9 +592,63 @@
           ]
         },
         {
+          "name": "moyo-badge",
+          "description": "",
+          "doc-url": "https://moyo-components.vercel.app/components/badge",
+          "js": {
+            "properties": [
+              {
+                "name": "variant",
+                "description": "The badge's variant.",
+                "value": {
+                  "type": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
+                }
+              },
+              {
+                "name": "pill",
+                "description": "Draws a pill-style badge with rounded edges.",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "pulse",
+                "description": "Makes the badge pulsate to draw attention.",
+                "value": {
+                  "type": "boolean"
+                }
+              }
+            ],
+            "events": []
+          },
+          "attributes": [
+            {
+              "name": "variant",
+              "description": "The badge's variant.",
+              "value": {
+                "type": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
+              }
+            },
+            {
+              "name": "pill",
+              "description": "Draws a pill-style badge with rounded edges.",
+              "value": {
+                "type": "boolean"
+              }
+            },
+            {
+              "name": "pulse",
+              "description": "Makes the badge pulsate to draw attention.",
+              "value": {
+                "type": "boolean"
+              }
+            }
+          ]
+        },
+        {
           "name": "moyo-breadcrumb",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/breadcrumb",
+          "doc-url": "https://moyo-components.vercel.app/components/breadcrumb",
           "js": {
             "properties": [
               {
@@ -694,7 +694,7 @@
         {
           "name": "moyo-breadcrumb-item",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/breadcrumb-item",
+          "doc-url": "https://moyo-components.vercel.app/components/breadcrumb-item",
           "js": {
             "properties": [
               {
@@ -752,7 +752,7 @@
         {
           "name": "moyo-button",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/button",
+          "doc-url": "https://moyo-components.vercel.app/components/button",
           "js": {
             "properties": [
               {
@@ -1086,7 +1086,7 @@
         {
           "name": "moyo-button-group",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/button-group",
+          "doc-url": "https://moyo-components.vercel.app/components/button-group",
           "js": {
             "properties": [
               {
@@ -1138,7 +1138,7 @@
         {
           "name": "moyo-card",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/card",
+          "doc-url": "https://moyo-components.vercel.app/components/card",
           "js": {
             "properties": [
               {
@@ -1153,7 +1153,7 @@
         {
           "name": "moyo-checkbox",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/checkbox",
+          "doc-url": "https://moyo-components.vercel.app/components/checkbox",
           "js": {
             "properties": [
               {
@@ -1337,7 +1337,7 @@
         {
           "name": "moyo-color-picker",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/color-picker",
+          "doc-url": "https://moyo-components.vercel.app/components/color-picker",
           "js": {
             "properties": [
               {
@@ -1704,7 +1704,7 @@
         {
           "name": "moyo-details",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/details",
+          "doc-url": "https://moyo-components.vercel.app/components/details",
           "js": {
             "properties": [
               {
@@ -1815,7 +1815,7 @@
         {
           "name": "moyo-dialog",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/dialog",
+          "doc-url": "https://moyo-components.vercel.app/components/dialog",
           "js": {
             "properties": [
               {
@@ -1954,7 +1954,7 @@
         {
           "name": "moyo-divider",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/divider",
+          "doc-url": "https://moyo-components.vercel.app/components/divider",
           "js": {
             "properties": [
               {
@@ -1984,7 +1984,7 @@
         {
           "name": "moyo-drawer",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/drawer",
+          "doc-url": "https://moyo-components.vercel.app/components/drawer",
           "js": {
             "properties": [
               {
@@ -2151,7 +2151,7 @@
         {
           "name": "moyo-dropdown",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/dropdown",
+          "doc-url": "https://moyo-components.vercel.app/components/dropdown",
           "js": {
             "properties": [
               {
@@ -2396,7 +2396,7 @@
         {
           "name": "moyo-format-bytes",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/format-bytes",
+          "doc-url": "https://moyo-components.vercel.app/components/format-bytes",
           "js": {
             "properties": [
               {
@@ -2468,7 +2468,7 @@
         {
           "name": "moyo-format-date",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/format-date",
+          "doc-url": "https://moyo-components.vercel.app/components/format-date",
           "js": {
             "properties": [
               {
@@ -2664,9 +2664,168 @@
           ]
         },
         {
+          "name": "moyo-icon",
+          "description": "",
+          "doc-url": "https://moyo-components.vercel.app/components/icon",
+          "js": {
+            "properties": [
+              {
+                "name": "svg",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "name",
+                "description": "The name of the icon to draw.",
+                "value": {
+                  "type": "string | undefined"
+                }
+              },
+              {
+                "name": "src",
+                "description": "An external URL of an SVG file.\n\nWARNING: Be sure you trust the content you are including as it will be executed as code and can result in XSS attacks.",
+                "value": {
+                  "type": "string | undefined"
+                }
+              },
+              {
+                "name": "label",
+                "description": "An alternate description to use for accessibility. If omitted, the icon will be ignored by assistive devices.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "library",
+                "description": "The name of a registered custom icon library.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "getUrl",
+                "value": {}
+              },
+              {
+                "name": "setIcon",
+                "value": {}
+              },
+              {
+                "name": "handleChange",
+                "value": {}
+              }
+            ],
+            "events": [
+              {
+                "name": "moyo-load",
+                "description": "Emitted when the icon has loaded."
+              },
+              {
+                "name": "moyo-error",
+                "description": "Emitted when the icon fails to load due to an error."
+              }
+            ]
+          },
+          "attributes": [
+            {
+              "name": "name",
+              "description": "The name of the icon to draw.",
+              "value": {
+                "type": "string | undefined"
+              }
+            },
+            {
+              "name": "src",
+              "description": "An external URL of an SVG file.\n\nWARNING: Be sure you trust the content you are including as it will be executed as code and can result in XSS attacks.",
+              "value": {
+                "type": "string | undefined"
+              }
+            },
+            {
+              "name": "label",
+              "description": "An alternate description to use for accessibility. If omitted, the icon will be ignored by assistive devices.",
+              "value": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "library",
+              "description": "The name of a registered custom icon library.",
+              "value": {
+                "type": "string"
+              }
+            }
+          ]
+        },
+        {
+          "doc-url": "https://moyo-components.vercel.app/components/",
+          "js": {
+            "properties": [],
+            "events": []
+          },
+          "attributes": []
+        },
+        {
+          "doc-url": "https://moyo-components.vercel.app/components/",
+          "js": {
+            "properties": [],
+            "events": []
+          },
+          "attributes": []
+        },
+        {
+          "doc-url": "https://moyo-components.vercel.app/components/",
+          "js": {
+            "properties": [],
+            "events": []
+          },
+          "attributes": []
+        },
+        {
+          "doc-url": "https://moyo-components.vercel.app/components/",
+          "js": {
+            "properties": [],
+            "events": []
+          },
+          "attributes": []
+        },
+        {
+          "doc-url": "https://moyo-components.vercel.app/components/",
+          "js": {
+            "properties": [],
+            "events": []
+          },
+          "attributes": []
+        },
+        {
+          "doc-url": "https://moyo-components.vercel.app/components/",
+          "js": {
+            "properties": [],
+            "events": []
+          },
+          "attributes": []
+        },
+        {
+          "doc-url": "https://moyo-components.vercel.app/components/",
+          "js": {
+            "properties": [],
+            "events": []
+          },
+          "attributes": []
+        },
+        {
+          "doc-url": "https://moyo-components.vercel.app/components/",
+          "js": {
+            "properties": [],
+            "events": []
+          },
+          "attributes": []
+        },
+        {
           "name": "moyo-format-number",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/format-number",
+          "doc-url": "https://moyo-components.vercel.app/components/format-number",
           "js": {
             "properties": [
               {
@@ -2834,168 +2993,9 @@
           ]
         },
         {
-          "name": "moyo-icon",
-          "description": "",
-          "doc-url": "https://prodkt.cloud/components/icon",
-          "js": {
-            "properties": [
-              {
-                "name": "svg",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "name",
-                "description": "The name of the icon to draw.",
-                "value": {
-                  "type": "string | undefined"
-                }
-              },
-              {
-                "name": "src",
-                "description": "An external URL of an SVG file.\n\nWARNING: Be sure you trust the content you are including as it will be executed as code and can result in XSS attacks.",
-                "value": {
-                  "type": "string | undefined"
-                }
-              },
-              {
-                "name": "label",
-                "description": "An alternate description to use for accessibility. If omitted, the icon will be ignored by assistive devices.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "library",
-                "description": "The name of a registered custom icon library.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "getUrl",
-                "value": {}
-              },
-              {
-                "name": "setIcon",
-                "value": {}
-              },
-              {
-                "name": "handleChange",
-                "value": {}
-              }
-            ],
-            "events": [
-              {
-                "name": "moyo-load",
-                "description": "Emitted when the icon has loaded."
-              },
-              {
-                "name": "moyo-error",
-                "description": "Emitted when the icon fails to load due to an error."
-              }
-            ]
-          },
-          "attributes": [
-            {
-              "name": "name",
-              "description": "The name of the icon to draw.",
-              "value": {
-                "type": "string | undefined"
-              }
-            },
-            {
-              "name": "src",
-              "description": "An external URL of an SVG file.\n\nWARNING: Be sure you trust the content you are including as it will be executed as code and can result in XSS attacks.",
-              "value": {
-                "type": "string | undefined"
-              }
-            },
-            {
-              "name": "label",
-              "description": "An alternate description to use for accessibility. If omitted, the icon will be ignored by assistive devices.",
-              "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "library",
-              "description": "The name of a registered custom icon library.",
-              "value": {
-                "type": "string"
-              }
-            }
-          ]
-        },
-        {
-          "doc-url": "https://prodkt.cloud/components/",
-          "js": {
-            "properties": [],
-            "events": []
-          },
-          "attributes": []
-        },
-        {
-          "doc-url": "https://prodkt.cloud/components/",
-          "js": {
-            "properties": [],
-            "events": []
-          },
-          "attributes": []
-        },
-        {
-          "doc-url": "https://prodkt.cloud/components/",
-          "js": {
-            "properties": [],
-            "events": []
-          },
-          "attributes": []
-        },
-        {
-          "doc-url": "https://prodkt.cloud/components/",
-          "js": {
-            "properties": [],
-            "events": []
-          },
-          "attributes": []
-        },
-        {
-          "doc-url": "https://prodkt.cloud/components/",
-          "js": {
-            "properties": [],
-            "events": []
-          },
-          "attributes": []
-        },
-        {
-          "doc-url": "https://prodkt.cloud/components/",
-          "js": {
-            "properties": [],
-            "events": []
-          },
-          "attributes": []
-        },
-        {
-          "doc-url": "https://prodkt.cloud/components/",
-          "js": {
-            "properties": [],
-            "events": []
-          },
-          "attributes": []
-        },
-        {
-          "doc-url": "https://prodkt.cloud/components/",
-          "js": {
-            "properties": [],
-            "events": []
-          },
-          "attributes": []
-        },
-        {
           "name": "moyo-icon-button",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/icon-button",
+          "doc-url": "https://moyo-components.vercel.app/components/icon-button",
           "js": {
             "properties": [
               {
@@ -3167,7 +3167,7 @@
         {
           "name": "moyo-image-comparer",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/image-comparer",
+          "doc-url": "https://moyo-components.vercel.app/components/image-comparer",
           "js": {
             "properties": [
               {
@@ -3222,7 +3222,7 @@
         {
           "name": "moyo-include",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/include",
+          "doc-url": "https://moyo-components.vercel.app/components/include",
           "js": {
             "properties": [
               {
@@ -3291,7 +3291,7 @@
           ]
         },
         {
-          "doc-url": "https://prodkt.cloud/components/",
+          "doc-url": "https://moyo-components.vercel.app/components/",
           "js": {
             "properties": [],
             "events": []
@@ -3301,7 +3301,7 @@
         {
           "name": "moyo-input",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/input",
+          "doc-url": "https://moyo-components.vercel.app/components/input",
           "js": {
             "properties": [
               {
@@ -3841,7 +3841,7 @@
         {
           "name": "moyo-menu",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/menu",
+          "doc-url": "https://moyo-components.vercel.app/components/menu",
           "js": {
             "properties": [
               {
@@ -3910,7 +3910,7 @@
         {
           "name": "moyo-menu-item",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/menu-item",
+          "doc-url": "https://moyo-components.vercel.app/components/menu-item",
           "js": {
             "properties": [
               {
@@ -4004,7 +4004,7 @@
         {
           "name": "moyo-menu-label",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/menu-label",
+          "doc-url": "https://moyo-components.vercel.app/components/menu-label",
           "js": {
             "properties": [],
             "events": []
@@ -4014,7 +4014,7 @@
         {
           "name": "moyo-mutation-observer",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/mutation-observer",
+          "doc-url": "https://moyo-components.vercel.app/components/mutation-observer",
           "js": {
             "properties": [
               {
@@ -4141,7 +4141,7 @@
         {
           "name": "moyo-progress-bar",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/progress-bar",
+          "doc-url": "https://moyo-components.vercel.app/components/progress-bar",
           "js": {
             "properties": [
               {
@@ -4213,7 +4213,7 @@
         {
           "name": "moyo-progress-ring",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/progress-ring",
+          "doc-url": "https://moyo-components.vercel.app/components/progress-ring",
           "js": {
             "properties": [
               {
@@ -4283,7 +4283,7 @@
         {
           "name": "moyo-qr-code",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/qr-code",
+          "doc-url": "https://moyo-components.vercel.app/components/qr-code",
           "js": {
             "properties": [
               {
@@ -4403,7 +4403,7 @@
         {
           "name": "moyo-radio",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/radio",
+          "doc-url": "https://moyo-components.vercel.app/components/radio",
           "js": {
             "properties": [
               {
@@ -4559,7 +4559,7 @@
         {
           "name": "moyo-radio-button",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/radio-button",
+          "doc-url": "https://moyo-components.vercel.app/components/radio-button",
           "js": {
             "properties": [
               {
@@ -4767,7 +4767,7 @@
         {
           "name": "moyo-radio-group",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/radio-group",
+          "doc-url": "https://moyo-components.vercel.app/components/radio-group",
           "js": {
             "properties": [
               {
@@ -4835,7 +4835,7 @@
         {
           "name": "moyo-range",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/range",
+          "doc-url": "https://moyo-components.vercel.app/components/range",
           "js": {
             "properties": [
               {
@@ -5100,7 +5100,7 @@
         {
           "name": "moyo-rating",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/rating",
+          "doc-url": "https://moyo-components.vercel.app/components/rating",
           "js": {
             "properties": [
               {
@@ -5285,7 +5285,7 @@
         {
           "name": "moyo-relative-time",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/relative-time",
+          "doc-url": "https://moyo-components.vercel.app/components/relative-time",
           "js": {
             "properties": [
               {
@@ -5395,7 +5395,7 @@
         {
           "name": "moyo-resize-observer",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/resize-observer",
+          "doc-url": "https://moyo-components.vercel.app/components/resize-observer",
           "js": {
             "properties": [
               {
@@ -5454,7 +5454,7 @@
         {
           "name": "moyo-responsive-media",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/responsive-media",
+          "doc-url": "https://moyo-components.vercel.app/components/responsive-media",
           "js": {
             "properties": [
               {
@@ -5494,7 +5494,7 @@
         {
           "name": "moyo-select",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/select",
+          "doc-url": "https://moyo-components.vercel.app/components/select",
           "js": {
             "properties": [
               {
@@ -5911,7 +5911,7 @@
         {
           "name": "moyo-skeleton",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/skeleton",
+          "doc-url": "https://moyo-components.vercel.app/components/skeleton",
           "js": {
             "properties": [
               {
@@ -5937,7 +5937,7 @@
         {
           "name": "moyo-spinner",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/spinner",
+          "doc-url": "https://moyo-components.vercel.app/components/spinner",
           "js": {
             "properties": [],
             "events": []
@@ -5947,7 +5947,7 @@
         {
           "name": "moyo-split-panel",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/split-panel",
+          "doc-url": "https://moyo-components.vercel.app/components/split-panel",
           "js": {
             "properties": [
               {
@@ -6126,7 +6126,7 @@
         {
           "name": "moyo-switch",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/switch",
+          "doc-url": "https://moyo-components.vercel.app/components/switch",
           "js": {
             "properties": [
               {
@@ -6300,7 +6300,7 @@
         {
           "name": "moyo-tab",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/tab",
+          "doc-url": "https://moyo-components.vercel.app/components/tab",
           "js": {
             "properties": [
               {
@@ -6419,7 +6419,7 @@
         {
           "name": "moyo-tab-group",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/tab-group",
+          "doc-url": "https://moyo-components.vercel.app/components/tab-group",
           "js": {
             "properties": [
               {
@@ -6621,7 +6621,7 @@
         {
           "name": "moyo-tab-panel",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/tab-panel",
+          "doc-url": "https://moyo-components.vercel.app/components/tab-panel",
           "js": {
             "properties": [
               {
@@ -6669,7 +6669,7 @@
         {
           "name": "moyo-tag",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/tag",
+          "doc-url": "https://moyo-components.vercel.app/components/tag",
           "js": {
             "properties": [
               {
@@ -6750,7 +6750,7 @@
         {
           "name": "moyo-textarea",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/textarea",
+          "doc-url": "https://moyo-components.vercel.app/components/textarea",
           "js": {
             "properties": [
               {
@@ -7185,7 +7185,7 @@
         {
           "name": "moyo-tooltip",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/tooltip",
+          "doc-url": "https://moyo-components.vercel.app/components/tooltip",
           "js": {
             "properties": [
               {
@@ -7428,7 +7428,7 @@
         {
           "name": "moyo-visually-hidden",
           "description": "",
-          "doc-url": "https://prodkt.cloud/components/visually-hidden",
+          "doc-url": "https://moyo-components.vercel.app/components/visually-hidden",
           "js": {
             "properties": [],
             "events": []

@@ -29,7 +29,7 @@ const jsonataExprString = `{
         modules.declarations.{
           "name": tagName,
           "description": description,
-          "doc-url": $join(["https://prodkt.cloud/components/", $substringAfter(tagName, 'moyo-')]),
+          "doc-url": $join(["https://moyo-components.vercel.app/components/", $substringAfter(tagName, 'moyo-')]),
           "js": {
             "properties": [
               members.{

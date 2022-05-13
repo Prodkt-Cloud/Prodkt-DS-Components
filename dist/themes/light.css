@@ -3,8 +3,17 @@
 .moyo-theme-light {
   @font-face {
     font-family: "CircularStd";
-    src: url("../fonts/circular/CircularStd-Book.woff2") format("woff2"),
-      url("../fonts/circular/CircularStd-Book.woff") format("woff");
+    src: url("CircularStd-Book.woff2") format("woff2"),
+      url("CircularStd-Book.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "CircularStd";
+    src: url("CircularStd-Bold.woff2") format("woff2"),
+      url("CircularStd-Bold.woff") format("woff");
+    font-weight: bold;
     font-style: normal;
   }
 
