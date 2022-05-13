@@ -1,7 +1,15 @@
+@font-face {
+  font-family: 'CircularStd';
+  src: url('../fonts/circular/CircularStd-Book.woff2') format("woff2"),
+  url('../fonts/circular/CircularStd-Book.woff') format("woff");
+  font-style: normal;
+  }  
+
 :host,
 .moyo-theme-dark {
 
-  @import url('../fonts/Inter-VariableFont.ttf');
+
+
 
   /*
    * Color Primitives
@@ -368,7 +376,7 @@
 
   /* Fonts */
   --moyo-font-mono: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
-  --moyo-font-sans: -apple-system, BlinkMacSystemFont, 'Inter', Roboto, Helvetica, Arial, sans-serif,
+  --moyo-font-sans: -apple-system, BlinkMacSystemFont, 'CircularStd', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --moyo-font-serif: Georgia, 'Times New Roman', serif;
 

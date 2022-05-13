@@ -1,10 +1,15 @@
 import { css } from "lit";
 
 export default css`
+  @font-face {
+    font-family: "CircularStd";
+    src: url("../fonts/circular/CircularStd-Book.woff2") format("woff2"),
+      url("../fonts/circular/CircularStd-Book.woff") format("woff");
+    font-style: normal;
+  }
+
   :host,
   .moyo-theme-dark {
-    @import url("../fonts/Inter-VariableFont.ttf");
-
     --moyo-color-gray-50: hsl(240 5.1% 15%);
     --moyo-color-gray-100: hsl(240 5.7% 18.2%);
     --moyo-color-gray-200: hsl(240 4.6% 22%);
@@ -317,7 +322,7 @@ export default css`
 
     --moyo-font-mono: SFMono-Regular, Consolas, "Liberation Mono", Menlo,
       monospace;
-    --moyo-font-sans: -apple-system, BlinkMacSystemFont, "Inter", Roboto,
+    --moyo-font-sans: -apple-system, BlinkMacSystemFont, "CircularStd", Roboto,
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
       "Segoe UI Symbol";
     --moyo-font-serif: Georgia, "Times New Roman", serif;

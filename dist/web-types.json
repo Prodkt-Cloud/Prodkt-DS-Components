@@ -14,6 +14,107 @@
     "html": {
       "elements": [
         {
+          "name": "moyo-animated-image",
+          "description": "",
+          "doc-url": "https://prodkt.cloud/components/animated-image",
+          "js": {
+            "properties": [
+              {
+                "name": "frozenFrame",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "isLoaded",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "animatedImage",
+                "value": {
+                  "type": "HTMLImageElement"
+                }
+              },
+              {
+                "name": "src",
+                "description": "The image's src attribute.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "alt",
+                "description": "The image's alt attribute.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "play",
+                "description": "When set, the image will animate. Otherwise, it will be paused.",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "handleClick",
+                "value": {}
+              },
+              {
+                "name": "handleLoad",
+                "value": {}
+              },
+              {
+                "name": "handleError",
+                "value": {}
+              },
+              {
+                "name": "handlePlayChange",
+                "value": {}
+              },
+              {
+                "name": "handleSrcChange",
+                "value": {}
+              }
+            ],
+            "events": [
+              {
+                "name": "moyo-load",
+                "description": "Emitted when the image loads successfully."
+              },
+              {
+                "name": "moyo-error",
+                "description": "Emitted when the image fails to load."
+              }
+            ]
+          },
+          "attributes": [
+            {
+              "name": "src",
+              "description": "The image's src attribute.",
+              "value": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "alt",
+              "description": "The image's alt attribute.",
+              "value": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "play",
+              "description": "When set, the image will animate. Otherwise, it will be paused.",
+              "value": {
+                "type": "boolean"
+              }
+            }
+          ]
+        },
+        {
           "name": "moyo-alert",
           "description": "",
           "doc-url": "https://prodkt.cloud/components/alert",
@@ -142,107 +243,6 @@
               "name": "duration",
               "description": "The length of time, in milliseconds, the alert will show before closing itself. If the user interacts with\nthe alert before it closes (e.g. moves the mouse over it), the timer will restart. Defaults to `Infinity`.",
               "value": {}
-            }
-          ]
-        },
-        {
-          "name": "moyo-animated-image",
-          "description": "",
-          "doc-url": "https://prodkt.cloud/components/animated-image",
-          "js": {
-            "properties": [
-              {
-                "name": "frozenFrame",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "isLoaded",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "animatedImage",
-                "value": {
-                  "type": "HTMLImageElement"
-                }
-              },
-              {
-                "name": "src",
-                "description": "The image's src attribute.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "alt",
-                "description": "The image's alt attribute.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "play",
-                "description": "When set, the image will animate. Otherwise, it will be paused.",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "handleClick",
-                "value": {}
-              },
-              {
-                "name": "handleLoad",
-                "value": {}
-              },
-              {
-                "name": "handleError",
-                "value": {}
-              },
-              {
-                "name": "handlePlayChange",
-                "value": {}
-              },
-              {
-                "name": "handleSrcChange",
-                "value": {}
-              }
-            ],
-            "events": [
-              {
-                "name": "moyo-load",
-                "description": "Emitted when the image loads successfully."
-              },
-              {
-                "name": "moyo-error",
-                "description": "Emitted when the image fails to load."
-              }
-            ]
-          },
-          "attributes": [
-            {
-              "name": "src",
-              "description": "The image's src attribute.",
-              "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "alt",
-              "description": "The image's alt attribute.",
-              "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "play",
-              "description": "When set, the image will animate. Otherwise, it will be paused.",
-              "value": {
-                "type": "boolean"
-              }
             }
           ]
         },
@@ -514,6 +514,60 @@
           "attributes": []
         },
         {
+          "name": "moyo-badge",
+          "description": "",
+          "doc-url": "https://prodkt.cloud/components/badge",
+          "js": {
+            "properties": [
+              {
+                "name": "variant",
+                "description": "The badge's variant.",
+                "value": {
+                  "type": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
+                }
+              },
+              {
+                "name": "pill",
+                "description": "Draws a pill-style badge with rounded edges.",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "pulse",
+                "description": "Makes the badge pulsate to draw attention.",
+                "value": {
+                  "type": "boolean"
+                }
+              }
+            ],
+            "events": []
+          },
+          "attributes": [
+            {
+              "name": "variant",
+              "description": "The badge's variant.",
+              "value": {
+                "type": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
+              }
+            },
+            {
+              "name": "pill",
+              "description": "Draws a pill-style badge with rounded edges.",
+              "value": {
+                "type": "boolean"
+              }
+            },
+            {
+              "name": "pulse",
+              "description": "Makes the badge pulsate to draw attention.",
+              "value": {
+                "type": "boolean"
+              }
+            }
+          ]
+        },
+        {
           "name": "moyo-avatar",
           "description": "",
           "doc-url": "https://prodkt.cloud/components/avatar",
@@ -587,60 +641,6 @@
               "description": "The shape of the avatar.",
               "value": {
                 "type": "'circle' | 'square' | 'rounded'"
-              }
-            }
-          ]
-        },
-        {
-          "name": "moyo-badge",
-          "description": "",
-          "doc-url": "https://prodkt.cloud/components/badge",
-          "js": {
-            "properties": [
-              {
-                "name": "variant",
-                "description": "The badge's variant.",
-                "value": {
-                  "type": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
-                }
-              },
-              {
-                "name": "pill",
-                "description": "Draws a pill-style badge with rounded edges.",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "pulse",
-                "description": "Makes the badge pulsate to draw attention.",
-                "value": {
-                  "type": "boolean"
-                }
-              }
-            ],
-            "events": []
-          },
-          "attributes": [
-            {
-              "name": "variant",
-              "description": "The badge's variant.",
-              "value": {
-                "type": "'primary' | 'success' | 'neutral' | 'warning' | 'danger'"
-              }
-            },
-            {
-              "name": "pill",
-              "description": "Draws a pill-style badge with rounded edges.",
-              "value": {
-                "type": "boolean"
-              }
-            },
-            {
-              "name": "pulse",
-              "description": "Makes the badge pulsate to draw attention.",
-              "value": {
-                "type": "boolean"
               }
             }
           ]

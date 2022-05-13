@@ -3,18 +3,11 @@ import { css } from "lit";
 export default css`
   :root,
   :host,
-  .sl-theme-light {
+  .moyo-theme-light {
     @font-face {
-      font-family: "Inter";
-      src: url("../fonts/Inter-VariableFont.ttf");
-      font-weight: 125 950;
-      font-stretch: 75% 125%;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: "IBMPlexMono";
-      src: url("../fonts/IBMPlexMono-Medium.ttf");
+      font-family: "CircularStd";
+      src: url("../fonts/circular/CircularStd-Book.woff2") format("woff2"),
+        url("../fonts/circular/CircularStd-Book.woff") format("woff");
       font-style: normal;
     }
 
@@ -329,7 +322,7 @@ export default css`
     --moyo-transition-x-fast: 50ms;
 
     --moyo-font-mono: SFMono-Regular, Consolas, "IBMPlexMono", Menlo, monospace;
-    --moyo-font-sans: -apple-system, BlinkMacSystemFont, "Inter", Roboto,
+    --moyo-font-sans: -apple-system, BlinkMacSystemFont, "CircularStd", Roboto,
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
       "Segoe UI Symbol";
     --moyo-font-serif: Georgia, "Times New Roman", serif;
