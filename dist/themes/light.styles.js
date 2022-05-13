@@ -4,22 +4,6 @@ export default css`
   :root,
   :host,
   .moyo-theme-light {
-    @font-face {
-      font-family: "CircularStd";
-      src: url("CircularStd-Book.woff2") format("woff2"),
-        url("CircularStd-Book.woff") format("woff");
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: "CircularStd";
-      src: url("CircularStd-Bold.woff2") format("woff2"),
-        url("CircularStd-Bold.woff") format("woff");
-      font-weight: bold;
-      font-style: normal;
-    }
-
     --moyo-color-gray-50: hsl(0 0% 97.5%);
     --moyo-color-gray-100: hsl(240 4.8% 95.9%);
     --moyo-color-gray-200: hsl(240 5.9% 90%);

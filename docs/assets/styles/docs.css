@@ -254,7 +254,7 @@ strong {
 
 .markdown-section .splash-start h1:first-of-type {
   font-size: var(--moyo-font-size-large);
-  font-family: 'Sora', sans-serif;
+  font-family: 'CircularStd', sans-serif;
 }
 
 @media screen and (max-width: 1040px) {
@@ -330,7 +330,7 @@ strong {
 .pagination-item-subtitle,
 .pagination-item-title {
   opacity: 1 !important;
-  font-family: 'Sora', sans-serif;
+  font-family: 'CircularStd', sans-serif;
 }
 
 .markdown-section h1,
@@ -341,38 +341,38 @@ strong {
 .markdown-section h6 {
   font-weight: var(--moyo-font-weight-bold);
   margin: 0 0 1em 0;
-  font-family: 'Sora', sans-serif;
+  font-family: 'CircularStd', sans-serif;
 }
 
 .markdown-section h1 {
   font-size: var(--moyo-font-size-2x-large);
-  font-family: 'Sora', sans-serif;
+  font-family: 'CircularStd', sans-serif;
 }
 
 .markdown-section h2 {
   font-size: var(--moyo-font-size-x-large);
   border-bottom: solid 1px var(--moyo-color-neutral-200);
-  font-family: 'Sora', sans-serif;
+  font-family: 'CircularStd', sans-serif;
 }
 
 .markdown-section h3 {
   font-size: var(--moyo-font-size-large);
-  font-family: 'Sora', sans-serif;
+  font-family: 'CircularStd', sans-serif;
 }
 
 .markdown-section h4 {
   font-size: var(--moyo-font-size-medium);
-  font-family: 'Sora', sans-serif;
+  font-family: 'CircularStd', sans-serif;
 }
 
 .markdown-section h5 {
   font-size: var(--moyo-font-size-small);
-  font-family: 'Sora', sans-serif;
+  font-family: 'CircularStd', sans-serif;
 }
 
 .markdown-section h6 {
   font-size: var(--moyo-font-size-x-small);
-  font-family: 'Sora', sans-serif;
+  font-family: 'CircularStd', sans-serif;
 }
 
 .markdown-section pre {
