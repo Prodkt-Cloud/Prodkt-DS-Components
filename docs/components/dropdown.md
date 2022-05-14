@@ -32,7 +32,7 @@ Dropdowns are designed to work well with [menus](/components/menu) to provide a 
 ```
 
 ```jsx react
-import { MoyoButton,MoyoDivider,MoyoDropdown,MoyoIcon,MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoDivider, MoyoDropdown, MoyoIcon, MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoDropdown>
@@ -90,7 +90,7 @@ When dropdowns are used with [menus](/components/menu), you can listen for the `
 ```
 
 ```jsx react
-import { MoyoButton,MoyoDropdown,MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoDropdown, MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => {
   function handleSelect(event) {
@@ -140,7 +140,7 @@ Alternatively, you can listen for the `click` event on individual menu items. No
 ```
 
 ```jsx react
-import { MoyoButton,MoyoDropdown,MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoDropdown, MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => {
   function handleCut() {
@@ -189,7 +189,7 @@ The preferred placement of the dropdown can be set with the `placement` attribut
 ```
 
 ```jsx react
-import { MoyoButton,MoyoDivider,MoyoDropdown,MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoDivider, MoyoDropdown, MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoDropdown placement="top-start">
@@ -227,7 +227,7 @@ The distance from the panel to the trigger can be customized using the `distance
 ```
 
 ```jsx react
-import { MoyoButton,MoyoDivider,MoyoDropdown,MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoDivider, MoyoDropdown, MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoDropdown distance={30}>
@@ -265,7 +265,7 @@ The offset of the panel along the trigger can be customized using the `skidding`
 ```
 
 ```jsx react
-import { MoyoButton,MoyoDivider,MoyoDropdown,MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoDivider, MoyoDropdown, MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoDropdown skidding={30}>
@@ -319,7 +319,7 @@ Dropdown panels will be clipped if they're inside a container that has `overflow
 ```
 
 ```jsx react
-import { MoyoButton,MoyoDivider,MoyoDropdown,MoyoIcon,MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoDivider, MoyoDropdown, MoyoIcon, MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const css = `
   .dropdown-hoist {

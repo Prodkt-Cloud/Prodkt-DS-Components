@@ -25,7 +25,8 @@ export default css`
     letter-spacing: var(--moyo-input-letter-spacing);
     vertical-align: middle;
     overflow: hidden;
-    transition: var(--moyo-transition-fast) color, var(--moyo-transition-fast) border, var(--moyo-transition-fast) box-shadow;
+    transition: var(--moyo-transition-fast) color, var(--moyo-transition-fast) border,
+      var(--moyo-transition-fast) box-shadow;
     cursor: pointer;
   }
 

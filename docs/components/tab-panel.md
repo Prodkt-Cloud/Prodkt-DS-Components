@@ -19,7 +19,7 @@ Tab panels are used inside [tab groups](/components/tab-group) to display tabbed
 ```
 
 ```jsx react
-import { MoyoTab,MoyoTabGroup,MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
+import { MoyoTab, MoyoTabGroup, MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoTabGroup>

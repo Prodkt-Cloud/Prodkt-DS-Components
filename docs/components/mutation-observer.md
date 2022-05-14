@@ -44,7 +44,7 @@ The mutation observer will report changes to the content it wraps through the `m
 
 ```jsx react
 import { useState } from 'react';
-import { MoyoButton,MoyoMutationObserver } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoMutationObserver } from '@tovutifunk/tovuti/dist/react';
 
 const css = `
   .resize-observer-overview div {
@@ -143,7 +143,7 @@ Use the `child-list` attribute to watch for new child elements that are added or
 
 ```jsx react
 import { useState } from 'react';
-import { MoyoButton,MoyoMutationObserver } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoMutationObserver } from '@tovutifunk/tovuti/dist/react';
 
 const css = `
   .mutation-child-list .buttons {

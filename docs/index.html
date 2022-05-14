@@ -38,28 +38,25 @@
 
     <!-- Import Tovuti -->
     <style>
+      @font-face {
+        font-family: 'CircularStd';
+        src: url('../../fonts/CircularStd-Book.woff2') format('woff2'),
+          url('../fonts/CircularStd-Book.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
 
-  @font-face {
-    font-family: 'CircularStd';
-    src: url('../../fonts/CircularStd-Book.woff2') format("woff2"),
-    url('../fonts/CircularStd-Book.woff') format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'CircularStd';
-    src: url('../../fonts/CircularStd-Bold.woff2') format("woff2"),
-    url('../fonts/CircularStd-Bold.woff') format("woff");
-    font-weight: bold;
-    font-style: normal;
-  }
-
+      @font-face {
+        font-family: 'CircularStd';
+        src: url('../../fonts/CircularStd-Bold.woff2') format('woff2'),
+          url('../fonts/CircularStd-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+      }
     </style>
     <link rel="stylesheet" href="/dist/themes/light.css" />
     <link rel="stylesheet" href="/dist/themes/dark.css" />
     <script type="module" src="/dist/tovuti.js"></script>
-
   </head>
   <body data-tovuti="/dist">
     <div id="app"></div>
@@ -67,7 +64,10 @@
       // Set the initial theme to prevent flashing
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
       const theme = localStorage.getItem('theme') || 'auto';
-      document.documentElement.classList.toggle('moyo-theme-dark', theme === 'dark' || (theme === 'auto' && prefersDark));
+      document.documentElement.classList.toggle(
+        'moyo-theme-dark',
+        theme === 'dark' || (theme === 'auto' && prefersDark)
+      );
     </script>
     <script>
       window.$docsify = {

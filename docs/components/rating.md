@@ -104,7 +104,10 @@ import '@tovutifunk/tovuti/dist/components/icon/icon';
 import { MoyoRating } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
-  <MoyoRating getSymbol={() => '<moyo-icon name="heart-fill"></moyo-icon>'} style={{ '--symbol-color-active': '#ff4136' }} />
+  <MoyoRating
+    getSymbol={() => '<moyo-icon name="heart-fill"></moyo-icon>'}
+    style={{ '--symbol-color-active': '#ff4136' }}
+  />
 );
 ```
 

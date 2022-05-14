@@ -1,7 +1,6 @@
 <div class="splash">
 </div>
 
-
 ## Quick Start
 
 Add the following code to your page.

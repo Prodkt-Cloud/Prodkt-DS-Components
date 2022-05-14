@@ -154,7 +154,7 @@ One of the most common use cases for badges is attaching them to buttons. To mak
 ```
 
 ```jsx react
-import { MoyoBadge,MoyoButton } from '@tovutifunk/tovuti/dist/react';
+import { MoyoBadge, MoyoButton } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <>
@@ -193,7 +193,7 @@ When including badges in menu items, use the `suffix` slot to make sure they're 
 ```
 
 ```jsx react
-import { MoyoBadge,MoyoButton,MoyoMenu,MoyoMenuItem,MoyoMenuLabel } from '@tovutifunk/tovuti/dist/react';
+import { MoyoBadge, MoyoButton, MoyoMenu, MoyoMenuItem, MoyoMenuLabel } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoMenu

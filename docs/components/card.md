@@ -40,7 +40,7 @@ Cards can be used to group related subjects in a container.
 ```
 
 ```jsx react
-import { MoyoButton,MoyoCard,MoyoRating } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoCard, MoyoRating } from '@tovutifunk/tovuti/dist/react';
 
 const css = `
   .card-overview {
@@ -159,7 +159,7 @@ Headers can be used to display titles and more.
 ```
 
 ```jsx react
-import { MoyoCard,MoyoIconButton } from '@tovutifunk/tovuti/dist/react';
+import { MoyoCard, MoyoIconButton } from '@tovutifunk/tovuti/dist/react';
 
 const css = `
   .card-header {
@@ -224,7 +224,7 @@ Footers can be used to display actions, summaries, or other relevant content.
 ```
 
 ```jsx react
-import { MoyoButton,MoyoCard,MoyoRating } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoCard, MoyoRating } from '@tovutifunk/tovuti/dist/react';
 
 const css = `
   .card-footer {

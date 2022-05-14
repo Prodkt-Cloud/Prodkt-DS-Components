@@ -153,7 +153,7 @@ Use the `circle` attribute to create circular icon buttons.
 ```
 
 ```jsx react
-import { MoyoButton,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <>
@@ -317,7 +317,7 @@ Use the `prefix` and `suffix` slots to add icons.
 ```
 
 ```jsx react
-import { MoyoButton,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <>

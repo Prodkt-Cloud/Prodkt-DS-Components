@@ -6,8 +6,8 @@ Typography tokens are used to maintain a consistent set of font styles throughou
 
 The default font stack is designed to be simple and highly available on as many devices as possible.
 
-| Token             | Value                                                                                                                                         | Example                                                                                              |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Token               | Value                                                                                                                                         | Example                                                                                                |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | `--moyo-font-sans`  | -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' | <span style="font-family: var(--moyo-font-sans)">The quick brown fox jumped over the lazy dog.</span>  |
 | `--moyo-font-serif` | Georgia, 'Times New Roman', serif                                                                                                             | <span style="font-family: var(--moyo-font-serif)">The quick brown fox jumped over the lazy dog.</span> |
 | `--moyo-font-mono`  | Menlo, Monaco, 'Courier New', monospace                                                                                                       | <span style="font-family: var(--moyo-font-mono)">The quick brown fox jumped over the lazy dog.</span>  |
@@ -16,8 +16,8 @@ The default font stack is designed to be simple and highly available on as many 
 
 Font sizes use `rem` units so they scale with the base font size. The pixel values displayed are based on a 16px font size.
 
-| Token                     | Value           | Example                                                         |
-| ------------------------- | --------------- | --------------------------------------------------------------- |
+| Token                       | Value           | Example                                                           |
+| --------------------------- | --------------- | ----------------------------------------------------------------- |
 | `--moyo-font-size-2x-small` | 0.625rem (10px) | <span style="font-size: var(--moyo-font-size-2x-small)">Aa</span> |
 | `--moyo-font-size-x-small`  | 0.75rem (12px)  | <span style="font-size: var(--moyo-font-size-x-small)">Aa</span>  |
 | `--moyo-font-size-small`    | 0.875rem (14px) | <span style="font-size: var(--moyo-font-size-small)">Aa</span>    |
@@ -30,8 +30,8 @@ Font sizes use `rem` units so they scale with the base font size. The pixel valu
 
 ## Font Weight
 
-| Token                       | Value | Example                                                                                                         |
-| --------------------------- | ----- | --------------------------------------------------------------------------------------------------------------- |
+| Token                         | Value | Example                                                                                                           |
+| ----------------------------- | ----- | ----------------------------------------------------------------------------------------------------------------- |
 | `--moyo-font-weight-light`    | 300   | <span style="font-weight: var(--moyo-font-weight-light);">The quick brown fox jumped over the lazy dog.</span>    |
 | `--moyo-font-weight-normal`   | 400   | <span style="font-weight: var(--moyo-font-weight-normal);">The quick brown fox jumped over the lazy dog.</span>   |
 | `--moyo-font-weight-semibold` | 500   | <span style="font-weight: var(--moyo-font-weight-semibold);">The quick brown fox jumped over the lazy dog.</span> |
@@ -39,8 +39,8 @@ Font sizes use `rem` units so they scale with the base font size. The pixel valu
 
 ## Letter Spacing
 
-| Token                        | Value    | Example                                                                                                             |
-| ---------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------- |
+| Token                          | Value    | Example                                                                                                               |
+| ------------------------------ | -------- | --------------------------------------------------------------------------------------------------------------------- |
 | `--moyo-letter-spacing-denser` | ?        | <span style="letter-spacing: var(--moyo-letter-spacing-denser);">The quick brown fox jumped over the lazy dog.</span> |
 | `--moyo-letter-spacing-dense`  | -0.015em | <span style="letter-spacing: var(--moyo-letter-spacing-dense);">The quick brown fox jumped over the lazy dog.</span>  |
 | `--moyo-letter-spacing-normal` | normal   | <span style="letter-spacing: var(--moyo-letter-spacing-normal);">The quick brown fox jumped over the lazy dog.</span> |
@@ -49,8 +49,8 @@ Font sizes use `rem` units so they scale with the base font size. The pixel valu
 
 ## Line Height
 
-| Token                     | Value | Example                                                                                                                                                                                                       |
-| ------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Token                       | Value | Example                                                                                                                                                                                                         |
+| --------------------------- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `--moyo-line-height-denser` | ?     | <div style="line-height: var(--moyo-line-height-denser);">The quick brown fox jumped over the lazy dog.<br>The quick brown fox jumped over the lazy dog.<br>The quick brown fox jumped over the lazy dog.</div> |
 | `--moyo-line-height-dense`  | 1.4   | <div style="line-height: var(--moyo-line-height-dense);">The quick brown fox jumped over the lazy dog.<br>The quick brown fox jumped over the lazy dog.<br>The quick brown fox jumped over the lazy dog.</div>  |
 | `--moyo-line-height-normal` | 1.8   | <div style="line-height: var(--moyo-line-height-normal);">The quick brown fox jumped over the lazy dog.<br>The quick brown fox jumped over the lazy dog.<br>The quick brown fox jumped over the lazy dog.</div> |

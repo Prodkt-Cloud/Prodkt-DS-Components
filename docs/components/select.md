@@ -17,7 +17,7 @@ Selects allow you to choose one or more items from a dropdown menu.
 ```
 
 ```jsx react
-import { MoyoDivider,MoyoMenuItem,MoyoSelect } from '@tovutifunk/tovuti/dist/react';
+import { MoyoDivider, MoyoMenuItem, MoyoSelect } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoSelect>
@@ -49,7 +49,7 @@ Use the `label` attribute to give the select an accessible label. For labels tha
 ```
 
 ```jsx react
-import { MoyoMenuItem,MoyoSelect } from '@tovutifunk/tovuti/dist/react';
+import { MoyoMenuItem, MoyoSelect } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoSelect label="Select one">
@@ -73,7 +73,7 @@ Add descriptive help text to a select with the `help-text` attribute. For help t
 ```
 
 ```jsx react
-import { MoyoMenuItem,MoyoSelect } from '@tovutifunk/tovuti/dist/react';
+import { MoyoMenuItem, MoyoSelect } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoSelect label="Experience" help-text="Please tell us your skill level.">
@@ -97,7 +97,7 @@ Use the `placeholder` attribute to add a placeholder.
 ```
 
 ```jsx react
-import { MoyoMenuItem,MoyoSelect } from '@tovutifunk/tovuti/dist/react';
+import { MoyoMenuItem, MoyoSelect } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoSelect placeholder="Select one">
@@ -121,7 +121,7 @@ Use the `clearable` attribute to make the control clearable.
 ```
 
 ```jsx react
-import { MoyoMenuItem,MoyoSelect } from '@tovutifunk/tovuti/dist/react';
+import { MoyoMenuItem, MoyoSelect } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoSelect placeholder="Clearable" clearable>
@@ -145,7 +145,7 @@ Add the `filled` attribute to draw a filled select.
 ```
 
 ```jsx react
-import { MoyoMenuItem,MoyoSelect } from '@tovutifunk/tovuti/dist/react';
+import { MoyoMenuItem, MoyoSelect } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoSelect filled>
@@ -169,7 +169,7 @@ Use the `pill` attribute to give selects rounded edges.
 ```
 
 ```jsx react
-import { MoyoMenuItem,MoyoSelect } from '@tovutifunk/tovuti/dist/react';
+import { MoyoMenuItem, MoyoSelect } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoSelect pill>
@@ -193,7 +193,7 @@ Use the `disabled` attribute to disable a select.
 ```
 
 ```jsx react
-import { MoyoMenuItem,MoyoSelect } from '@tovutifunk/tovuti/dist/react';
+import { MoyoMenuItem, MoyoSelect } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoSelect placeholder="Disabled" disabled>
@@ -217,7 +217,7 @@ Use the `value` attribute to set the current selection. When users interact with
 ```
 
 ```jsx react
-import { MoyoDivider,MoyoMenuItem,MoyoSelect } from '@tovutifunk/tovuti/dist/react';
+import { MoyoDivider, MoyoMenuItem, MoyoSelect } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoSelect value="option-2">
@@ -261,7 +261,7 @@ To programmatically set the selection, update the `value` property as shown belo
 
 ```jsx react
 import { useState } from 'react';
-import { MoyoButton,MoyoMenuItem,MoyoSelect } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoMenuItem, MoyoSelect } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => {
   const [value, setValue] = useState('option-1');
@@ -301,7 +301,7 @@ To allow multiple options to be selected, use the `multiple` attribute. With thi
 ```
 
 ```jsx react
-import { MoyoDivider,MoyoMenuItem,MoyoSelect } from '@tovutifunk/tovuti/dist/react';
+import { MoyoDivider, MoyoMenuItem, MoyoSelect } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoSelect placeholder="Select a few" multiple clearable>
@@ -337,7 +337,7 @@ Options can be grouped visually using menu labels and dividers.
 ```
 
 ```jsx react
-import { MoyoDivider,MoyoMenuItem,MoyoMenuLabel,MoyoSelect } from '@tovutifunk/tovuti/dist/react';
+import { MoyoDivider, MoyoMenuItem, MoyoMenuLabel, MoyoSelect } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoSelect placeholder="Select one">
@@ -383,7 +383,7 @@ Use the `size` attribute to change a select's size.
 ```
 
 ```jsx react
-import { MoyoMenuItem,MoyoSelect } from '@tovutifunk/tovuti/dist/react';
+import { MoyoMenuItem, MoyoSelect } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <>
@@ -470,7 +470,7 @@ Use the `prefix` and `suffix` slots to add icons.
 ```
 
 ```jsx react
-import { MoyoIcon,MoyoMenuItem,MoyoSelect } from '@tovutifunk/tovuti/dist/react';
+import { MoyoIcon, MoyoMenuItem, MoyoSelect } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <>

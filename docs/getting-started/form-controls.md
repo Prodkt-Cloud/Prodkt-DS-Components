@@ -78,7 +78,14 @@ To make a field required, use the `required` prop. The form will not be submitte
 ```
 
 ```jsx react
-import { MoyoButton,MoyoCheckbox, MoyoInput,MoyoMenuItem,MoyoSelect,MoyoTextarea } from '@tovutifunk/tovuti/dist/react';
+import {
+  MoyoButton,
+  MoyoCheckbox,
+  MoyoInput,
+  MoyoMenuItem,
+  MoyoSelect,
+  MoyoTextarea
+} from '@tovutifunk/tovuti/dist/react';
 
 const App = () => {
   function handleSubmit(event) {

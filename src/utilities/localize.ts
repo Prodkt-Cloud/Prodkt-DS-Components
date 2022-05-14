@@ -2,4 +2,4 @@
 import '../translations/en';
 
 // Export functions from the localize lib so we have one central place to import them from
-export * from '@tovutifunk/localize';
+export * from '@prodkt/localize';

@@ -323,8 +323,6 @@
 
       // Store version for reuse
       sessionStorage.setItem('moyo-version', metadata.package.version);
-
-
     });
 
     hook.beforeEach(async (content, next) => {

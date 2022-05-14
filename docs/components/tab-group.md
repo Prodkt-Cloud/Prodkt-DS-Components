@@ -21,7 +21,7 @@ Tab groups make use of [tabs](/components/tab) and [tab panels](/components/tab-
 ```
 
 ```jsx react
-import { MoyoTab,MoyoTabGroup,MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
+import { MoyoTab, MoyoTabGroup, MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoTabGroup>
@@ -67,7 +67,7 @@ Tabs can be shown on the bottom by setting `placement` to `bottom`.
 ```
 
 ```jsx react
-import { MoyoTab,MoyoTabGroup,MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
+import { MoyoTab, MoyoTabGroup, MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoTabGroup placement="bottom">
@@ -111,7 +111,7 @@ Tabs can be shown on the starting side by setting `placement` to `start`.
 ```
 
 ```jsx react
-import { MoyoTab,MoyoTabGroup,MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
+import { MoyoTab, MoyoTabGroup, MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoTabGroup placement="start">
@@ -155,7 +155,7 @@ Tabs can be shown on the ending side by setting `placement` to `end`.
 ```
 
 ```jsx react
-import { MoyoTab,MoyoTabGroup,MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
+import { MoyoTab, MoyoTabGroup, MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoTabGroup placement="end">
@@ -217,7 +217,7 @@ Add the `closable` attribute to a tab to show a close button. This example shows
 ```
 
 ```jsx react
-import { MoyoTab,MoyoTabGroup,MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
+import { MoyoTab, MoyoTabGroup, MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => {
   function handleClose(event) {
@@ -309,7 +309,7 @@ When there are more tabs than horizontal space allows, the nav will be scrollabl
 ```
 
 ```jsx react
-import { MoyoTab,MoyoTabGroup,MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
+import { MoyoTab, MoyoTabGroup, MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoTabGroup>
@@ -417,7 +417,7 @@ When focused, keyboard users can press <kbd>Left</kbd> or <kbd>Right</kbd> to se
 ```
 
 ```jsx react
-import { MoyoTab,MoyoTabGroup,MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
+import { MoyoTab, MoyoTabGroup, MoyoTabPanel } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoTabGroup activation="manual">

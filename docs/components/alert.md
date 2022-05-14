@@ -12,7 +12,7 @@ Alerts are used to display important messages inline or as toast notifications.
 ```
 
 ```jsx react
-import { MoyoAlert,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoAlert, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoAlert open>
@@ -71,7 +71,7 @@ Set the `variant` attribute to change the alert's variant.
 ```
 
 ```jsx react
-import { MoyoAlert,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoAlert, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <>
@@ -141,7 +141,7 @@ Add the `closable` attribute to show a close button that will hide the alert.
 
 ```jsx react
 import { useState } from 'react';
-import { MoyoAlert,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoAlert, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => {
   const [open, setOpen] = useState(true);
@@ -209,7 +209,7 @@ Set the `duration` attribute to automatically hide an alert after a period of ti
 
 ```jsx react
 import { useState } from 'react';
-import { MoyoAlert,MoyoButton,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoAlert, MoyoButton, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 const css = `
   .alert-duration moyo-alert {
@@ -298,7 +298,7 @@ You should always use the `closable` attribute so users can dismiss the notifica
 
 ```jsx react
 import { useRef } from 'react';
-import { MoyoAlert,MoyoButton,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoAlert, MoyoButton, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 function showToast(alert) {
   alert.toast();

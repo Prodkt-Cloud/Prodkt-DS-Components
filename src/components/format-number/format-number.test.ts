@@ -46,7 +46,9 @@ describe('<moyo-format-number>', () => {
 
   describe('noGrouping property', () => {
     it(`number has correct grouping format: no grouping`, async () => {
-      const el = await fixture<MoyoFormatNumber>(html` <moyo-format-number value="1000" no-grouping></moyo-format-number> `);
+      const el = await fixture<MoyoFormatNumber>(
+        html` <moyo-format-number value="1000" no-grouping></moyo-format-number> `
+      );
       const expected = new Intl.NumberFormat('en-US', { useGrouping: false }).format(1000);
       expect(el.shadowRoot?.textContent).to.equal(expected);
     });

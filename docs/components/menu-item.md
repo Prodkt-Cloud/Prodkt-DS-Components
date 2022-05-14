@@ -25,7 +25,7 @@ Menu items provide options for the user to pick from in a menu.
 ```
 
 ```jsx react
-import { MoyoDivider,MoyoIcon,MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoDivider, MoyoIcon, MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoMenu style={{ maxWidth: '200px' }}>
@@ -63,7 +63,7 @@ Use the `checked` attribute to draw menu items in a checked state.
 ```
 
 ```jsx react
-import { MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoMenu style={{ maxWidth: '200px' }}>
@@ -87,7 +87,7 @@ Add the `disabled` attribute to disable the menu item so it cannot be selected.
 ```
 
 ```jsx react
-import { MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoMenu style={{ maxWidth: '200px' }}>
@@ -125,7 +125,7 @@ Add content to the start and end of menu items using the `prefix` and `suffix` s
 ```
 
 ```jsx react
-import { MoyoBadge,MoyoDivider,MoyoIcon,MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoBadge, MoyoDivider, MoyoIcon, MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoMenu style={{ maxWidth: '200px' }}>
@@ -179,7 +179,7 @@ The `value` attribute can be used to assign a hidden value, such as a unique ide
 ```
 
 ```jsx react
-import { MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => {
   function handleSelect(event) {

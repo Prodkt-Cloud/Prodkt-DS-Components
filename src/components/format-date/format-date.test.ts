@@ -53,7 +53,10 @@ describe('<moyo-format-date>', () => {
       it(`date has correct language format: ${setup.lang}`, async () => {
         const el = await fixture<MoyoFormatDate>(
           html`
-            <moyo-format-date .date="${new Date(new Date().getFullYear(), 0, 1)}" lang="${setup.lang}"></moyo-format-date>
+            <moyo-format-date
+              .date="${new Date(new Date().getFullYear(), 0, 1)}"
+              lang="${setup.lang}"
+            ></moyo-format-date>
           `
         );
         expect(el.shadowRoot?.textContent?.trim()).to.equal(setup.result);
@@ -106,7 +109,10 @@ describe('<moyo-format-date>', () => {
       it(`date has correct year format: ${yearFormat}`, async () => {
         const el = await fixture<MoyoFormatDate>(
           html`
-            <moyo-format-date .date="${new Date(new Date().getFullYear(), 0, 1)}" year="${yearFormat}"></moyo-format-date>
+            <moyo-format-date
+              .date="${new Date(new Date().getFullYear(), 0, 1)}"
+              year="${yearFormat}"
+            ></moyo-format-date>
           `
         );
 
@@ -124,7 +130,10 @@ describe('<moyo-format-date>', () => {
       it(`date has correct month format: ${monthFormat}`, async () => {
         const el = await fixture<MoyoFormatDate>(
           html`
-            <moyo-format-date .date="${new Date(new Date().getFullYear(), 0, 1)}" month="${monthFormat}"></moyo-format-date>
+            <moyo-format-date
+              .date="${new Date(new Date().getFullYear(), 0, 1)}"
+              month="${monthFormat}"
+            ></moyo-format-date>
           `
         );
 
@@ -160,7 +169,10 @@ describe('<moyo-format-date>', () => {
       it(`date has correct hour format: ${hourFormat}`, async () => {
         const el = await fixture<MoyoFormatDate>(
           html`
-            <moyo-format-date .date="${new Date(new Date().getFullYear(), 0, 1)}" hour="${hourFormat}"></moyo-format-date>
+            <moyo-format-date
+              .date="${new Date(new Date().getFullYear(), 0, 1)}"
+              hour="${hourFormat}"
+            ></moyo-format-date>
           `
         );
 

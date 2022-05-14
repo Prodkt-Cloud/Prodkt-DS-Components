@@ -80,7 +80,7 @@
   - [Border Radius](/tokens/border-radius)
   - [Transition](/tokens/transition)
   - [Z-index](/tokens/z-index)
-  
+
 - Frameworks <moyo-badge variant="warning">Coming Soon</moyo-badge>
 
   - [React]()

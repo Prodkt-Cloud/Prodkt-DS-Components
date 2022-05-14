@@ -123,7 +123,7 @@ Wrap a tooltip around an icon button to provide contextual information to the us
 ```
 
 ```jsx react
-import { MoyoIconButton,MoyoTooltip } from '@tovutifunk/tovuti/dist/react';
+import { MoyoIconButton, MoyoTooltip } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoTooltip content="Settings">

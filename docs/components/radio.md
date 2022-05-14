@@ -15,7 +15,7 @@ Radios are designed to be used with [radio groups](/components/radio-group).
 ```
 
 ```jsx react
-import { MoyoRadio,MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoRadio, MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoRadioGroup label="Select an option">
@@ -49,7 +49,7 @@ To set the initial checked state, use the `checked` attribute.
 ```
 
 ```jsx react
-import { MoyoRadio,MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoRadio, MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoRadioGroup label="Select an option">
@@ -79,7 +79,7 @@ Use the `disabled` attribute to disable a radio.
 ```
 
 ```jsx react
-import { MoyoRadio,MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoRadio, MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoRadioGroup label="Select an option">
@@ -133,7 +133,7 @@ Use the `setCustomValidity()` method to set a custom validation message. This wi
 
 ```jsx react
 import { useEffect, useRef } from 'react';
-import { MoyoButton,MoyoIcon,MoyoRadio,MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoIcon, MoyoRadio, MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
 const App = () => {
   const radio = useRef(null);
   const errorMessage = 'You must choose this option';

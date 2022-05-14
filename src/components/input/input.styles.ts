@@ -23,8 +23,8 @@ export default css`
     vertical-align: middle;
     overflow: hidden;
     cursor: text;
-    transition: var(--moyo-transition-fast) color, var(--moyo-transition-fast) border, var(--moyo-transition-fast) box-shadow,
-      var(--moyo-transition-fast) background-color;
+    transition: var(--moyo-transition-fast) color, var(--moyo-transition-fast) border,
+      var(--moyo-transition-fast) box-shadow, var(--moyo-transition-fast) background-color;
   }
 
   /* Standard inputs */

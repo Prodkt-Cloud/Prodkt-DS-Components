@@ -1,4 +1,6 @@
-pre .language-html, pre .language-js, pre .language-bash {
+pre .language-html,
+pre .language-js,
+pre .language-bash {
   max-width: 960px !important;
   width: 100% !important;
   margin: auto auto;
@@ -6,18 +8,17 @@ pre .language-html, pre .language-js, pre .language-bash {
 
 .docsify-pagination-container {
   background-color: var(--moyo-color-neutral-50);
-  padding:0;
+  padding: 0;
   margin-bottom: 0 !important;
 }
 
 .pagination-item--previous {
-  padding:2rem;
+  padding: 2rem;
 }
 
 .pagination-item--next {
-  padding:2rem;
+  padding: 2rem;
 }
-
 
 article {
   display: flex-row;
@@ -25,8 +26,9 @@ article {
   justify-content: center;
 }
 
-
-article h1, article h2, article h3 {
+article h1,
+article h2,
+article h3 {
   padding: 2rem 2rem !important;
   display: flex;
   justify-content: left;
@@ -35,16 +37,17 @@ article h1, article h2, article h3 {
   border-bottom: solid 1px var(--moyo-color-neutral-200);
 }
 
-article h1 a, article h2 a, article h3 a {
+article h1 a,
+article h2 a,
+article h3 a {
   max-width: 960px !important;
   width: 100% !important;
   margin: auto auto;
 }
 
-
 article p {
   padding: 1rem 2rem !important;
-  max-width:  calc(960px + 4rem) !important;
+  max-width: calc(960px + 4rem) !important;
   width: 100% !important;
   margin: auto auto !important;
 }
@@ -53,10 +56,6 @@ article h3 {
   padding: 2rem 3rem 1rem 3rem;
   margin: auto auto !important;
 }
-
-
-
-
 
 html {
   box-sizing: border-box;
@@ -94,7 +93,7 @@ strong {
 .sidebar {
   background-color: var(--moyo-color-neutral-0);
   border-right: solid 1px var(--moyo-color-neutral-200);
-  padding-top:0;
+  padding-top: 0;
 }
 
 .sidebar .app-name {
@@ -139,8 +138,6 @@ strong {
   outline: none;
   /* box-shadow: var(--moyo-focus-ring); */
 }
-
-
 
 .sidebar-toggle span {
   background-color: var(--moyo-color-neutral-600);
@@ -192,12 +189,12 @@ strong {
   margin: 0 0.75rem 0.5rem 0;
   padding: 1.25rem 2rem;
   font-family: 'Inter', sans-serif;
-  width:100%;
+  width: 100%;
 }
 
 .sidebar-nav > ul:nth-child(1) {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 .sidebar ul li ul {
@@ -487,7 +484,7 @@ kbd,
 /* Tables */
 .table-wrapper {
   overflow-x: auto;
-  width:960px;
+  width: 960px;
   margin: 2rem auto 0 auto;
   border-radius: var(--moyo-border-radius-medium);
   border: solid 1px var(--moyo-color-neutral-200);
@@ -526,7 +523,7 @@ kbd,
   padding: 0.75rem 0.5rem;
 }
 
-.markdown-section  tr:last-child td {
+.markdown-section tr:last-child td {
   border-bottom: 0;
 }
 
@@ -557,7 +554,7 @@ kbd,
   border-radius: var(--moyo-border-radius-medium);
   padding: 4rem 4rem !important;
   margin: 4rem auto !important;
-  max-width:960px !important;
+  max-width: 960px !important;
 }
 
 .markdown-section p.tip:before,
@@ -605,7 +602,8 @@ kbd,
   border-bottom: solid 1px var(--moyo-color-neutral-200);
 }
 
-.component-header__tag, .component-header__info {
+.component-header__tag,
+.component-header__info {
   padding: 0 0 !important;
   max-width: 960px !important;
   margin: 0 auto !important;

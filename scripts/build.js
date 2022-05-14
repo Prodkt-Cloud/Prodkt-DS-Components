@@ -76,7 +76,7 @@ fs.mkdirSync(outdir, { recursive: true });
       //
       external: bundle
         ? alwaysExternal
-        : [...alwaysExternal, '@floating-ui/dom', '@tovutifunk/animations', 'lit', 'qr-creator'],
+        : [...alwaysExternal, '@floating-ui/dom', '@prodkt/animations', 'lit', 'qr-creator'],
       splitting: true,
       plugins: []
     })

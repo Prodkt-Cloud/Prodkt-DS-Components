@@ -77,7 +77,7 @@ Use the default slot to show a value.
 
 ```jsx react
 import { useState } from 'react';
-import { MoyoButton,MoyoIcon,MoyoProgressBar } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoIcon, MoyoProgressBar } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => {
   const [value, setValue] = useState(50);

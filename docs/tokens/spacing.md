@@ -2,8 +2,8 @@
 
 Spacing tokens are used to provide consistent spacing between components and content throughout your app.
 
-| Token                   | Value          | Example                                                                                                         |
-| ----------------------- | -------------- | --------------------------------------------------------------------------------------------------------------- |
+| Token                     | Value          | Example                                                                                                             |
+| ------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------- |
 | `--moyo-spacing-3x-small` | 0.125rem (2px) | <div class="spacing-demo" style="width: var(--moyo-spacing-3x-small); height: var(--moyo-spacing-3x-small);"></div> |
 | `--moyo-spacing-2x-small` | 0.25rem (4px)  | <div class="spacing-demo" style="width: var(--moyo-spacing-2x-small); height: var(--moyo-spacing-2x-small);"></div> |
 | `--moyo-spacing-x-small`  | 0.5rem (8px)   | <div class="spacing-demo" style="width: var(--moyo-spacing-x-small); height: var(--moyo-spacing-x-small);"></div>   |

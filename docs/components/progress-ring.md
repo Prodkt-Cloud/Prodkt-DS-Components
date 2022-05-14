@@ -119,7 +119,7 @@ Use the default slot to show a label inside the progress ring.
 
 ```jsx react
 import { useState } from 'react';
-import { MoyoButton,MoyoIcon,MoyoProgressRing } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoIcon, MoyoProgressRing } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => {
   const [value, setValue] = useState(50);

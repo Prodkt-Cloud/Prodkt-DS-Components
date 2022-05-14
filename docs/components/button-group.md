@@ -13,7 +13,7 @@ Button groups can be used to group related buttons into sections.
 ```
 
 ```jsx react
-import { MoyoButton,MoyoButtonGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoButtonGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoButtonGroup>
@@ -55,7 +55,7 @@ All button sizes are supported, but avoid mixing sizes within the same button gr
 ```
 
 ```jsx react
-import { MoyoButton,MoyoButtonGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoButtonGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <>
@@ -131,7 +131,7 @@ Theme buttons are supported through the button's `type` attribute.
 ```
 
 ```jsx react
-import { MoyoButton,MoyoButtonGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoButtonGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <>
@@ -209,7 +209,7 @@ Pill buttons are supported through the button's `pill` attribute.
 ```
 
 ```jsx react
-import { MoyoButton,MoyoButtonGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoButtonGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <>
@@ -278,7 +278,7 @@ Dropdowns can be placed inside button groups as long as the trigger is an `<moyo
 ```
 
 ```jsx react
-import { MoyoButton,MoyoButtonGroup,MoyoDropdown,MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoButtonGroup, MoyoDropdown, MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoButtonGroup>
@@ -319,7 +319,7 @@ Create a split button using a button and a dropdown. Use a [visually hidden](/co
 ```
 
 ```jsx react
-import { MoyoButton,MoyoButtonGroup,MoyoDropdown,MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoButtonGroup, MoyoDropdown, MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoButtonGroup>
@@ -357,7 +357,7 @@ Buttons can be wrapped in tooltips to provide more detail when the user interact
 ```
 
 ```jsx react
-import { MoyoButton,MoyoButtonGroup,MoyoTooltip } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoButtonGroup, MoyoTooltip } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <>
@@ -426,7 +426,7 @@ Create interactive toolbars with button groups.
 ```
 
 ```jsx react
-import { MoyoButton,MoyoButtonGroup,MoyoIcon,MoyoTooltip } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoButtonGroup, MoyoIcon, MoyoTooltip } from '@tovutifunk/tovuti/dist/react';
 
 const css = `
   .button-group-toolbar moyo-button-group:not(:last-of-type) {

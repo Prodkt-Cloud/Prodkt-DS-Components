@@ -119,7 +119,7 @@ Use dividers in [menus](/components/menu) to visually group menu items.
 ```
 
 ```jsx react
-import { MoyoDivider,MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoDivider, MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoMenu style={{ maxWidth: '200px' }}>

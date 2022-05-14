@@ -326,7 +326,7 @@ Animations won't play until you apply the `play` attribute. You can omit it init
 
 ```jsx react
 import { useState } from 'react';
-import { MoyoAnimation,MoyoButton } from '@tovutifunk/tovuti/dist/react';
+import { MoyoAnimation, MoyoButton } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => {
   const [play, setPlay] = useState(false);

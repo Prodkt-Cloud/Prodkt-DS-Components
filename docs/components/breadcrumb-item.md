@@ -16,7 +16,7 @@ Breadcrumb Items are used inside [breadcrumbs](/components/breadcrumb) to repres
 ```
 
 ```jsx react
-import { MoyoBreadcrumb,MoyoBreadcrumbItem,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoBreadcrumb, MoyoBreadcrumbItem, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoBreadcrumb>

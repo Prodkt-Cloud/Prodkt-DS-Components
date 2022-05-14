@@ -19,7 +19,7 @@ Menu labels are used to describe a group of menu items.
 ```
 
 ```jsx react
-import { MoyoDivider,MoyoMenu,MoyoMenuLabel,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoDivider, MoyoMenu, MoyoMenuLabel, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoMenu style={{ maxWidth: '200px' }}>

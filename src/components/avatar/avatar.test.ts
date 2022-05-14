@@ -53,7 +53,7 @@ describe('<moyo-avatar>', () => {
   });
 
   describe('when provided initials parameter', () => {
-    const initials = 'SL';
+    const initials = 'Moyo';
     before(async () => {
       el = await fixture<MoyoAvatar>(html`<moyo-avatar initials="${initials}" label="Avatar"></moyo-avatar>`);
     });
@@ -90,7 +90,9 @@ describe('<moyo-avatar>', () => {
 
   describe('when passed a <span>, on slot "icon"', () => {
     before(async () => {
-      el = await fixture<MoyoAvatar>(html`<moyo-avatar label="Avatar"><span slot="icon">random content</span></moyo-avatar>`);
+      el = await fixture<MoyoAvatar>(
+        html`<moyo-avatar label="Avatar"><span slot="icon">random content</span></moyo-avatar>`
+      );
     });
 
     it('should pass accessibility tests', async () => {

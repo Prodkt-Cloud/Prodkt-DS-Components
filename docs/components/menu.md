@@ -19,7 +19,7 @@ You can use [menu items](/components/menu-item), [menu labels](/components/menu-
 ```
 
 ```jsx react
-import { MoyoDivider,MoyoMenu,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoDivider, MoyoMenu, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoMenu style={{ maxWidth: '200px' }}>

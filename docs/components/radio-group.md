@@ -13,7 +13,7 @@ Radio groups are used to group multiple [radios](/components/radio) or [radio bu
 ```
 
 ```jsx react
-import { MoyoRadio,MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoRadio, MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoRadioGroup label="Select an option">
@@ -45,7 +45,7 @@ You can show the fieldset and legend that wraps the radio group using the `field
 ```
 
 ```jsx react
-import { MoyoRadio,MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoRadio, MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoRadioGroup label="Select an option" fieldset>
@@ -75,7 +75,7 @@ const App = () => (
 ```
 
 ```jsx react
-import { MoyoRadioButton,MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoRadioButton, MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoRadioGroup label="Select an option">

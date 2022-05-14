@@ -398,7 +398,7 @@ Try resizing the example below with each option and notice how the panels respon
 
 ```jsx react
 import { useState } from 'react';
-import { MoyoSplitPanel,MoyoSelect,MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoSplitPanel, MoyoSelect, MoyoMenuItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => {
   const [primary, setPrimary] = useState('');
@@ -606,7 +606,7 @@ You can target the `divider` part to apply CSS properties to the divider. To add
 ```
 
 ```jsx react
-import { MoyoSplitPanel,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoSplitPanel, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoSplitPanel style={{ '--divider-width': '20px' }}>
@@ -689,7 +689,7 @@ Here's a more elaborate example that changes the divider's color and width and a
 ```
 
 ```jsx react
-import { MoyoSplitPanel,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoSplitPanel, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 const css = `
   .split-panel-handle moyo-split-panel {

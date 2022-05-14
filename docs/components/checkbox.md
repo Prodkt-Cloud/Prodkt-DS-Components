@@ -92,7 +92,7 @@ Use the `setCustomValidity()` method to set a custom validation message. This wi
 
 ```jsx react
 import { useEffect, useRef } from 'react';
-import { MoyoButton,MoyoCheckbox } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoCheckbox } from '@tovutifunk/tovuti/dist/react';
 const App = () => {
   const checkbox = useRef(null);
   const errorMessage = `Don't forget to check me!`;

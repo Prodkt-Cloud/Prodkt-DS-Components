@@ -74,7 +74,9 @@ describe('<moyo-icon>', () => {
   describe('when a label is provided', () => {
     it('the icon has the correct default aria attributes', async () => {
       const fakeLabel = 'a label';
-      const el = await fixture<MoyoIcon>(html` <moyo-icon label="${fakeLabel}" library="system" name="check"></moyo-icon> `);
+      const el = await fixture<MoyoIcon>(
+        html` <moyo-icon label="${fakeLabel}" library="system" name="check"></moyo-icon> `
+      );
       const rootDiv = el.shadowRoot?.querySelector('div.icon');
 
       expect(rootDiv?.getAttribute('role')).to.equal('img');

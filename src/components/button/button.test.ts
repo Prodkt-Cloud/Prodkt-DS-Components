@@ -77,7 +77,9 @@ describe('<moyo-button>', () => {
       button.shadowRoot!.querySelector('button')!.click();
       expect(handleClick).not.to.have.been.called;
 
-      const buttonLink = await fixture<MoyoButton>(html` <moyo-button href="some/path" disabled>Button Label</moyo-button> `);
+      const buttonLink = await fixture<MoyoButton>(
+        html` <moyo-button href="some/path" disabled>Button Label</moyo-button> `
+      );
       buttonLink.addEventListener('click', handleClick);
       buttonLink.click();
 

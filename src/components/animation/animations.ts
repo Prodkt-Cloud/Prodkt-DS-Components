@@ -1,4 +1,4 @@
-import * as animations from '@tovutifunk/animations';
+import * as animations from '@prodkt/animations';
 
 export { animations };
 

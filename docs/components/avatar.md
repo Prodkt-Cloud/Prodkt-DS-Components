@@ -73,7 +73,7 @@ When no image or initials are set, an icon will be shown. The default avatar sho
 ```
 
 ```jsx react
-import { MoyoAvatar,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoAvatar, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <>
@@ -103,7 +103,7 @@ Avatars can be shaped using the `shape` attribute.
 ```
 
 ```jsx react
-import { MoyoAvatar,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoAvatar, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <>
@@ -153,7 +153,7 @@ You can group avatars with a few lines of CSS.
 ```
 
 ```jsx react
-import { MoyoAvatar,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoAvatar, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 const css = `
   .avatar-group moyo-avatar:not(:first-of-type) {

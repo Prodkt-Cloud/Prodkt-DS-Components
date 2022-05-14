@@ -1,11 +1,9 @@
-
-
 .code-block__source-group {
   width: 100%;
 }
 
 article .code-block__source--html {
-  width:100%;
+  width: 100%;
 }
 
 article div.code-block div {
@@ -13,14 +11,14 @@ article div.code-block div {
 }
 
 article div.code-block {
-  padding:0.25rem 0.25rem !important;
+  padding: 0.25rem 0.25rem !important;
   margin: 2rem auto !important;
   max-width: 960px;
 }
 
 .code-block {
   position: relative;
-  border:1px solid var(--moyo-color-neutral-100);
+  border: 1px solid var(--moyo-color-neutral-100);
   border-radius: var(--moyo-border-radius-large);
   background-color: var(--moyo-color-neutral-0);
   /* box-shadow: var(--moyo-shadow-x-large) */
@@ -36,7 +34,7 @@ article div.code-block {
   background-color: var(--moyo-color-neutral-0);
   min-width: 20rem;
   max-width: 100%;
-  width:100%;
+  width: 100%;
   padding: 1.5rem 3.25rem 1.5rem 1.5rem;
 }
 

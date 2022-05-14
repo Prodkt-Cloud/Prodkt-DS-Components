@@ -20,8 +20,8 @@ export default css`
     line-height: var(--moyo-line-height-normal);
     letter-spacing: var(--moyo-input-letter-spacing);
     vertical-align: middle;
-    transition: var(--moyo-transition-fast) color, var(--moyo-transition-fast) border, var(--moyo-transition-fast) box-shadow,
-      var(--moyo-transition-fast) background-color;
+    transition: var(--moyo-transition-fast) color, var(--moyo-transition-fast) border,
+      var(--moyo-transition-fast) box-shadow, var(--moyo-transition-fast) background-color;
     cursor: text;
   }
 

@@ -16,7 +16,7 @@ Breadcrumbs are usually placed before a page's main content with the current pag
 ```
 
 ```jsx react
-import { MoyoBreadcrumb,MoyoBreadcrumbItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoBreadcrumb, MoyoBreadcrumbItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoBreadcrumb>
@@ -49,7 +49,7 @@ For websites, you'll probably want to use links instead. You can make any breadc
 ```
 
 ```jsx react
-import { MoyoBreadcrumb,MoyoBreadcrumbItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoBreadcrumb, MoyoBreadcrumbItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoBreadcrumb>
@@ -97,7 +97,7 @@ Use the `separator` slot to change the separator that goes between breadcrumb it
 
 ```jsx react
 import '@tovutifunk/tovuti/dist/components/icon/icon.js';
-import { MoyoBreadcrumb,MoyoBreadcrumbItem } from '@tovutifunk/tovuti/dist/react';
+import { MoyoBreadcrumb, MoyoBreadcrumbItem } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <>
@@ -145,7 +145,7 @@ Use the `prefix` slot to add content before any breadcrumb item.
 ```
 
 ```jsx react
-import { MoyoBreadcrumb,MoyoBreadcrumbItem,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoBreadcrumb, MoyoBreadcrumbItem, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoBreadcrumb>
@@ -175,7 +175,7 @@ Use the `suffix` slot to add content after any breadcrumb item.
 ```
 
 ```jsx react
-import { MoyoBreadcrumb,MoyoBreadcrumbItem,MoyoIcon } from '@tovutifunk/tovuti/dist/react';
+import { MoyoBreadcrumb, MoyoBreadcrumbItem, MoyoIcon } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoBreadcrumb>
@@ -216,13 +216,13 @@ Dropdown menus can be placed in a prefix or suffix slot to provide additional op
 
 ```jsx react
 import {
- MoyoBreadcrumb,
- MoyoBreadcrumbItem,
- MoyoButton,
- MoyoDropdown,
- MoyoIcon,
- MoyoMenu,
- MoyoMenuItem
+  MoyoBreadcrumb,
+  MoyoBreadcrumbItem,
+  MoyoButton,
+  MoyoDropdown,
+  MoyoIcon,
+  MoyoMenu,
+  MoyoMenuItem
 } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (

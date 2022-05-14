@@ -568,7 +568,10 @@ export default class MoyoSelect extends LitElement {
             </div>
 
             <moyo-menu part="menu" id="menu" class="select__menu" @moyo-select=${this.handleMenuSelect}>
-              <slot @slotchange=${this.handleMenuSlotChange} @moyo-label-change=${this.handleMenuItemLabelChange}></slot>
+              <slot
+                @slotchange=${this.handleMenuSlotChange}
+                @moyo-label-change=${this.handleMenuItemLabelChange}
+              ></slot>
             </moyo-menu>
           </moyo-dropdown>
         </div>

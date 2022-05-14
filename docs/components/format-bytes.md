@@ -21,7 +21,7 @@ Formats a number as a human readable bytes value.
 
 ```jsx react
 import { useState } from 'react';
-import { MoyoButton,MoyoFormatBytes, MoyoInput } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoFormatBytes, MoyoInput } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => {
   const [value, setValue] = useState(1000);

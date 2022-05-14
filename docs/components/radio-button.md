@@ -15,7 +15,7 @@ Radio buttons are designed to be used with [radio groups](/components/radio-grou
 ```
 
 ```jsx react
-import { MoyoRadioButton,MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoRadioButton, MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoRadioGroup label="Select an option">
@@ -47,7 +47,7 @@ To set the initial checked state, use the `checked` attribute.
 ```
 
 ```jsx react
-import { MoyoRadioButton,MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoRadioButton, MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoRadioGroup label="Select an option">
@@ -77,7 +77,7 @@ Use the `disabled` attribute to disable a radio button.
 ```
 
 ```jsx react
-import { MoyoRadioButton,MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoRadioButton, MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoRadioGroup label="Select an option">
@@ -335,7 +335,7 @@ Use the `prefix` and `suffix` slots to add icons.
 ```
 
 ```jsx react
-import { MoyoIcon,MoyoRadioButton,MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoIcon, MoyoRadioButton, MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoRadioGroup label="Select an option">
@@ -387,7 +387,7 @@ You can omit button labels and use icons instead. Make sure to set a `label` att
 ```
 
 ```jsx react
-import { MoyoIcon,MoyoRadioButton,MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoIcon, MoyoRadioButton, MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoRadioGroup label="Select an option">
@@ -451,7 +451,7 @@ Use the `setCustomValidity()` method to set a custom validation message. This wi
 
 ```jsx react
 import { useEffect, useRef } from 'react';
-import { MoyoButton,MoyoIcon,MoyoRadioButton,MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
+import { MoyoButton, MoyoIcon, MoyoRadioButton, MoyoRadioGroup } from '@tovutifunk/tovuti/dist/react';
 const App = () => {
   const radio = useRef(null);
   const errorMessage = 'You must choose this option';
