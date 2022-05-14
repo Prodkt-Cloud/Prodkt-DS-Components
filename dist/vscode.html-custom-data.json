@@ -1,23 +1,6 @@
 {
   "tags": [
     {
-      "name": "moyo-animated-image",
-      "attributes": [
-        {
-          "name": "src",
-          "description": "The image's src attribute."
-        },
-        {
-          "name": "alt",
-          "description": "The image's alt attribute."
-        },
-        {
-          "name": "play",
-          "description": "When set, the image will animate. Otherwise, it will be paused."
-        }
-      ]
-    },
-    {
       "name": "moyo-alert",
       "attributes": [
         {
@@ -52,38 +35,6 @@
         {
           "name": "duration",
           "description": "The length of time, in milliseconds, the alert will show before closing itself. If the user interacts with\nthe alert before it closes (e.g. moves the mouse over it), the timer will restart. Defaults to `Infinity`."
-        }
-      ]
-    },
-    {
-      "name": "moyo-avatar",
-      "attributes": [
-        {
-          "name": "image",
-          "description": "The image source to use for the avatar."
-        },
-        {
-          "name": "label",
-          "description": "A label to use to describe the avatar to assistive devices."
-        },
-        {
-          "name": "initials",
-          "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended)."
-        },
-        {
-          "name": "shape",
-          "description": "The shape of the avatar.",
-          "values": [
-            {
-              "name": "circle"
-            },
-            {
-              "name": "square"
-            },
-            {
-              "name": "rounded"
-            }
-          ]
         }
       ]
     },
@@ -133,6 +84,55 @@
         {
           "name": "playback-rate",
           "description": "Sets the animation's playback rate. The default is `1`, which plays the animation at a normal speed. Setting this\nto `2`, for example, will double the animation's speed. A negative value can be used to reverse the animation. This\nvalue can be changed without causing the animation to restart."
+        }
+      ]
+    },
+    {
+      "name": "moyo-animated-image",
+      "attributes": [
+        {
+          "name": "src",
+          "description": "The image's src attribute."
+        },
+        {
+          "name": "alt",
+          "description": "The image's alt attribute."
+        },
+        {
+          "name": "play",
+          "description": "When set, the image will animate. Otherwise, it will be paused."
+        }
+      ]
+    },
+    {
+      "name": "moyo-avatar",
+      "attributes": [
+        {
+          "name": "image",
+          "description": "The image source to use for the avatar."
+        },
+        {
+          "name": "label",
+          "description": "A label to use to describe the avatar to assistive devices."
+        },
+        {
+          "name": "initials",
+          "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended)."
+        },
+        {
+          "name": "shape",
+          "description": "The shape of the avatar.",
+          "values": [
+            {
+              "name": "circle"
+            },
+            {
+              "name": "square"
+            },
+            {
+              "name": "rounded"
+            }
+          ]
         }
       ]
     },

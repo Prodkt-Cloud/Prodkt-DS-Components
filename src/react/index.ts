@@ -1,7 +1,7 @@
-export { default as MoyoAnimatedImage } from './moyo-animated-image';
 export { default as MoyoAlert } from './moyo-alert';
-export { default as MoyoAvatar } from './moyo-avatar';
 export { default as MoyoAnimation } from './moyo-animation';
+export { default as MoyoAnimatedImage } from './moyo-animated-image';
+export { default as MoyoAvatar } from './moyo-avatar';
 export { default as MoyoBadge } from './moyo-badge';
 export { default as MoyoBreadcrumb } from './moyo-breadcrumb';
 export { default as MoyoBreadcrumbItem } from './moyo-breadcrumb-item';

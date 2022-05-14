@@ -6,7 +6,7 @@ A component for displaying animated GIFs and WEBPs that play and pause on intera
 
 ```html preview
 <moyo-animated-image
-  src="https://prodkt.cloud/assets/images/walk.gif"
+  src="https://media0.giphy.com/media/QpWDP1YMziaQw/giphy.gif"
   alt="Animation of untied shoes walking on pavement"
 ></moyo-animated-image>
 ```
@@ -16,7 +16,7 @@ import { MoyoAnimatedImage } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoAnimatedImage
-    src="https://prodkt.cloud/assets/images/walk.gif"
+    src="https://media0.giphy.com/media/QpWDP1YMziaQw/giphy.gif"
     alt="Animation of untied shoes walking on pavement"
   />
 );
@@ -32,7 +32,7 @@ Both GIF and WEBP images are supported.
 
 ```html preview
 <moyo-animated-image
-  src="https://prodkt.cloud/assets/images/tie.webp"
+  src="https://res.cloudinary.com/demo/image/upload/fl_awebp/bored_animation.webp"
   alt="Animation of a shoe being tied"
 ></moyo-animated-image>
 ```
@@ -41,7 +41,10 @@ Both GIF and WEBP images are supported.
 import { MoyoAnimatedImage } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
-  <MoyoAnimatedImage src="https://prodkt.cloud/assets/images/tie.webp" alt="Animation of a shoe being tied" />
+  <MoyoAnimatedImage
+    src="https://res.cloudinary.com/demo/image/upload/fl_awebp/bored_animation.webp"
+    alt="Animation of a shoe being tied"
+  />
 );
 ```
 
@@ -51,7 +54,7 @@ To set a custom size, apply a width and/or height to the host element.
 
 ```html preview
 <moyo-animated-image
-  src="https://prodkt.cloud/assets/images/walk.gif"
+  src="https://media0.giphy.com/media/QpWDP1YMziaQw/giphy.gif"
   alt="Animation of untied shoes walking on pavement"
   style="width: 150px; height: 200px;"
 >
@@ -63,7 +66,7 @@ import { MoyoAnimatedImage } from '@tovutifunk/tovuti/dist/react';
 
 const App = () => (
   <MoyoAnimatedImage
-    src="https://prodkt.cloud/assets/images/walk.gif"
+    src="https://media0.giphy.com/media/QpWDP1YMziaQw/giphy.gif"
     alt="Animation of untied shoes walking on pavement"
     style={{ width: '150px', height: '200px' }}
   />
@@ -76,7 +79,7 @@ You can change the appearance and location of the control box by targeting the `
 
 ```html preview
 <moyo-animated-image
-  src="https://prodkt.cloud/assets/images/walk.gif"
+  src="https://media0.giphy.com/media/QpWDP1YMziaQw/giphy.gif"
   alt="Animation of untied shoes walking on pavement"
   class="animated-image-custom-control-box"
 ></moyo-animated-image>
@@ -113,7 +116,7 @@ const App = () => (
   <>
     <MoyoAnimatedImage
       className="animated-image-custom-control-box"
-      src="https://prodkt.cloud/assets/images/walk.gif"
+      src="https://media0.giphy.com/media/QpWDP1YMziaQw/giphy.gif"
       alt="Animation of untied shoes walking on pavement"
     />
 
