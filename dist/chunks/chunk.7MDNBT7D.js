@@ -1,6 +1,6 @@
 import {
   MoyoAlert
-} from "./chunk.QIIYYFSC.js";
+} from "./chunk.H3TLZJDH.js";
 
 // src/react/moyo-alert/index.ts
 import * as React from "react";

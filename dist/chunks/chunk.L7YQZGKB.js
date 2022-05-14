@@ -1,6 +1,6 @@
 import {
   MoyoAvatar
-} from "./chunk.GNUCDFLV.js";
+} from "./chunk.OL6RQTLX.js";
 
 // src/react/moyo-avatar/index.ts
 import * as React from "react";

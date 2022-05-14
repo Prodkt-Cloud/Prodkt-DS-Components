@@ -1,6 +1,6 @@
 import {
   MoyoRating
-} from "./chunk.5KBDAMHD.js";
+} from "./chunk.CTHVAGUU.js";
 
 // src/react/moyo-rating/index.ts
 import * as React from "react";

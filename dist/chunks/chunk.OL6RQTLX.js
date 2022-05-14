@@ -1,4 +1,7 @@
 import {
+  avatar_styles_default
+} from "./chunk.CYEVL4ZK.js";
+import {
   o
 } from "./chunk.7BXY5XRG.js";
 import {
@@ -9,9 +12,6 @@ import {
   n,
   t
 } from "./chunk.72DLNKYZ.js";
-import {
-  avatar_styles_default
-} from "./chunk.CYEVL4ZK.js";
 import {
   $,
   s
