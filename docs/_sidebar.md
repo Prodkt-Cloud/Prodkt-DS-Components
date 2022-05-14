@@ -1,17 +1,3 @@
-- Getting Started
-
-  - [Overview](/)
-  - [Installation](/getting-started/installation)
-  - [Usage](/getting-started/usage)
-
-- Resources
-
-  - [Accessibility](/resources/accessibility)
-  - [Localization](/getting-started/localization)
-  - [Form Controls](/getting-started/form-controls)
-  - [Themes](/getting-started/themes)
-  - [Customizing](/getting-started/customizing)
-
 - Components
 
   - [Alert](/components/alert)
@@ -71,7 +57,7 @@
   - [Responsive Media](/components/responsive-media)
   - [Visually Hidden](/components/visually-hidden)
 
-- Design Tokens
+- Design Tokens <moyo-badge variant="danger">Unstable</moyo-badge>
 
   - [Typography](/tokens/typography)
   - [Color](/tokens/color)
@@ -83,10 +69,8 @@
 
 - Frameworks <moyo-badge variant="warning">Coming Soon</moyo-badge>
 
-  - [React]()
-  - [Vue]()
-  - [Angular]()
+  - 
 
-- Tutorials
+- Resources
 
-  - [Integrating with Laravel]()
+  - [Localization](/getting-started/localization)

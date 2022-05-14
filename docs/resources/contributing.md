@@ -2,7 +2,6 @@
 
 Tovuti is an open source project, meaning everyone can use it and contribute to its development. When you join our community, you'll find a friendly group of enthusiasts at all experience levels who are willing to chat about anything and everything related to Tovuti.
 
-The easiest way to get started contributing is to join the [community chat](https://discord.gg/mg8f26C). This is where we hang out, discuss new ideas, ask for feedback, and more!
 
 A common misconception about contributing to an open source project is that you need to know how to code. This simply isn't true. In fact, there are _many_ ways to contribute, and some of the most important contributions come from those who never write a single line of code. Here's a list of ways you can make a meaningful contribution to the project:
 
@@ -143,14 +142,6 @@ If the test file is `src/components/breadcrumb-item.test.ts`, then `<nameOfTestF
 ```bash
 npm run test -- --group <nameOfTestFile>
 ```
-
-## Best Practices
-
-The following is a non-exhaustive list of conventions, patterns, and best practices we try to follow. As a contributor, we ask that you make a good faith effort to follow them as well. This ensures consistency and maintainability throughout the project.
-
-If in doubt, use your best judgment and the maintainers will be happy to guide you during the code review process. If you'd like clarification on something before submitting a PR, feel free to reach out on the [community chat](https://discord.gg/mg8f26C).
-
-?> This section can be a lot to digest in one sitting, so don't feel like you need to take it all in right now. Most contributors will be better off skimming this section and reviewing the relevant content as needed.
 
 ### Accessibility
 

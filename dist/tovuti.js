@@ -181,10 +181,6 @@ import "./chunks/chunk.O2TDYW3A.js";
 import "./chunks/chunk.N2T2IJMA.js";
 import "./chunks/chunk.SZTKF4H3.js";
 import {
-  MoyoAvatar
-} from "./chunks/chunk.OL6RQTLX.js";
-import "./chunks/chunk.CYEVL4ZK.js";
-import {
   MoyoBadge
 } from "./chunks/chunk.E5J6ZHMR.js";
 import "./chunks/chunk.A5MD4SCG.js";
@@ -197,8 +193,12 @@ import {
 } from "./chunks/chunk.PYJXW5H5.js";
 import "./chunks/chunk.UCLZO2NK.js";
 import {
+  MoyoAnimatedImage
+} from "./chunks/chunk.NNLT6PN6.js";
+import "./chunks/chunk.ZFBBQO6I.js";
+import {
   MoyoAlert
-} from "./chunks/chunk.H3TLZJDH.js";
+} from "./chunks/chunk.QIIYYFSC.js";
 import {
   MoyoIconButton
 } from "./chunks/chunk.ZGAZ4CWM.js";
@@ -207,12 +207,12 @@ import "./chunks/chunk.YBI4N56R.js";
 import "./chunks/chunk.6SAGALY4.js";
 import "./chunks/chunk.LOYEL7IY.js";
 import "./chunks/chunk.UHGCFDN7.js";
-import "./chunks/chunk.7BXY5XRG.js";
 import "./chunks/chunk.IVOHDN3H.js";
 import "./chunks/chunk.5RQTNHWQ.js";
 import {
-  MoyoAnimatedImage
-} from "./chunks/chunk.NNLT6PN6.js";
+  MoyoAvatar
+} from "./chunks/chunk.SG5DJ4KQ.js";
+import "./chunks/chunk.7BXY5XRG.js";
 import {
   MoyoIcon
 } from "./chunks/chunk.S7CLVJ3C.js";
@@ -231,7 +231,7 @@ import "./chunks/chunk.RPB53XXV.js";
 import "./chunks/chunk.NPYVPRSA.js";
 import "./chunks/chunk.R37SUKY2.js";
 import "./chunks/chunk.2JQPDYNA.js";
-import "./chunks/chunk.ZFBBQO6I.js";
+import "./chunks/chunk.CYEVL4ZK.js";
 import {
   MoyoAnimation
 } from "./chunks/chunk.3SEGOOIJ.js";

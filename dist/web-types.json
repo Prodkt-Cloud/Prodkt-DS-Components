@@ -646,52 +646,6 @@
           ]
         },
         {
-          "name": "moyo-breadcrumb",
-          "description": "",
-          "doc-url": "https://moyo-components.vercel.app/components/breadcrumb",
-          "js": {
-            "properties": [
-              {
-                "name": "defaultSlot",
-                "value": {
-                  "type": "HTMLSlotElement"
-                }
-              },
-              {
-                "name": "separatorSlot",
-                "value": {
-                  "type": "HTMLSlotElement"
-                }
-              },
-              {
-                "name": "label",
-                "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "getSeparator",
-                "value": {}
-              },
-              {
-                "name": "handleSlotChange",
-                "value": {}
-              }
-            ],
-            "events": []
-          },
-          "attributes": [
-            {
-              "name": "label",
-              "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
-              "value": {
-                "type": "string"
-              }
-            }
-          ]
-        },
-        {
           "name": "moyo-breadcrumb-item",
           "description": "",
           "doc-url": "https://moyo-components.vercel.app/components/breadcrumb-item",
@@ -1079,6 +1033,52 @@
               "description": "Used to override the form owner's `target` attribute.",
               "value": {
                 "type": "'_self' | '_blank' | '_parent' | '_top' | string"
+              }
+            }
+          ]
+        },
+        {
+          "name": "moyo-breadcrumb",
+          "description": "",
+          "doc-url": "https://moyo-components.vercel.app/components/breadcrumb",
+          "js": {
+            "properties": [
+              {
+                "name": "defaultSlot",
+                "value": {
+                  "type": "HTMLSlotElement"
+                }
+              },
+              {
+                "name": "separatorSlot",
+                "value": {
+                  "type": "HTMLSlotElement"
+                }
+              },
+              {
+                "name": "label",
+                "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "getSeparator",
+                "value": {}
+              },
+              {
+                "name": "handleSlotChange",
+                "value": {}
+              }
+            ],
+            "events": []
+          },
+          "attributes": [
+            {
+              "name": "label",
+              "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices.",
+              "value": {
+                "type": "string"
               }
             }
           ]

@@ -171,15 +171,6 @@
       ]
     },
     {
-      "name": "moyo-breadcrumb",
-      "attributes": [
-        {
-          "name": "label",
-          "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices."
-        }
-      ]
-    },
-    {
       "name": "moyo-breadcrumb-item",
       "attributes": [
         {
@@ -366,6 +357,15 @@
               "name": "_top"
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "moyo-breadcrumb",
+      "attributes": [
+        {
+          "name": "label",
+          "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices."
         }
       ]
     },

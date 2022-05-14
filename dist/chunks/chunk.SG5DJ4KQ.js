@@ -1,9 +1,9 @@
 import {
-  avatar_styles_default
-} from "./chunk.CYEVL4ZK.js";
-import {
   o
 } from "./chunk.7BXY5XRG.js";
+import {
+  avatar_styles_default
+} from "./chunk.CYEVL4ZK.js";
 import {
   watch
 } from "./chunk.PQ5VRVXF.js";

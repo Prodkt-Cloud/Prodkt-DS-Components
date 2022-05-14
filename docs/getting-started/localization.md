@@ -16,7 +16,7 @@ Components can be localized by importing the appropriate translation file and se
 
 Through the magic of a mutation observer, changing the `lang` attribute will automatically update all localized components to use the new locale.
 
-?> Tovuti provides a localization mechanism for component internals. This is not designed to be used as localization tool our your entire application. We should use a more appropriate tool such as [i18next](https://www.i18next.com/) to localize all of the content in our app.
+?> Tovuti provides a localization mechanism for component internals. This is not designed to be used as localization tool for our entire application. We should use a more appropriate tool such as [i18next](https://www.i18next.com/) to localize all of the content in our app.
 
 ## Available Translations
 
@@ -53,7 +53,7 @@ To contribute new translations or improvements to existing translations, please 
 
 Regional translations are welcome! For example, if a German translation (`de`) exists it's perfectly acceptable to submit a German (Switzerland) (`de-CH`) translation.
 
-If you have any questions, please start a [discussion](https://github.com/tovutifunk/tovuti/discussions) or ask in the [community chat](https://discord.gg/mg8f26C).
+If you have any questions, please start a [discussion](https://github.com/tovutifunk/tovuti/discussions).
 
 ## Multiple Locales Per Page
 
@@ -84,7 +84,7 @@ For performance reasons, the `lang` attribute must be on the component itself, n
 </html>
 ```
 
-This limitation exists because there's no efficient way to determine the current locale of a given element in a DOM tree. I consider this a gap in the platform and [I've proposed a couple properties](https://github.com/whatwg/html/issues/7039) to make this possible.
+This limitation exists because there's no efficient way to determine the current locale of a given element in a DOM tree.
 
 ## Creating Your Own Translations
 
