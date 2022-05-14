@@ -1,8 +1,8 @@
 {
-  "name": "@tovutifunk/tovuti",
-  "description": "Just a Designer with big dreams and no support.",
+  "name": "@prodkt/moyo-components",
+  "description": "A labor of love by Tovuti Designers with no Support from anyone in the Org",
   "version": "1.0.1",
-  "homepage": "https://github.com/tovutifunk/tovuti",
+  "homepage": "https://github.com/Prodkt-Cloud/moyo-components.git",
   "author": "Bryan Funk",
   "license": "MIT",
   "main": "dist/tovuti.js",
@@ -21,10 +21,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tovutifunk/tovuti.git"
+    "url": "git+https://github.com/Prodkt-Cloud/moyo-components.git"
   },
   "bugs": {
-    "url": "https://github.com/tovutifunk/tovuti/issues"
+    "url": "https://github.com/Prodkt-Cloud/moyo-components/issues"
   },
   "funding": {
     "type": "individual",
@@ -55,6 +55,7 @@
   "dependencies": {
     "@floating-ui/dom": "^0.3.1",
     "@lit-labs/react": "^1.0.2",
+    "@prodkt/localize": "^2.1.5",
     "color": "4.2",
     "lit": "^2.1.4",
     "qr-creator": "^1.0.0"
