@@ -18,20 +18,6 @@ The [discussion forum](https://github.com/tovutifunk/tovuti/discussions) is open
   Join the Discussion
 </moyo-button>
 
-## Community Chat
-
-The [community chat](https://discord.gg/mg8f26C) is open to the public and powered by [Discord](https://discord.com/). This is a good place to:
-
-- Ask for help
-- Share ideas and get feedback
-- Show the community what you're working on
-- Chat live with other designers, developers, and Tovuti fans
-
-<moyo-button variant="primary" href="https://discord.gg/mg8f26C" target="_blank">
-  <moyo-icon name="discord" slot="prefix"></moyo-icon>
-  Join the Chat
-</moyo-button>
-
 ## Stack Overflow
 
 You can post questions on Stack Overflow using [the "tovuti" tag](https://stackoverflow.com/questions/tagged/tovuti). This is a public forum where talented developers answer questions. It's a great way to get help, but it is not maintained by the Tovuti author.

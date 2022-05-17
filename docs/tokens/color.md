@@ -107,7 +107,6 @@ Theme tokens give you a semantic way to reference colors in your app. The primar
   <div class="color-palette__example"><div class="color-palette__swatch " style="background-color: var(--moyo-color-neutral-1000);"></div>1000</div>
 </div>
 
-?> Looking for an easy way to customize your theme? [Try the color token generator!](https://codepen.io/tovutifunk/full/QWveRgL)
 
 ## Primitives
 
