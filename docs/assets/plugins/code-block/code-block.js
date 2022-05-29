@@ -57,7 +57,7 @@
   // React is ready now given the build pack I used -- Remember to release this once Vue is done once you test in the React App
   function setFlavor(newFlavor) {
     flavor = ['html'].includes(newFlavor) ? newFlavor : 'html';
-    // flavor = ['html', 'react'].includes(newFlavor) ? newFlavor : 'html';
+    flavor = ['html', 'react'].includes(newFlavor) ? newFlavor : 'html';
     localStorage.setItem('flavor', flavor);
 
     // Set the flavor class on the body
@@ -89,7 +89,7 @@
             flavor === 'react' ? 'code-block__button--selected' : ''
           }"
         >
-          Vue (Soon)
+          React
         </button>
       `;
 
