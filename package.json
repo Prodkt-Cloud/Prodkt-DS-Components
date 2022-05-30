@@ -1,7 +1,7 @@
 {
   "name": "@prodkt/moyo-components",
   "description": "A labor of love by Tovuti Designers with no Org Support",
-  "version": "1.0.1",
+  "version": "1.0.13",
   "homepage": "https://github.com/Prodkt-Cloud/moyo-components.git",
   "author": "Bryan Funk",
   "license": "MIT",
@@ -47,7 +47,8 @@
     "test:watch": "web-test-runner --watch",
     "spellcheck": "cspell \"**/*.{js,ts,json,html,css,md}\" --no-progress",
     "list-outdated-dependencies": "npm-check-updates --format repo --peer",
-    "update-dependencies": "npm-check-updates --peer -u && npm install && npm run lint:fix && npm run prettier && npm run verify"
+    "update-dependencies": "npm-check-updates --peer -u && npm install && npm run lint:fix && npm run prettier && npm run verify",
+    "publishnpm": "npm publish --access public"
   },
   "engines": {
     "node": ">=14.17.0"

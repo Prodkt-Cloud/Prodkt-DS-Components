@@ -1,4 +1,7 @@
 import {
+  animated_image_styles_default
+} from "./chunk.ZFBBQO6I.js";
+import {
   watch
 } from "./chunk.PQ5VRVXF.js";
 import {
@@ -10,9 +13,6 @@ import {
   n,
   t
 } from "./chunk.72DLNKYZ.js";
-import {
-  animated_image_styles_default
-} from "./chunk.ZFBBQO6I.js";
 import {
   $,
   s

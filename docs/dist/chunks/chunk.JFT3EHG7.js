@@ -1,6 +1,6 @@
 import {
   MoyoBreadcrumbItem
-} from "./chunk.PYJXW5H5.js";
+} from "./chunk.INXU7PYY.js";
 
 // src/react/moyo-breadcrumb-item/index.ts
 import * as React from "react";

@@ -69,7 +69,7 @@
 
 - Frameworks <moyo-badge variant="warning">Coming Soon</moyo-badge>
 
-  - 
+  -
 
 - Resources
 

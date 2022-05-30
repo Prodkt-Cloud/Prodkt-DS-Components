@@ -1,6 +1,6 @@
 import {
   MoyoAnimatedImage
-} from "./chunk.5QGM2ZZT.js";
+} from "./chunk.NNLT6PN6.js";
 
 // src/react/moyo-animated-image/index.ts
 import * as React from "react";

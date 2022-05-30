@@ -105,46 +105,6 @@
       ]
     },
     {
-      "name": "moyo-breadcrumb",
-      "attributes": [
-        {
-          "name": "label",
-          "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices."
-        }
-      ]
-    },
-    {
-      "name": "moyo-breadcrumb-item",
-      "attributes": [
-        {
-          "name": "href",
-          "description": "Optional URL to direct the user to when the breadcrumb item is activated. When set, a link will be rendered\ninternally. When unset, a button will be rendered instead."
-        },
-        {
-          "name": "target",
-          "description": "Tells the browser where to open the link. Only used when `href` is set.",
-          "values": [
-            {
-              "name": "_blank"
-            },
-            {
-              "name": "_parent"
-            },
-            {
-              "name": "_self"
-            },
-            {
-              "name": "_top"
-            }
-          ]
-        },
-        {
-          "name": "rel",
-          "description": "The `rel` attribute to use on the link. Only used when `href` is set."
-        }
-      ]
-    },
-    {
       "name": "moyo-avatar",
       "attributes": [
         {
@@ -207,6 +167,46 @@
         {
           "name": "pulse",
           "description": "Makes the badge pulsate to draw attention."
+        }
+      ]
+    },
+    {
+      "name": "moyo-breadcrumb",
+      "attributes": [
+        {
+          "name": "label",
+          "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices."
+        }
+      ]
+    },
+    {
+      "name": "moyo-breadcrumb-item",
+      "attributes": [
+        {
+          "name": "href",
+          "description": "Optional URL to direct the user to when the breadcrumb item is activated. When set, a link will be rendered\ninternally. When unset, a button will be rendered instead."
+        },
+        {
+          "name": "target",
+          "description": "Tells the browser where to open the link. Only used when `href` is set.",
+          "values": [
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
+          ]
+        },
+        {
+          "name": "rel",
+          "description": "The `rel` attribute to use on the link. Only used when `href` is set."
         }
       ]
     },
@@ -415,40 +415,6 @@
       ]
     },
     {
-      "name": "moyo-details",
-      "attributes": [
-        {
-          "name": "open",
-          "description": "Indicates whether or not the details is open. You can use this in lieu of the show/hide methods."
-        },
-        {
-          "name": "summary",
-          "description": "The summary to show in the details header. If you need to display HTML, use the `summary` slot instead."
-        },
-        {
-          "name": "disabled",
-          "description": "Disables the details so it can't be toggled."
-        }
-      ]
-    },
-    {
-      "name": "moyo-dialog",
-      "attributes": [
-        {
-          "name": "open",
-          "description": "Indicates whether or not the dialog is open. You can use this in lieu of the show/hide methods."
-        },
-        {
-          "name": "label",
-          "description": "The dialog's label as displayed in the header. You should always include a relevant label even when using\n`no-header`, as it is required for proper accessibility."
-        },
-        {
-          "name": "no-header",
-          "description": "Disables the header. This will also remove the default close button, so please ensure you provide an easy,\naccessible way for users to dismiss the dialog."
-        }
-      ]
-    },
-    {
       "name": "moyo-color-picker",
       "attributes": [
         {
@@ -523,6 +489,40 @@
         {
           "name": "lang",
           "description": "The locale to render the component in."
+        }
+      ]
+    },
+    {
+      "name": "moyo-details",
+      "attributes": [
+        {
+          "name": "open",
+          "description": "Indicates whether or not the details is open. You can use this in lieu of the show/hide methods."
+        },
+        {
+          "name": "summary",
+          "description": "The summary to show in the details header. If you need to display HTML, use the `summary` slot instead."
+        },
+        {
+          "name": "disabled",
+          "description": "Disables the details so it can't be toggled."
+        }
+      ]
+    },
+    {
+      "name": "moyo-dialog",
+      "attributes": [
+        {
+          "name": "open",
+          "description": "Indicates whether or not the dialog is open. You can use this in lieu of the show/hide methods."
+        },
+        {
+          "name": "label",
+          "description": "The dialog's label as displayed in the header. You should always include a relevant label even when using\n`no-header`, as it is required for proper accessibility."
+        },
+        {
+          "name": "no-header",
+          "description": "Disables the header. This will also remove the default close button, so please ensure you provide an easy,\naccessible way for users to dismiss the dialog."
         }
       ]
     },
