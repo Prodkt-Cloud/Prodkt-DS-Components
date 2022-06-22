@@ -14,6 +14,107 @@
     "html": {
       "elements": [
         {
+          "name": "moyo-animated-image",
+          "description": "",
+          "doc-url": "https://moyo-components.vercel.app/components/animated-image",
+          "js": {
+            "properties": [
+              {
+                "name": "frozenFrame",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "isLoaded",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "animatedImage",
+                "value": {
+                  "type": "HTMLImageElement"
+                }
+              },
+              {
+                "name": "src",
+                "description": "The image's src attribute.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "alt",
+                "description": "The image's alt attribute.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "play",
+                "description": "When set, the image will animate. Otherwise, it will be paused.",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "handleClick",
+                "value": {}
+              },
+              {
+                "name": "handleLoad",
+                "value": {}
+              },
+              {
+                "name": "handleError",
+                "value": {}
+              },
+              {
+                "name": "handlePlayChange",
+                "value": {}
+              },
+              {
+                "name": "handleSrcChange",
+                "value": {}
+              }
+            ],
+            "events": [
+              {
+                "name": "moyo-load",
+                "description": "Emitted when the image loads successfully."
+              },
+              {
+                "name": "moyo-error",
+                "description": "Emitted when the image fails to load."
+              }
+            ]
+          },
+          "attributes": [
+            {
+              "name": "src",
+              "description": "The image's src attribute.",
+              "value": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "alt",
+              "description": "The image's alt attribute.",
+              "value": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "play",
+              "description": "When set, the image will animate. Otherwise, it will be paused.",
+              "value": {
+                "type": "boolean"
+              }
+            }
+          ]
+        },
+        {
           "name": "moyo-alert",
           "description": "",
           "doc-url": "https://moyo-components.vercel.app/components/alert",
@@ -146,102 +247,79 @@
           ]
         },
         {
-          "name": "moyo-animated-image",
+          "name": "moyo-avatar",
           "description": "",
-          "doc-url": "https://moyo-components.vercel.app/components/animated-image",
+          "doc-url": "https://moyo-components.vercel.app/components/avatar",
           "js": {
             "properties": [
               {
-                "name": "frozenFrame",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "isLoaded",
+                "name": "hasError",
                 "value": {
                   "type": "boolean"
                 }
               },
               {
-                "name": "animatedImage",
-                "value": {
-                  "type": "HTMLImageElement"
-                }
-              },
-              {
-                "name": "src",
-                "description": "The image's src attribute.",
+                "name": "image",
+                "description": "The image source to use for the avatar.",
                 "value": {
                   "type": "string"
                 }
               },
               {
-                "name": "alt",
-                "description": "The image's alt attribute.",
+                "name": "label",
+                "description": "A label to use to describe the avatar to assistive devices.",
                 "value": {
                   "type": "string"
                 }
               },
               {
-                "name": "play",
-                "description": "When set, the image will animate. Otherwise, it will be paused.",
+                "name": "initials",
+                "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended).",
                 "value": {
-                  "type": "boolean"
+                  "type": "string"
                 }
               },
               {
-                "name": "handleClick",
-                "value": {}
+                "name": "shape",
+                "description": "The shape of the avatar.",
+                "value": {
+                  "type": "'circle' | 'square' | 'rounded'"
+                }
               },
               {
-                "name": "handleLoad",
-                "value": {}
-              },
-              {
-                "name": "handleError",
-                "value": {}
-              },
-              {
-                "name": "handlePlayChange",
-                "value": {}
-              },
-              {
-                "name": "handleSrcChange",
+                "name": "handleImageChange",
                 "value": {}
               }
             ],
-            "events": [
-              {
-                "name": "moyo-load",
-                "description": "Emitted when the image loads successfully."
-              },
-              {
-                "name": "moyo-error",
-                "description": "Emitted when the image fails to load."
-              }
-            ]
+            "events": []
           },
           "attributes": [
             {
-              "name": "src",
-              "description": "The image's src attribute.",
+              "name": "image",
+              "description": "The image source to use for the avatar.",
               "value": {
                 "type": "string"
               }
             },
             {
-              "name": "alt",
-              "description": "The image's alt attribute.",
+              "name": "label",
+              "description": "A label to use to describe the avatar to assistive devices.",
               "value": {
                 "type": "string"
               }
             },
             {
-              "name": "play",
-              "description": "When set, the image will animate. Otherwise, it will be paused.",
+              "name": "initials",
+              "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended).",
               "value": {
-                "type": "boolean"
+                "type": "string"
+              }
+            },
+            {
+              "name": "shape",
+              "description": "The shape of the avatar.",
+              "value": {
+                "type": "'circle' | 'square' | 'rounded'"
               }
             }
           ]
@@ -512,84 +590,6 @@
             "events": []
           },
           "attributes": []
-        },
-        {
-          "name": "moyo-avatar",
-          "description": "",
-          "doc-url": "https://moyo-components.vercel.app/components/avatar",
-          "js": {
-            "properties": [
-              {
-                "name": "hasError",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "image",
-                "description": "The image source to use for the avatar.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "label",
-                "description": "A label to use to describe the avatar to assistive devices.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "initials",
-                "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended).",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "shape",
-                "description": "The shape of the avatar.",
-                "value": {
-                  "type": "'circle' | 'square' | 'rounded'"
-                }
-              },
-              {
-                "name": "handleImageChange",
-                "value": {}
-              }
-            ],
-            "events": []
-          },
-          "attributes": [
-            {
-              "name": "image",
-              "description": "The image source to use for the avatar.",
-              "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "label",
-              "description": "A label to use to describe the avatar to assistive devices.",
-              "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "initials",
-              "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended).",
-              "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "shape",
-              "description": "The shape of the avatar.",
-              "value": {
-                "type": "'circle' | 'square' | 'rounded'"
-              }
-            }
-          ]
         },
         {
           "name": "moyo-badge",
@@ -4401,6 +4401,162 @@
           ]
         },
         {
+          "name": "moyo-radio",
+          "description": "",
+          "doc-url": "https://moyo-components.vercel.app/components/radio",
+          "js": {
+            "properties": [
+              {
+                "name": "input",
+                "value": {
+                  "type": "HTMLInputElement"
+                }
+              },
+              {
+                "name": "formSubmitController",
+                "value": {}
+              },
+              {
+                "name": "hasFocus",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "name",
+                "description": "The radio's name attribute.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "value",
+                "description": "The radio's value attribute.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "disabled",
+                "description": "Disables the radio.",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "checked",
+                "description": "Draws the radio in a checked state.",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "invalid",
+                "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method.",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "click",
+                "description": "Simulates a click on the radio.",
+                "value": {}
+              },
+              {
+                "name": "focus",
+                "description": "Sets focus on the radio.",
+                "value": {}
+              },
+              {
+                "name": "blur",
+                "description": "Removes focus from the radio.",
+                "value": {}
+              },
+              {
+                "name": "reportValidity",
+                "description": "Checks for validity and shows the browser's validation message if the control is invalid.",
+                "value": {}
+              },
+              {
+                "name": "setCustomValidity",
+                "description": "Sets a custom validation message. If `message` is not empty, the field will be considered invalid.",
+                "value": {}
+              },
+              {
+                "name": "handleBlur",
+                "value": {}
+              },
+              {
+                "name": "handleClick",
+                "value": {}
+              },
+              {
+                "name": "handleFocus",
+                "value": {}
+              },
+              {
+                "name": "handleCheckedChange",
+                "value": {}
+              },
+              {
+                "name": "handleDisabledChange",
+                "value": {}
+              }
+            ],
+            "events": [
+              {
+                "name": "moyo-blur",
+                "description": "Emitted when the control loses focus."
+              },
+              {
+                "name": "moyo-change",
+                "description": "Emitted when the control's checked state changes."
+              },
+              {
+                "name": "moyo-focus",
+                "description": "Emitted when the control gains focus."
+              }
+            ]
+          },
+          "attributes": [
+            {
+              "name": "name",
+              "description": "The radio's name attribute.",
+              "value": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "value",
+              "description": "The radio's value attribute.",
+              "value": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "disabled",
+              "description": "Disables the radio.",
+              "value": {
+                "type": "boolean"
+              }
+            },
+            {
+              "name": "checked",
+              "description": "Draws the radio in a checked state.",
+              "value": {
+                "type": "boolean"
+              }
+            },
+            {
+              "name": "invalid",
+              "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method.",
+              "value": {
+                "type": "boolean"
+              }
+            }
+          ]
+        },
+        {
           "name": "moyo-radio-button",
           "description": "",
           "doc-url": "https://moyo-components.vercel.app/components/radio-button",
@@ -4602,162 +4758,6 @@
             {
               "name": "pill",
               "description": "Draws a pill-style button with rounded edges.",
-              "value": {
-                "type": "boolean"
-              }
-            }
-          ]
-        },
-        {
-          "name": "moyo-radio",
-          "description": "",
-          "doc-url": "https://moyo-components.vercel.app/components/radio",
-          "js": {
-            "properties": [
-              {
-                "name": "input",
-                "value": {
-                  "type": "HTMLInputElement"
-                }
-              },
-              {
-                "name": "formSubmitController",
-                "value": {}
-              },
-              {
-                "name": "hasFocus",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "name",
-                "description": "The radio's name attribute.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "value",
-                "description": "The radio's value attribute.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "disabled",
-                "description": "Disables the radio.",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "checked",
-                "description": "Draws the radio in a checked state.",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "invalid",
-                "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method.",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "click",
-                "description": "Simulates a click on the radio.",
-                "value": {}
-              },
-              {
-                "name": "focus",
-                "description": "Sets focus on the radio.",
-                "value": {}
-              },
-              {
-                "name": "blur",
-                "description": "Removes focus from the radio.",
-                "value": {}
-              },
-              {
-                "name": "reportValidity",
-                "description": "Checks for validity and shows the browser's validation message if the control is invalid.",
-                "value": {}
-              },
-              {
-                "name": "setCustomValidity",
-                "description": "Sets a custom validation message. If `message` is not empty, the field will be considered invalid.",
-                "value": {}
-              },
-              {
-                "name": "handleBlur",
-                "value": {}
-              },
-              {
-                "name": "handleClick",
-                "value": {}
-              },
-              {
-                "name": "handleFocus",
-                "value": {}
-              },
-              {
-                "name": "handleCheckedChange",
-                "value": {}
-              },
-              {
-                "name": "handleDisabledChange",
-                "value": {}
-              }
-            ],
-            "events": [
-              {
-                "name": "moyo-blur",
-                "description": "Emitted when the control loses focus."
-              },
-              {
-                "name": "moyo-change",
-                "description": "Emitted when the control's checked state changes."
-              },
-              {
-                "name": "moyo-focus",
-                "description": "Emitted when the control gains focus."
-              }
-            ]
-          },
-          "attributes": [
-            {
-              "name": "name",
-              "description": "The radio's name attribute.",
-              "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "value",
-              "description": "The radio's value attribute.",
-              "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "disabled",
-              "description": "Disables the radio.",
-              "value": {
-                "type": "boolean"
-              }
-            },
-            {
-              "name": "checked",
-              "description": "Draws the radio in a checked state.",
-              "value": {
-                "type": "boolean"
-              }
-            },
-            {
-              "name": "invalid",
-              "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method.",
               "value": {
                 "type": "boolean"
               }

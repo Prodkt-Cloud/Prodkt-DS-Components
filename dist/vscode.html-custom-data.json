@@ -1,6 +1,23 @@
 {
   "tags": [
     {
+      "name": "moyo-animated-image",
+      "attributes": [
+        {
+          "name": "src",
+          "description": "The image's src attribute."
+        },
+        {
+          "name": "alt",
+          "description": "The image's alt attribute."
+        },
+        {
+          "name": "play",
+          "description": "When set, the image will animate. Otherwise, it will be paused."
+        }
+      ]
+    },
+    {
       "name": "moyo-alert",
       "attributes": [
         {
@@ -39,19 +56,34 @@
       ]
     },
     {
-      "name": "moyo-animated-image",
+      "name": "moyo-avatar",
       "attributes": [
         {
-          "name": "src",
-          "description": "The image's src attribute."
+          "name": "image",
+          "description": "The image source to use for the avatar."
         },
         {
-          "name": "alt",
-          "description": "The image's alt attribute."
+          "name": "label",
+          "description": "A label to use to describe the avatar to assistive devices."
         },
         {
-          "name": "play",
-          "description": "When set, the image will animate. Otherwise, it will be paused."
+          "name": "initials",
+          "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended)."
+        },
+        {
+          "name": "shape",
+          "description": "The shape of the avatar.",
+          "values": [
+            {
+              "name": "circle"
+            },
+            {
+              "name": "square"
+            },
+            {
+              "name": "rounded"
+            }
+          ]
         }
       ]
     },
@@ -101,38 +133,6 @@
         {
           "name": "playback-rate",
           "description": "Sets the animation's playback rate. The default is `1`, which plays the animation at a normal speed. Setting this\nto `2`, for example, will double the animation's speed. A negative value can be used to reverse the animation. This\nvalue can be changed without causing the animation to restart."
-        }
-      ]
-    },
-    {
-      "name": "moyo-avatar",
-      "attributes": [
-        {
-          "name": "image",
-          "description": "The image source to use for the avatar."
-        },
-        {
-          "name": "label",
-          "description": "A label to use to describe the avatar to assistive devices."
-        },
-        {
-          "name": "initials",
-          "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended)."
-        },
-        {
-          "name": "shape",
-          "description": "The shape of the avatar.",
-          "values": [
-            {
-              "name": "circle"
-            },
-            {
-              "name": "square"
-            },
-            {
-              "name": "rounded"
-            }
-          ]
         }
       ]
     },
@@ -1384,6 +1384,31 @@
       ]
     },
     {
+      "name": "moyo-radio",
+      "attributes": [
+        {
+          "name": "name",
+          "description": "The radio's name attribute."
+        },
+        {
+          "name": "value",
+          "description": "The radio's value attribute."
+        },
+        {
+          "name": "disabled",
+          "description": "Disables the radio."
+        },
+        {
+          "name": "checked",
+          "description": "Draws the radio in a checked state."
+        },
+        {
+          "name": "invalid",
+          "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method."
+        }
+      ]
+    },
+    {
       "name": "moyo-radio-button",
       "attributes": [
         {
@@ -1448,31 +1473,6 @@
         {
           "name": "pill",
           "description": "Draws a pill-style button with rounded edges."
-        }
-      ]
-    },
-    {
-      "name": "moyo-radio",
-      "attributes": [
-        {
-          "name": "name",
-          "description": "The radio's name attribute."
-        },
-        {
-          "name": "value",
-          "description": "The radio's value attribute."
-        },
-        {
-          "name": "disabled",
-          "description": "Disables the radio."
-        },
-        {
-          "name": "checked",
-          "description": "Draws the radio in a checked state."
-        },
-        {
-          "name": "invalid",
-          "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method."
         }
       ]
     },

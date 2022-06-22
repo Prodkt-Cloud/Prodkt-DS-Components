@@ -4,6 +4,166 @@
   "modules": [
     {
       "kind": "javascript-module",
+      "path": "src/components/animated-image/animated-image.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "MoyoAnimatedImage",
+          "cssProperties": [
+            {
+              "description": "The size of the icon box.",
+              "name": "--control-box-size"
+            },
+            {
+              "description": "The size of the play/pause icons.",
+              "name": "--icon-size"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "frozenFrame",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "isLoaded",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "animatedImage",
+              "type": {
+                "text": "HTMLImageElement"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "src",
+              "type": {
+                "text": "string"
+              },
+              "description": "The image's src attribute.",
+              "attribute": "src"
+            },
+            {
+              "kind": "field",
+              "name": "alt",
+              "type": {
+                "text": "string"
+              },
+              "description": "The image's alt attribute.",
+              "attribute": "alt"
+            },
+            {
+              "kind": "field",
+              "name": "play",
+              "type": {
+                "text": "boolean"
+              },
+              "description": "When set, the image will animate. Otherwise, it will be paused.",
+              "attribute": "play",
+              "reflects": true
+            },
+            {
+              "kind": "method",
+              "name": "handleClick"
+            },
+            {
+              "kind": "method",
+              "name": "handleLoad"
+            },
+            {
+              "kind": "method",
+              "name": "handleError"
+            },
+            {
+              "kind": "method",
+              "name": "handlePlayChange"
+            },
+            {
+              "kind": "method",
+              "name": "handleSrcChange"
+            }
+          ],
+          "events": [
+            {
+              "description": "Emitted when the image loads successfully.",
+              "name": "moyo-load",
+              "reactName": "onMoyoLoad"
+            },
+            {
+              "description": "Emitted when the image fails to load.",
+              "name": "moyo-error",
+              "reactName": "onMoyoError"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "src",
+              "type": {
+                "text": "string"
+              },
+              "description": "The image's src attribute.",
+              "fieldName": "src"
+            },
+            {
+              "name": "alt",
+              "type": {
+                "text": "string"
+              },
+              "description": "The image's alt attribute.",
+              "fieldName": "alt"
+            },
+            {
+              "name": "play",
+              "type": {
+                "text": "boolean"
+              },
+              "description": "When set, the image will animate. Otherwise, it will be paused.",
+              "fieldName": "play"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "since": "Beta-46",
+          "status": "experimental",
+          "dependencies": [
+            "moyo-icon"
+          ],
+          "tagName": "moyo-animated-image",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "MoyoAnimatedImage",
+            "module": "src/components/animated-image/animated-image.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "moyo-animated-image",
+          "declaration": {
+            "name": "MoyoAnimatedImage",
+            "module": "src/components/animated-image/animated-image.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/components/alert/alert.ts",
       "declarations": [
         {
@@ -250,130 +410,134 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/components/animated-image/animated-image.ts",
+      "path": "src/components/avatar/avatar.ts",
       "declarations": [
         {
           "kind": "class",
           "description": "",
-          "name": "MoyoAnimatedImage",
+          "name": "MoyoAvatar",
           "cssProperties": [
             {
-              "description": "The size of the icon box.",
-              "name": "--control-box-size"
+              "description": "The size of the avatar.",
+              "name": "--size"
+            }
+          ],
+          "cssParts": [
+            {
+              "description": "The component's internal wrapper.",
+              "name": "base"
             },
             {
-              "description": "The size of the play/pause icons.",
-              "name": "--icon-size"
+              "description": "The container that wraps the avatar icon.",
+              "name": "icon"
+            },
+            {
+              "description": "The container that wraps the avatar initials.",
+              "name": "initials"
+            },
+            {
+              "description": "The avatar image.",
+              "name": "image"
+            }
+          ],
+          "slots": [
+            {
+              "description": "The default icon to use when no image or initials are present.",
+              "name": "icon"
             }
           ],
           "members": [
             {
               "kind": "field",
-              "name": "frozenFrame",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "isLoaded",
+              "name": "hasError",
               "type": {
                 "text": "boolean"
               },
+              "privacy": "private",
               "default": "false"
             },
             {
               "kind": "field",
-              "name": "animatedImage",
-              "type": {
-                "text": "HTMLImageElement"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "src",
+              "name": "image",
               "type": {
                 "text": "string"
               },
-              "description": "The image's src attribute.",
-              "attribute": "src"
+              "default": "''",
+              "description": "The image source to use for the avatar.",
+              "attribute": "image"
             },
             {
               "kind": "field",
-              "name": "alt",
+              "name": "label",
               "type": {
                 "text": "string"
               },
-              "description": "The image's alt attribute.",
-              "attribute": "alt"
+              "default": "''",
+              "description": "A label to use to describe the avatar to assistive devices.",
+              "attribute": "label"
             },
             {
               "kind": "field",
-              "name": "play",
+              "name": "initials",
               "type": {
-                "text": "boolean"
+                "text": "string"
               },
-              "description": "When set, the image will animate. Otherwise, it will be paused.",
-              "attribute": "play",
+              "default": "''",
+              "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended).",
+              "attribute": "initials"
+            },
+            {
+              "kind": "field",
+              "name": "shape",
+              "type": {
+                "text": "'circle' | 'square' | 'rounded'"
+              },
+              "default": "'circle'",
+              "description": "The shape of the avatar.",
+              "attribute": "shape",
               "reflects": true
             },
             {
               "kind": "method",
-              "name": "handleClick"
-            },
-            {
-              "kind": "method",
-              "name": "handleLoad"
-            },
-            {
-              "kind": "method",
-              "name": "handleError"
-            },
-            {
-              "kind": "method",
-              "name": "handlePlayChange"
-            },
-            {
-              "kind": "method",
-              "name": "handleSrcChange"
-            }
-          ],
-          "events": [
-            {
-              "description": "Emitted when the image loads successfully.",
-              "name": "moyo-load",
-              "reactName": "onMoyoLoad"
-            },
-            {
-              "description": "Emitted when the image fails to load.",
-              "name": "moyo-error",
-              "reactName": "onMoyoError"
+              "name": "handleImageChange"
             }
           ],
           "attributes": [
             {
-              "name": "src",
+              "name": "image",
               "type": {
                 "text": "string"
               },
-              "description": "The image's src attribute.",
-              "fieldName": "src"
+              "default": "''",
+              "description": "The image source to use for the avatar.",
+              "fieldName": "image"
             },
             {
-              "name": "alt",
+              "name": "label",
               "type": {
                 "text": "string"
               },
-              "description": "The image's alt attribute.",
-              "fieldName": "alt"
+              "default": "''",
+              "description": "A label to use to describe the avatar to assistive devices.",
+              "fieldName": "label"
             },
             {
-              "name": "play",
+              "name": "initials",
               "type": {
-                "text": "boolean"
+                "text": "string"
               },
-              "description": "When set, the image will animate. Otherwise, it will be paused.",
-              "fieldName": "play"
+              "default": "''",
+              "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended).",
+              "fieldName": "initials"
+            },
+            {
+              "name": "shape",
+              "type": {
+                "text": "'circle' | 'square' | 'rounded'"
+              },
+              "default": "'circle'",
+              "description": "The shape of the avatar.",
+              "fieldName": "shape"
             }
           ],
           "superclass": {
@@ -381,11 +545,11 @@
             "package": "lit"
           },
           "since": "Beta-46",
-          "status": "experimental",
+          "status": "stable",
           "dependencies": [
             "moyo-icon"
           ],
-          "tagName": "moyo-animated-image",
+          "tagName": "moyo-avatar",
           "customElement": true
         }
       ],
@@ -394,16 +558,16 @@
           "kind": "js",
           "name": "default",
           "declaration": {
-            "name": "MoyoAnimatedImage",
-            "module": "src/components/animated-image/animated-image.ts"
+            "name": "MoyoAvatar",
+            "module": "src/components/avatar/avatar.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "moyo-animated-image",
+          "name": "moyo-avatar",
           "declaration": {
-            "name": "MoyoAnimatedImage",
-            "module": "src/components/animated-image/animated-image.ts"
+            "name": "MoyoAvatar",
+            "module": "src/components/avatar/avatar.ts"
           }
         }
       ]
@@ -799,170 +963,6 @@
           "declaration": {
             "name": "getEasingNames",
             "module": "src/components/animation/animations.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/avatar/avatar.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "MoyoAvatar",
-          "cssProperties": [
-            {
-              "description": "The size of the avatar.",
-              "name": "--size"
-            }
-          ],
-          "cssParts": [
-            {
-              "description": "The component's internal wrapper.",
-              "name": "base"
-            },
-            {
-              "description": "The container that wraps the avatar icon.",
-              "name": "icon"
-            },
-            {
-              "description": "The container that wraps the avatar initials.",
-              "name": "initials"
-            },
-            {
-              "description": "The avatar image.",
-              "name": "image"
-            }
-          ],
-          "slots": [
-            {
-              "description": "The default icon to use when no image or initials are present.",
-              "name": "icon"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "hasError",
-              "type": {
-                "text": "boolean"
-              },
-              "privacy": "private",
-              "default": "false"
-            },
-            {
-              "kind": "field",
-              "name": "image",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "The image source to use for the avatar.",
-              "attribute": "image"
-            },
-            {
-              "kind": "field",
-              "name": "label",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "A label to use to describe the avatar to assistive devices.",
-              "attribute": "label"
-            },
-            {
-              "kind": "field",
-              "name": "initials",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended).",
-              "attribute": "initials"
-            },
-            {
-              "kind": "field",
-              "name": "shape",
-              "type": {
-                "text": "'circle' | 'square' | 'rounded'"
-              },
-              "default": "'circle'",
-              "description": "The shape of the avatar.",
-              "attribute": "shape",
-              "reflects": true
-            },
-            {
-              "kind": "method",
-              "name": "handleImageChange"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "image",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "The image source to use for the avatar.",
-              "fieldName": "image"
-            },
-            {
-              "name": "label",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "A label to use to describe the avatar to assistive devices.",
-              "fieldName": "label"
-            },
-            {
-              "name": "initials",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended).",
-              "fieldName": "initials"
-            },
-            {
-              "name": "shape",
-              "type": {
-                "text": "'circle' | 'square' | 'rounded'"
-              },
-              "default": "'circle'",
-              "description": "The shape of the avatar.",
-              "fieldName": "shape"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "since": "Beta-46",
-          "status": "stable",
-          "dependencies": [
-            "moyo-icon"
-          ],
-          "tagName": "moyo-avatar",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "name": "MoyoAvatar",
-            "module": "src/components/avatar/avatar.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "moyo-avatar",
-          "declaration": {
-            "name": "MoyoAvatar",
-            "module": "src/components/avatar/avatar.ts"
           }
         }
       ]
@@ -8078,6 +8078,266 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/components/radio/radio.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "MoyoRadio",
+          "cssParts": [
+            {
+              "description": "The component's internal wrapper.",
+              "name": "base"
+            },
+            {
+              "description": "The radio control.",
+              "name": "control"
+            },
+            {
+              "description": "The container the wraps the checked icon.",
+              "name": "checked-icon"
+            },
+            {
+              "description": "The radio label.",
+              "name": "label"
+            }
+          ],
+          "slots": [
+            {
+              "description": "The radio's label.",
+              "name": ""
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "input",
+              "type": {
+                "text": "HTMLInputElement"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "formSubmitController",
+              "privacy": "protected",
+              "default": "new FormSubmitController(this, {\n    value: (control: HTMLInputElement) => (control.checked ? control.value : undefined)\n  })"
+            },
+            {
+              "kind": "field",
+              "name": "hasFocus",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "protected",
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "description": "The radio's name attribute.",
+              "attribute": "name"
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "description": "The radio's value attribute.",
+              "attribute": "value"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Disables the radio.",
+              "attribute": "disabled",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "checked",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Draws the radio in a checked state.",
+              "attribute": "checked",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "invalid",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method.",
+              "attribute": "invalid",
+              "reflects": true
+            },
+            {
+              "kind": "method",
+              "name": "click",
+              "description": "Simulates a click on the radio."
+            },
+            {
+              "kind": "method",
+              "name": "focus",
+              "parameters": [
+                {
+                  "name": "options",
+                  "optional": true,
+                  "type": {
+                    "text": "FocusOptions"
+                  }
+                }
+              ],
+              "description": "Sets focus on the radio."
+            },
+            {
+              "kind": "method",
+              "name": "blur",
+              "description": "Removes focus from the radio."
+            },
+            {
+              "kind": "method",
+              "name": "reportValidity",
+              "description": "Checks for validity and shows the browser's validation message if the control is invalid."
+            },
+            {
+              "kind": "method",
+              "name": "setCustomValidity",
+              "parameters": [
+                {
+                  "name": "message",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ],
+              "description": "Sets a custom validation message. If `message` is not empty, the field will be considered invalid."
+            },
+            {
+              "kind": "method",
+              "name": "handleBlur"
+            },
+            {
+              "kind": "method",
+              "name": "handleClick"
+            },
+            {
+              "kind": "method",
+              "name": "handleFocus"
+            },
+            {
+              "kind": "method",
+              "name": "handleCheckedChange"
+            },
+            {
+              "kind": "method",
+              "name": "handleDisabledChange"
+            }
+          ],
+          "events": [
+            {
+              "description": "Emitted when the control loses focus.",
+              "name": "moyo-blur",
+              "reactName": "onMoyoBlur"
+            },
+            {
+              "description": "Emitted when the control's checked state changes.",
+              "name": "moyo-change",
+              "reactName": "onMoyoChange"
+            },
+            {
+              "description": "Emitted when the control gains focus.",
+              "name": "moyo-focus",
+              "reactName": "onMoyoFocus"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "description": "The radio's name attribute.",
+              "fieldName": "name"
+            },
+            {
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "description": "The radio's value attribute.",
+              "fieldName": "value"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Disables the radio.",
+              "fieldName": "disabled"
+            },
+            {
+              "name": "checked",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Draws the radio in a checked state.",
+              "fieldName": "checked"
+            },
+            {
+              "name": "invalid",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method.",
+              "fieldName": "invalid"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "since": "Beta-46",
+          "status": "stable",
+          "tagName": "moyo-radio",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "MoyoRadio",
+            "module": "src/components/radio/radio.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "moyo-radio",
+          "declaration": {
+            "name": "MoyoRadio",
+            "module": "src/components/radio/radio.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/components/radio-button/radio-button.ts",
       "declarations": [
         {
@@ -8421,266 +8681,6 @@
           "declaration": {
             "name": "MoyoRadioButton",
             "module": "src/components/radio-button/radio-button.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/radio/radio.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "MoyoRadio",
-          "cssParts": [
-            {
-              "description": "The component's internal wrapper.",
-              "name": "base"
-            },
-            {
-              "description": "The radio control.",
-              "name": "control"
-            },
-            {
-              "description": "The container the wraps the checked icon.",
-              "name": "checked-icon"
-            },
-            {
-              "description": "The radio label.",
-              "name": "label"
-            }
-          ],
-          "slots": [
-            {
-              "description": "The radio's label.",
-              "name": ""
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "input",
-              "type": {
-                "text": "HTMLInputElement"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "formSubmitController",
-              "privacy": "protected",
-              "default": "new FormSubmitController(this, {\n    value: (control: HTMLInputElement) => (control.checked ? control.value : undefined)\n  })"
-            },
-            {
-              "kind": "field",
-              "name": "hasFocus",
-              "type": {
-                "text": "boolean"
-              },
-              "privacy": "protected",
-              "default": "false"
-            },
-            {
-              "kind": "field",
-              "name": "name",
-              "type": {
-                "text": "string"
-              },
-              "description": "The radio's name attribute.",
-              "attribute": "name"
-            },
-            {
-              "kind": "field",
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "description": "The radio's value attribute.",
-              "attribute": "value"
-            },
-            {
-              "kind": "field",
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Disables the radio.",
-              "attribute": "disabled",
-              "reflects": true
-            },
-            {
-              "kind": "field",
-              "name": "checked",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Draws the radio in a checked state.",
-              "attribute": "checked",
-              "reflects": true
-            },
-            {
-              "kind": "field",
-              "name": "invalid",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method.",
-              "attribute": "invalid",
-              "reflects": true
-            },
-            {
-              "kind": "method",
-              "name": "click",
-              "description": "Simulates a click on the radio."
-            },
-            {
-              "kind": "method",
-              "name": "focus",
-              "parameters": [
-                {
-                  "name": "options",
-                  "optional": true,
-                  "type": {
-                    "text": "FocusOptions"
-                  }
-                }
-              ],
-              "description": "Sets focus on the radio."
-            },
-            {
-              "kind": "method",
-              "name": "blur",
-              "description": "Removes focus from the radio."
-            },
-            {
-              "kind": "method",
-              "name": "reportValidity",
-              "description": "Checks for validity and shows the browser's validation message if the control is invalid."
-            },
-            {
-              "kind": "method",
-              "name": "setCustomValidity",
-              "parameters": [
-                {
-                  "name": "message",
-                  "type": {
-                    "text": "string"
-                  }
-                }
-              ],
-              "description": "Sets a custom validation message. If `message` is not empty, the field will be considered invalid."
-            },
-            {
-              "kind": "method",
-              "name": "handleBlur"
-            },
-            {
-              "kind": "method",
-              "name": "handleClick"
-            },
-            {
-              "kind": "method",
-              "name": "handleFocus"
-            },
-            {
-              "kind": "method",
-              "name": "handleCheckedChange"
-            },
-            {
-              "kind": "method",
-              "name": "handleDisabledChange"
-            }
-          ],
-          "events": [
-            {
-              "description": "Emitted when the control loses focus.",
-              "name": "moyo-blur",
-              "reactName": "onMoyoBlur"
-            },
-            {
-              "description": "Emitted when the control's checked state changes.",
-              "name": "moyo-change",
-              "reactName": "onMoyoChange"
-            },
-            {
-              "description": "Emitted when the control gains focus.",
-              "name": "moyo-focus",
-              "reactName": "onMoyoFocus"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "name",
-              "type": {
-                "text": "string"
-              },
-              "description": "The radio's name attribute.",
-              "fieldName": "name"
-            },
-            {
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "description": "The radio's value attribute.",
-              "fieldName": "value"
-            },
-            {
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Disables the radio.",
-              "fieldName": "disabled"
-            },
-            {
-              "name": "checked",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "Draws the radio in a checked state.",
-              "fieldName": "checked"
-            },
-            {
-              "name": "invalid",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method.",
-              "fieldName": "invalid"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "since": "Beta-46",
-          "status": "stable",
-          "tagName": "moyo-radio",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "name": "MoyoRadio",
-            "module": "src/components/radio/radio.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "moyo-radio",
-          "declaration": {
-            "name": "MoyoRadio",
-            "module": "src/components/radio/radio.ts"
           }
         }
       ]
