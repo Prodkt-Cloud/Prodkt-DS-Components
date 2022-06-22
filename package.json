@@ -60,7 +60,13 @@
     "@prodkt/localize": "^2.1.5",
     "color": "4.2",
     "lit": "^2.1.4",
-    "qr-creator": "^1.0.0"
+    "qr-creator": "^1.0.0",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/pro-duotone-svg-icons": "^6.1.1",
+    "@fortawesome/pro-light-svg-icons": "^6.1.1",
+    "@fortawesome/pro-regular-svg-icons": "^6.1.1",
+    "@fortawesome/pro-solid-svg-icons": "^6.1.1",
+    "@fortawesome/pro-thin-svg-icons": "^6.1.1"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "^0.5.7",
