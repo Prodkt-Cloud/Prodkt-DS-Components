@@ -1,9 +1,9 @@
 import {
-  breadcrumb_item_styles_default
-} from "./chunk.UCLZO2NK.js";
-import {
   HasSlotController
 } from "./chunk.UHGCFDN7.js";
+import {
+  breadcrumb_item_styles_default
+} from "./chunk.UCLZO2NK.js";
 import {
   o
 } from "./chunk.7BXY5XRG.js";
