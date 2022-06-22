@@ -4401,162 +4401,6 @@
           ]
         },
         {
-          "name": "moyo-radio",
-          "description": "",
-          "doc-url": "https://moyo-components.vercel.app/components/radio",
-          "js": {
-            "properties": [
-              {
-                "name": "input",
-                "value": {
-                  "type": "HTMLInputElement"
-                }
-              },
-              {
-                "name": "formSubmitController",
-                "value": {}
-              },
-              {
-                "name": "hasFocus",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "name",
-                "description": "The radio's name attribute.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "value",
-                "description": "The radio's value attribute.",
-                "value": {
-                  "type": "string"
-                }
-              },
-              {
-                "name": "disabled",
-                "description": "Disables the radio.",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "checked",
-                "description": "Draws the radio in a checked state.",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "invalid",
-                "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method.",
-                "value": {
-                  "type": "boolean"
-                }
-              },
-              {
-                "name": "click",
-                "description": "Simulates a click on the radio.",
-                "value": {}
-              },
-              {
-                "name": "focus",
-                "description": "Sets focus on the radio.",
-                "value": {}
-              },
-              {
-                "name": "blur",
-                "description": "Removes focus from the radio.",
-                "value": {}
-              },
-              {
-                "name": "reportValidity",
-                "description": "Checks for validity and shows the browser's validation message if the control is invalid.",
-                "value": {}
-              },
-              {
-                "name": "setCustomValidity",
-                "description": "Sets a custom validation message. If `message` is not empty, the field will be considered invalid.",
-                "value": {}
-              },
-              {
-                "name": "handleBlur",
-                "value": {}
-              },
-              {
-                "name": "handleClick",
-                "value": {}
-              },
-              {
-                "name": "handleFocus",
-                "value": {}
-              },
-              {
-                "name": "handleCheckedChange",
-                "value": {}
-              },
-              {
-                "name": "handleDisabledChange",
-                "value": {}
-              }
-            ],
-            "events": [
-              {
-                "name": "moyo-blur",
-                "description": "Emitted when the control loses focus."
-              },
-              {
-                "name": "moyo-change",
-                "description": "Emitted when the control's checked state changes."
-              },
-              {
-                "name": "moyo-focus",
-                "description": "Emitted when the control gains focus."
-              }
-            ]
-          },
-          "attributes": [
-            {
-              "name": "name",
-              "description": "The radio's name attribute.",
-              "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "value",
-              "description": "The radio's value attribute.",
-              "value": {
-                "type": "string"
-              }
-            },
-            {
-              "name": "disabled",
-              "description": "Disables the radio.",
-              "value": {
-                "type": "boolean"
-              }
-            },
-            {
-              "name": "checked",
-              "description": "Draws the radio in a checked state.",
-              "value": {
-                "type": "boolean"
-              }
-            },
-            {
-              "name": "invalid",
-              "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method.",
-              "value": {
-                "type": "boolean"
-              }
-            }
-          ]
-        },
-        {
           "name": "moyo-radio-button",
           "description": "",
           "doc-url": "https://moyo-components.vercel.app/components/radio-button",
@@ -4758,6 +4602,162 @@
             {
               "name": "pill",
               "description": "Draws a pill-style button with rounded edges.",
+              "value": {
+                "type": "boolean"
+              }
+            }
+          ]
+        },
+        {
+          "name": "moyo-radio",
+          "description": "",
+          "doc-url": "https://moyo-components.vercel.app/components/radio",
+          "js": {
+            "properties": [
+              {
+                "name": "input",
+                "value": {
+                  "type": "HTMLInputElement"
+                }
+              },
+              {
+                "name": "formSubmitController",
+                "value": {}
+              },
+              {
+                "name": "hasFocus",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "name",
+                "description": "The radio's name attribute.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "value",
+                "description": "The radio's value attribute.",
+                "value": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "disabled",
+                "description": "Disables the radio.",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "checked",
+                "description": "Draws the radio in a checked state.",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "invalid",
+                "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method.",
+                "value": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "click",
+                "description": "Simulates a click on the radio.",
+                "value": {}
+              },
+              {
+                "name": "focus",
+                "description": "Sets focus on the radio.",
+                "value": {}
+              },
+              {
+                "name": "blur",
+                "description": "Removes focus from the radio.",
+                "value": {}
+              },
+              {
+                "name": "reportValidity",
+                "description": "Checks for validity and shows the browser's validation message if the control is invalid.",
+                "value": {}
+              },
+              {
+                "name": "setCustomValidity",
+                "description": "Sets a custom validation message. If `message` is not empty, the field will be considered invalid.",
+                "value": {}
+              },
+              {
+                "name": "handleBlur",
+                "value": {}
+              },
+              {
+                "name": "handleClick",
+                "value": {}
+              },
+              {
+                "name": "handleFocus",
+                "value": {}
+              },
+              {
+                "name": "handleCheckedChange",
+                "value": {}
+              },
+              {
+                "name": "handleDisabledChange",
+                "value": {}
+              }
+            ],
+            "events": [
+              {
+                "name": "moyo-blur",
+                "description": "Emitted when the control loses focus."
+              },
+              {
+                "name": "moyo-change",
+                "description": "Emitted when the control's checked state changes."
+              },
+              {
+                "name": "moyo-focus",
+                "description": "Emitted when the control gains focus."
+              }
+            ]
+          },
+          "attributes": [
+            {
+              "name": "name",
+              "description": "The radio's name attribute.",
+              "value": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "value",
+              "description": "The radio's value attribute.",
+              "value": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "disabled",
+              "description": "Disables the radio.",
+              "value": {
+                "type": "boolean"
+              }
+            },
+            {
+              "name": "checked",
+              "description": "Draws the radio in a checked state.",
+              "value": {
+                "type": "boolean"
+              }
+            },
+            {
+              "name": "invalid",
+              "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method.",
               "value": {
                 "type": "boolean"
               }

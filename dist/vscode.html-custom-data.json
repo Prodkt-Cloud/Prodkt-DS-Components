@@ -1384,31 +1384,6 @@
       ]
     },
     {
-      "name": "moyo-radio",
-      "attributes": [
-        {
-          "name": "name",
-          "description": "The radio's name attribute."
-        },
-        {
-          "name": "value",
-          "description": "The radio's value attribute."
-        },
-        {
-          "name": "disabled",
-          "description": "Disables the radio."
-        },
-        {
-          "name": "checked",
-          "description": "Draws the radio in a checked state."
-        },
-        {
-          "name": "invalid",
-          "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method."
-        }
-      ]
-    },
-    {
       "name": "moyo-radio-button",
       "attributes": [
         {
@@ -1473,6 +1448,31 @@
         {
           "name": "pill",
           "description": "Draws a pill-style button with rounded edges."
+        }
+      ]
+    },
+    {
+      "name": "moyo-radio",
+      "attributes": [
+        {
+          "name": "name",
+          "description": "The radio's name attribute."
+        },
+        {
+          "name": "value",
+          "description": "The radio's value attribute."
+        },
+        {
+          "name": "disabled",
+          "description": "Disables the radio."
+        },
+        {
+          "name": "checked",
+          "description": "Draws the radio in a checked state."
+        },
+        {
+          "name": "invalid",
+          "description": "This will be true when the control is in an invalid state. Validity in radios is determined by the message provided\nby the `setCustomValidity` method."
         }
       ]
     },

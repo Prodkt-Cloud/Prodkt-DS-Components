@@ -1,4 +1,5 @@
-import "../chunks/chunk.ICGTMF5Z.js";
+"use strict";
+import "../chunks/chunk.K2NRSETB.js";
 
 // src/utilities/form.ts
 function serialize(form) {

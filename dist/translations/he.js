@@ -1,7 +1,8 @@
+"use strict";
 import {
   registerTranslation
 } from "../chunks/chunk.NLYU4R6O.js";
-import "../chunks/chunk.ICGTMF5Z.js";
+import "../chunks/chunk.K2NRSETB.js";
 
 // src/translations/he.ts
 var translation = {

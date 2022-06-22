@@ -1,9 +1,10 @@
+"use strict";
 import {
   getAnimation,
   setAnimation,
   setDefaultAnimation
-} from "../chunks/chunk.6SAGALY4.js";
-import "../chunks/chunk.ICGTMF5Z.js";
+} from "../chunks/chunk.LMSITQL7.js";
+import "../chunks/chunk.K2NRSETB.js";
 export {
   getAnimation,
   setAnimation,
