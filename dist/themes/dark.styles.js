@@ -219,17 +219,17 @@ export default css`
     --moyo-color-rose-900: hsl(354.5 100% 90.7%);
     --moyo-color-rose-950: hsl(353.3 100% 95.7%);
 
-    --moyo-color-primary-50: var(--moyo-color-blue-50);
-    --moyo-color-primary-100: var(--moyo-color-blue-100);
-    --moyo-color-primary-200: var(--moyo-color-blue-200);
-    --moyo-color-primary-300: var(--moyo-color-blue-300);
-    --moyo-color-primary-400: var(--moyo-color-blue-400);
-    --moyo-color-primary-500: var(--moyo-color-blue-500);
-    --moyo-color-primary-600: var(--moyo-color-blue-600);
-    --moyo-color-primary-700: var(--moyo-color-blue-700);
-    --moyo-color-primary-800: var(--moyo-color-blue-800);
-    --moyo-color-primary-900: var(--moyo-color-blue-900);
-    --moyo-color-primary-950: var(--moyo-color-blue-950);
+    --moyo-color-primary-50: var(--moyo-color-pink-50);
+    --moyo-color-primary-100: var(--moyo-color-pink-100);
+    --moyo-color-primary-200: var(--moyo-color-pink-200);
+    --moyo-color-primary-300: var(--moyo-color-pink-300);
+    --moyo-color-primary-400: var(--moyo-color-pink-400);
+    --moyo-color-primary-500: var(--moyo-color-pink-500);
+    --moyo-color-primary-600: var(--moyo-color-pink-600);
+    --moyo-color-primary-700: var(--moyo-color-pink-700);
+    --moyo-color-primary-800: var(--moyo-color-pink-800);
+    --moyo-color-primary-900: var(--moyo-color-pink-900);
+    --moyo-color-primary-950: var(--moyo-color-pink-950);
 
     --moyo-color-success-50: var(--moyo-color-green-50);
     --moyo-color-success-100: var(--moyo-color-green-100);
@@ -315,9 +315,9 @@ export default css`
 
     --moyo-font-mono: SFMono-Regular, Consolas, "Liberation Mono", Menlo,
       monospace;
-    --moyo-font-sans: -apple-system, BlinkMacSystemFont, "CircularStd", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
+    --moyo-font-sans: "Aeonik", -apple-system, BlinkMacSystemFont, "CircularStd",
+      Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol";
     --moyo-font-serif: Georgia, "Times New Roman", serif;
 
     --moyo-font-size-2x-small: 0.625rem;

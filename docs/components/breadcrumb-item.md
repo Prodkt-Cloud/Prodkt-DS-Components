@@ -10,8 +10,8 @@ Breadcrumb Items are used inside [breadcrumbs](/components/breadcrumb) to repres
     <moyo-icon slot="prefix" name="house"></moyo-icon>
     Home
   </moyo-breadcrumb-item>
-  <moyo-breadcrumb-item>Clothing</moyo-breadcrumb-item>
-  <moyo-breadcrumb-item>Shirts</moyo-breadcrumb-item>
+  <moyo-breadcrumb-item>Courses</moyo-breadcrumb-item>
+  <moyo-breadcrumb-item>Lessons</moyo-breadcrumb-item>
 </moyo-breadcrumb>
 ```
 
@@ -24,8 +24,8 @@ const App = () => (
       <MoyoIcon slot="prefix" name="house"></MoyoIcon>
       Home
     </MoyoBreadcrumbItem>
-    <MoyoBreadcrumbItem>Clothing</MoyoBreadcrumbItem>
-    <MoyoBreadcrumbItem>Shirts</MoyoBreadcrumbItem>
+    <MoyoBreadcrumbItem>Courses</MoyoBreadcrumbItem>
+    <MoyoBreadcrumbItem>Lessons</MoyoBreadcrumbItem>
   </MoyoBreadcrumb>
 );
 ```

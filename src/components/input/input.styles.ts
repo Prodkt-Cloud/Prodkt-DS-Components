@@ -30,7 +30,7 @@ export default css`
   /* Standard inputs */
   .input--standard {
     background-color: var(--moyo-input-background-color);
-    border: solid var(--moyo-input-border-width) var(--moyo-input-border-color);
+    border: solid calc(var(--moyo-input-border-width)*) var(--moyo-input-border-color);
   }
 
   .input--standard:hover:not(.input--disabled) {

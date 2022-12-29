@@ -9,9 +9,9 @@ describe('<moyo-breadcrumb>', () => {
       el = await fixture<MoyoBreadcrumb>(html`
         <moyo-breadcrumb>
           <moyo-breadcrumb-item>Catalog</moyo-breadcrumb-item>
-          <moyo-breadcrumb-item>Clothing</moyo-breadcrumb-item>
-          <moyo-breadcrumb-item>Women's</moyo-breadcrumb-item>
-          <moyo-breadcrumb-item>Shirts &amp; Tops</moyo-breadcrumb-item>
+          <moyo-breadcrumb-item>Courses</moyo-breadcrumb-item>
+          <moyo-breadcrumb-item>Design Systems</moyo-breadcrumb-item>
+          <moyo-breadcrumb-item>Lessons &amp; Activities</moyo-breadcrumb-item>
         </moyo-breadcrumb>
       `);
     });

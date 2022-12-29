@@ -39,23 +39,6 @@
       ]
     },
     {
-      "name": "moyo-animated-image",
-      "attributes": [
-        {
-          "name": "src",
-          "description": "The image's src attribute."
-        },
-        {
-          "name": "alt",
-          "description": "The image's alt attribute."
-        },
-        {
-          "name": "play",
-          "description": "When set, the image will animate. Otherwise, it will be paused."
-        }
-      ]
-    },
-    {
       "name": "moyo-animation",
       "attributes": [
         {
@@ -101,6 +84,23 @@
         {
           "name": "playback-rate",
           "description": "Sets the animation's playback rate. The default is `1`, which plays the animation at a normal speed. Setting this\nto `2`, for example, will double the animation's speed. A negative value can be used to reverse the animation. This\nvalue can be changed without causing the animation to restart."
+        }
+      ]
+    },
+    {
+      "name": "moyo-animated-image",
+      "attributes": [
+        {
+          "name": "src",
+          "description": "The image's src attribute."
+        },
+        {
+          "name": "alt",
+          "description": "The image's alt attribute."
+        },
+        {
+          "name": "play",
+          "description": "When set, the image will animate. Otherwise, it will be paused."
         }
       ]
     },
@@ -1477,19 +1477,6 @@
       ]
     },
     {
-      "name": "moyo-radio-group",
-      "attributes": [
-        {
-          "name": "label",
-          "description": "The radio group label. Required for proper accessibility. Alternatively, you can use the label slot."
-        },
-        {
-          "name": "fieldset",
-          "description": "Shows the fieldset and legend that surrounds the radio group."
-        }
-      ]
-    },
-    {
       "name": "moyo-range",
       "attributes": [
         {
@@ -1571,6 +1558,19 @@
         {
           "name": "getSymbol",
           "description": "The name of the icon to display as the symbol."
+        }
+      ]
+    },
+    {
+      "name": "moyo-radio-group",
+      "attributes": [
+        {
+          "name": "label",
+          "description": "The radio group label. Required for proper accessibility. Alternatively, you can use the label slot."
+        },
+        {
+          "name": "fieldset",
+          "description": "Shows the fieldset and legend that surrounds the radio group."
         }
       ]
     },

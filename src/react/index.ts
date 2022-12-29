@@ -1,6 +1,6 @@
 export { default as MoyoAlert } from './moyo-alert';
-export { default as MoyoAnimatedImage } from './moyo-animated-image';
 export { default as MoyoAnimation } from './moyo-animation';
+export { default as MoyoAnimatedImage } from './moyo-animated-image';
 export { default as MoyoAvatar } from './moyo-avatar';
 export { default as MoyoBadge } from './moyo-badge';
 export { default as MoyoBreadcrumb } from './moyo-breadcrumb';
@@ -32,9 +32,9 @@ export { default as MoyoProgressRing } from './moyo-progress-ring';
 export { default as MoyoQrCode } from './moyo-qr-code';
 export { default as MoyoRadio } from './moyo-radio';
 export { default as MoyoRadioButton } from './moyo-radio-button';
-export { default as MoyoRadioGroup } from './moyo-radio-group';
 export { default as MoyoRange } from './moyo-range';
 export { default as MoyoRating } from './moyo-rating';
+export { default as MoyoRadioGroup } from './moyo-radio-group';
 export { default as MoyoRelativeTime } from './moyo-relative-time';
 export { default as MoyoResizeObserver } from './moyo-resize-observer';
 export { default as MoyoResponsiveMedia } from './moyo-responsive-media';

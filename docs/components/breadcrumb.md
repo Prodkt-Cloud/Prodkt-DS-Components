@@ -9,9 +9,9 @@ Breadcrumbs are usually placed before a page's main content with the current pag
 ```html preview
 <moyo-breadcrumb>
   <moyo-breadcrumb-item>Catalog</moyo-breadcrumb-item>
-  <moyo-breadcrumb-item>Clothing</moyo-breadcrumb-item>
+  <moyo-breadcrumb-item>Courses</moyo-breadcrumb-item>
   <moyo-breadcrumb-item>Women's</moyo-breadcrumb-item>
-  <moyo-breadcrumb-item>Shirts &amp; Tops</moyo-breadcrumb-item>
+  <moyo-breadcrumb-item>Lessons &amp; Activities</moyo-breadcrumb-item>
 </moyo-breadcrumb>
 ```
 
@@ -21,9 +21,9 @@ import { MoyoBreadcrumb, MoyoBreadcrumbItem } from '@tovutifunk/tovuti/dist/reac
 const App = () => (
   <MoyoBreadcrumb>
     <MoyoBreadcrumbItem>Catalog</MoyoBreadcrumbItem>
-    <MoyoBreadcrumbItem>Clothing</MoyoBreadcrumbItem>
+    <MoyoBreadcrumbItem>Courses</MoyoBreadcrumbItem>
     <MoyoBreadcrumbItem>Women's</MoyoBreadcrumbItem>
-    <MoyoBreadcrumbItem>Shirts &amp; Tops</MoyoBreadcrumbItem>
+    <MoyoBreadcrumbItem>Lessons &amp; Activities</MoyoBreadcrumbItem>
   </MoyoBreadcrumb>
 );
 ```
