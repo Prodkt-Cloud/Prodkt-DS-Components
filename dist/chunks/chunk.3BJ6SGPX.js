@@ -1,10 +1,17 @@
-import { css } from 'lit';
-import componentStyles from '../../styles/component.styles';
-import formControlStyles from '../../styles/form-control.styles';
+import {
+  form_control_styles_default
+} from "./chunk.F65LFIGE.js";
+import {
+  component_styles_default
+} from "./chunk.KNVYX3FQ.js";
+import {
+  r
+} from "./chunk.PEQICPKO.js";
 
-export default css`
-  ${componentStyles}
-  ${formControlStyles}
+// src/components/input/input.styles.ts
+var input_styles_default = r`
+  ${component_styles_default}
+  ${form_control_styles_default}
 
   :host {
     display: block;
@@ -280,3 +287,7 @@ export default css`
     display: none;
   }
 `;
+
+export {
+  input_styles_default
+};

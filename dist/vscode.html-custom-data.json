@@ -39,6 +39,23 @@
       ]
     },
     {
+      "name": "moyo-animated-image",
+      "attributes": [
+        {
+          "name": "src",
+          "description": "The image's src attribute."
+        },
+        {
+          "name": "alt",
+          "description": "The image's alt attribute."
+        },
+        {
+          "name": "play",
+          "description": "When set, the image will animate. Otherwise, it will be paused."
+        }
+      ]
+    },
+    {
       "name": "moyo-animation",
       "attributes": [
         {
@@ -88,51 +105,42 @@
       ]
     },
     {
-      "name": "moyo-animated-image",
+      "name": "moyo-breadcrumb",
       "attributes": [
         {
-          "name": "src",
-          "description": "The image's src attribute."
-        },
-        {
-          "name": "alt",
-          "description": "The image's alt attribute."
-        },
-        {
-          "name": "play",
-          "description": "When set, the image will animate. Otherwise, it will be paused."
+          "name": "label",
+          "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices."
         }
       ]
     },
     {
-      "name": "moyo-avatar",
+      "name": "moyo-breadcrumb-item",
       "attributes": [
         {
-          "name": "image",
-          "description": "The image source to use for the avatar."
+          "name": "href",
+          "description": "Optional URL to direct the user to when the breadcrumb item is activated. When set, a link will be rendered\ninternally. When unset, a button will be rendered instead."
         },
         {
-          "name": "label",
-          "description": "A label to use to describe the avatar to assistive devices."
-        },
-        {
-          "name": "initials",
-          "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended)."
-        },
-        {
-          "name": "shape",
-          "description": "The shape of the avatar.",
+          "name": "target",
+          "description": "Tells the browser where to open the link. Only used when `href` is set.",
           "values": [
             {
-              "name": "circle"
+              "name": "_blank"
             },
             {
-              "name": "square"
+              "name": "_parent"
             },
             {
-              "name": "rounded"
+              "name": "_self"
+            },
+            {
+              "name": "_top"
             }
           ]
+        },
+        {
+          "name": "rel",
+          "description": "The `rel` attribute to use on the link. Only used when `href` is set."
         }
       ]
     },
@@ -171,42 +179,34 @@
       ]
     },
     {
-      "name": "moyo-breadcrumb",
+      "name": "moyo-avatar",
       "attributes": [
+        {
+          "name": "image",
+          "description": "The image source to use for the avatar."
+        },
         {
           "name": "label",
-          "description": "The label to use for the breadcrumb control. This will not be shown, but it will be announced by screen readers and\nother assistive devices."
-        }
-      ]
-    },
-    {
-      "name": "moyo-breadcrumb-item",
-      "attributes": [
-        {
-          "name": "href",
-          "description": "Optional URL to direct the user to when the breadcrumb item is activated. When set, a link will be rendered\ninternally. When unset, a button will be rendered instead."
+          "description": "A label to use to describe the avatar to assistive devices."
         },
         {
-          "name": "target",
-          "description": "Tells the browser where to open the link. Only used when `href` is set.",
+          "name": "initials",
+          "description": "Initials to use as a fallback when no image is available (1-2 characters max recommended)."
+        },
+        {
+          "name": "shape",
+          "description": "The shape of the avatar.",
           "values": [
             {
-              "name": "_blank"
+              "name": "circle"
             },
             {
-              "name": "_parent"
+              "name": "square"
             },
             {
-              "name": "_self"
-            },
-            {
-              "name": "_top"
+              "name": "rounded"
             }
           ]
-        },
-        {
-          "name": "rel",
-          "description": "The `rel` attribute to use on the link. Only used when `href` is set."
         }
       ]
     },
@@ -1477,6 +1477,19 @@
       ]
     },
     {
+      "name": "moyo-radio-group",
+      "attributes": [
+        {
+          "name": "label",
+          "description": "The radio group label. Required for proper accessibility. Alternatively, you can use the label slot."
+        },
+        {
+          "name": "fieldset",
+          "description": "Shows the fieldset and legend that surrounds the radio group."
+        }
+      ]
+    },
+    {
       "name": "moyo-range",
       "attributes": [
         {
@@ -1558,19 +1571,6 @@
         {
           "name": "getSymbol",
           "description": "The name of the icon to display as the symbol."
-        }
-      ]
-    },
-    {
-      "name": "moyo-radio-group",
-      "attributes": [
-        {
-          "name": "label",
-          "description": "The radio group label. Required for proper accessibility. Alternatively, you can use the label slot."
-        },
-        {
-          "name": "fieldset",
-          "description": "Shows the fieldset and legend that surrounds the radio group."
         }
       ]
     },

@@ -58,7 +58,6 @@
     "@lit-labs/react": "^1.0.2",
     "@prodkt/animations": "^1.3.0",
     "@prodkt/localize": "^2.1.5",
-    "@supernovaio/gatsby-source-supernova": "^0.7.2",
     "color": "4.2",
     "lit": "^2.1.4",
     "qr-creator": "^1.0.0"

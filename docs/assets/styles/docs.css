@@ -256,7 +256,7 @@ strong {
 
 .markdown-section .splash-start h1:first-of-type {
   font-size: var(--moyo-font-size-large);
-  font-family: 'Aeonik' ,'CircularStd', sans-serif;
+  font-family: 'Aeonik', 'CircularStd', sans-serif;
 }
 
 @media screen and (max-width: 1040px) {
@@ -758,12 +758,9 @@ body[data-page^='/tokens/'] .table-wrapper td:first-child code {
   margin: 2rem 0;
 }
 
-
-
 @font-face {
   font-family: 'Aeonik Air';
-  src: url('../fonts/Aeonik-Air.woff2') format('woff2'),
-      url('../fonts/Aeonik-Air.woff') format('woff');
+  src: url('../fonts/Aeonik-Air.woff2') format('woff2'), url('../fonts/Aeonik-Air.woff') format('woff');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -771,8 +768,7 @@ body[data-page^='/tokens/'] .table-wrapper td:first-child code {
 
 @font-face {
   font-family: 'Aeonik';
-  src: url('../fonts/Aeonik-Black.woff2') format('woff2'),
-      url('../fonts/Aeonik-Black.woff') format('woff');
+  src: url('../fonts/Aeonik-Black.woff2') format('woff2'), url('../fonts/Aeonik-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -780,8 +776,7 @@ body[data-page^='/tokens/'] .table-wrapper td:first-child code {
 
 @font-face {
   font-family: 'Aeonik Air';
-  src: url('../fonts/Aeonik-AirItalic.woff2') format('woff2'),
-      url('../fonts/Aeonik-AirItalic.woff') format('woff');
+  src: url('../fonts/Aeonik-AirItalic.woff2') format('woff2'), url('../fonts/Aeonik-AirItalic.woff') format('woff');
   font-weight: 100;
   font-style: italic;
   font-display: swap;
@@ -789,8 +784,7 @@ body[data-page^='/tokens/'] .table-wrapper td:first-child code {
 
 @font-face {
   font-family: 'Aeonik';
-  src: url('../fonts/Aeonik-Medium.woff2') format('woff2'),
-      url('../fonts/Aeonik-Medium.woff') format('woff');
+  src: url('../fonts/Aeonik-Medium.woff2') format('woff2'), url('../fonts/Aeonik-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -798,8 +792,7 @@ body[data-page^='/tokens/'] .table-wrapper td:first-child code {
 
 @font-face {
   font-family: 'Aeonik';
-  src: url('../fonts/Aeonik-Light.woff2') format('woff2'),
-      url('../fonts/Aeonik-Light.woff') format('woff');
+  src: url('../fonts/Aeonik-Light.woff2') format('woff2'), url('../fonts/Aeonik-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -807,8 +800,7 @@ body[data-page^='/tokens/'] .table-wrapper td:first-child code {
 
 @font-face {
   font-family: 'Aeonik';
-  src: url('../fonts/Aeonik-Bold.woff2') format('woff2'),
-      url('../fonts/Aeonik-Bold.woff') format('woff');
+  src: url('../fonts/Aeonik-Bold.woff2') format('woff2'), url('../fonts/Aeonik-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -816,8 +808,7 @@ body[data-page^='/tokens/'] .table-wrapper td:first-child code {
 
 @font-face {
   font-family: 'Aeonik';
-  src: url('../fonts/Aeonik-BoldItalic.woff2') format('woff2'),
-      url('../fonts/Aeonik-BoldItalic.woff') format('woff');
+  src: url('../fonts/Aeonik-BoldItalic.woff2') format('woff2'), url('../fonts/Aeonik-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -825,8 +816,7 @@ body[data-page^='/tokens/'] .table-wrapper td:first-child code {
 
 @font-face {
   font-family: 'Aeonik';
-  src: url('../fonts/Aeonik-LightItalic.woff2') format('woff2'),
-      url('../fonts/Aeonik-LightItalic.woff') format('woff');
+  src: url('../fonts/Aeonik-LightItalic.woff2') format('woff2'), url('../fonts/Aeonik-LightItalic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -835,7 +825,7 @@ body[data-page^='/tokens/'] .table-wrapper td:first-child code {
 @font-face {
   font-family: 'Aeonik';
   src: url('../fonts/Aeonik-MediumItalic.woff2') format('woff2'),
-      url('../fonts/Aeonik-MediumItalic.woff') format('woff');
+    url('../fonts/Aeonik-MediumItalic.woff') format('woff');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -843,8 +833,7 @@ body[data-page^='/tokens/'] .table-wrapper td:first-child code {
 
 @font-face {
   font-family: 'Aeonik';
-  src: url('../fonts/Aeonik-BlackItalic.woff2') format('woff2'),
-      url('../fonts/Aeonik-BlackItalic.woff') format('woff');
+  src: url('../fonts/Aeonik-BlackItalic.woff2') format('woff2'), url('../fonts/Aeonik-BlackItalic.woff') format('woff');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -852,8 +841,7 @@ body[data-page^='/tokens/'] .table-wrapper td:first-child code {
 
 @font-face {
   font-family: 'Aeonik';
-  src: url('../fonts/Aeonik-Thin.woff2') format('woff2'),
-      url('../fonts/Aeonik-Thin.woff') format('woff');
+  src: url('../fonts/Aeonik-Thin.woff2') format('woff2'), url('../fonts/Aeonik-Thin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -861,8 +849,7 @@ body[data-page^='/tokens/'] .table-wrapper td:first-child code {
 
 @font-face {
   font-family: 'Aeonik';
-  src: url('../fonts/Aeonik-ThinItalic.woff2') format('woff2'),
-      url('../fonts/Aeonik-ThinItalic.woff') format('woff');
+  src: url('../fonts/Aeonik-ThinItalic.woff2') format('woff2'), url('../fonts/Aeonik-ThinItalic.woff') format('woff');
   font-weight: 100;
   font-style: italic;
   font-display: swap;
@@ -871,7 +858,7 @@ body[data-page^='/tokens/'] .table-wrapper td:first-child code {
 @font-face {
   font-family: 'Aeonik';
   src: url('../fonts/Aeonik-RegularItalic.woff2') format('woff2'),
-      url('../fonts/Aeonik-RegularItalic.woff') format('woff');
+    url('../fonts/Aeonik-RegularItalic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -879,10 +866,8 @@ body[data-page^='/tokens/'] .table-wrapper td:first-child code {
 
 @font-face {
   font-family: 'Aeonik';
-  src: url('../fonts/Aeonik-Regular.woff2') format('woff2'),
-      url('../fonts/Aeonik-Regular.woff') format('woff');
+  src: url('../fonts/Aeonik-Regular.woff2') format('woff2'), url('../fonts/Aeonik-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
